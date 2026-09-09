@@ -8,7 +8,7 @@ data:
   sample_jsonl: data/sample/threads_{brand}_sample.jsonl
   sample_size: 4000
 
-brand: null            # set after profiling, e.g. "SpotifyCares"
+brand: Delta           # chosen after profiling; see DECISIONS.md #7
 
 llm:
   provider: gemini

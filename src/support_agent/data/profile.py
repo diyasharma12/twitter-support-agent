@@ -9,7 +9,25 @@ from __future__ import annotations
 import sqlite3
 from pathlib import Path
 
-DM_MARKERS = ("dm", "direct message", "send us a message", "pm us")
+# Deflection is any reply that moves the customer to another channel instead of
+# answering. The first version of this only looked for "DM", which badly undercounted
+# brands that push people to phone/chat/email instead — AmazonHelp scored 1.2% while
+# its replies were visibly full of "reach us by phone or chat here". See DECISIONS.md #8.
+DM_MARKERS = (
+    "dm ",
+    "dm us",
+    "direct message",
+    "send us a message",
+    "pm us",
+    "by phone",
+    "phone or chat",
+    "give us a call",
+    "call us",
+    "contact us at",
+    "email us",
+    "reach us",
+    "chat here",
+)
 
 
 def brand_stats(db_path: Path, top_n: int = 25) -> list[dict]:
