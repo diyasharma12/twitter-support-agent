@@ -17,7 +17,7 @@ import textwrap
 
 import _bootstrap  # noqa: F401
 from support_agent.config import load_config, resolve
-from support_agent.intents import INTENTS, INTENT_NAMES
+from support_agent.intents import INTENTS, INTENT_NAMES, TIE_BREAKS
 
 FIELDS = ["thread_id", "customer_message", "brand_reply", "intent", "decision", "note"]
 
@@ -71,6 +71,9 @@ def main():
                 if raw == "?":
                     for name, desc in INTENTS.items():
                         print(f"  {name}: {desc}")
+                    print("\n  TIE-BREAK RULES:")
+                    for rule in TIE_BREAKS:
+                        print(f"   - {rule}")
                     continue
                 if raw.isdigit() and int(raw) < len(INTENT_NAMES):
                     intent = INTENT_NAMES[int(raw)]

@@ -34,6 +34,22 @@ INTENTS: dict[str, str] = {
     ),
 }
 
+# Tie-break rules, written BEFORE labelling started and applied to all 200 examples.
+# Without these, the same message gets labelled differently on Monday and Wednesday, and
+# every "accuracy" number downstream is measuring the labeller's mood.
+TIE_BREAKS = (
+    "Label by what the customer is ASKING FOR, not by what happened to them. "
+    "'Delayed, missed my connection, can you rebook me' -> rebooking_change. "
+    "'Delayed 7 hours, where is the plane you promised' -> delay_cancellation.",
+    "If the message asks for money or miles back, it is loyalty_refund_compensation, "
+    "even when a bag or a delay caused it.",
+    "A message that mentions a bag ONLY as context for a delay is delay_cancellation; "
+    "baggage means the bag itself is the problem.",
+    "Praise plus a small complaint -> the complaint wins; praise is for messages with "
+    "nothing to resolve.",
+    "Sarcasm with no request ('great job as always') -> other, not praise.",
+)
+
 # Decisions the agent must make about handling.
 DECISIONS = ("auto", "escalate")
 
