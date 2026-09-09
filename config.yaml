@@ -1,0 +1,25 @@
+# Single source of truth for the pipeline. Scripts read this; nothing hardcodes paths.
+random_seed: 42
+
+data:
+  raw_csv: data/raw/twcs.csv
+  index_db: data/interim/tweets.sqlite
+  threads_jsonl: data/interim/threads_{brand}.jsonl
+  sample_jsonl: data/sample/threads_{brand}_sample.jsonl
+  sample_size: 4000
+
+brand: null            # set after profiling, e.g. "SpotifyCares"
+
+llm:
+  provider: gemini
+  model: gemini-2.0-flash
+  temperature_classify: 0.0
+  temperature_draft: 0.3
+  temperature_judge: 0.0
+  max_output_tokens: 512
+  requests_per_minute: 10   # stay inside the free-tier RPM
+  cache_dir: .cache/llm
+
+eval:
+  golden_path: data/golden/golden.csv
+  judge_sample_for_human_agreement: 50
