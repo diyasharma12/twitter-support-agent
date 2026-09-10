@@ -82,6 +82,24 @@ def judge_replies(judge, rows, outputs, retriever, limit=JUDGE_LIMIT):
     }
 
 
+def preflight(llm, cfg):
+    """One live call before the real run.
+
+    Without this, a wrong model name or an exhausted quota is discovered several minutes
+    and several hundred cached-miss calls into the run.
+    """
+    try:
+        llm.complete("Reply with the single word: ok", temperature=0.0, use_cache=False)
+    except Exception as err:  # noqa: BLE001 - we want the raw provider message here
+        raise SystemExit(
+            f"\nLLM preflight failed, so the run was not started:\n  {err}\n\n"
+            f"Model in config.yaml: {cfg['llm']['model']}\n"
+            "If the provider says the model is retired, put the name it suggests into "
+            "config.yaml under llm.model and rerun."
+        )
+    print(f"preflight ok ({cfg['llm']['model']})")
+
+
 def main():
     t0 = time.time()
     cfg = load_config()
@@ -108,6 +126,7 @@ def main():
     print("simple baseline done")
 
     llm = LLM(cfg)
+    preflight(llm, cfg)
     agent = SupportAgent(retriever, cfg, llm)
     agent_out = []
     for i, m in enumerate(msgs, 1):

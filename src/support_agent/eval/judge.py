@@ -10,6 +10,8 @@ perfectly on-brand and still invent a refund.
 """
 from __future__ import annotations
 
+import json
+
 from ..llm import LLM
 
 RUBRIC = """You are evaluating a draft public reply written by an AI support agent for
@@ -51,7 +53,7 @@ class ReplyJudge:
             out = self.llm.complete_json(
                 prompt, temperature=self.cfg.get("temperature_judge", 0.0)
             )
-        except Exception:
+        except (json.JSONDecodeError, ValueError):
             return {"grounded": None, "tone": None, "resolution": None,
                     "sendable": None, "why": "judge output unparseable"}
         for key in ("grounded", "tone", "resolution"):

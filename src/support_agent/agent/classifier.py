@@ -6,6 +6,8 @@ answer is a different failure from a wrong answer, and the report distinguishes 
 """
 from __future__ import annotations
 
+import json
+
 from ..intents import INTENTS, INTENT_NAMES
 from ..llm import LLM
 
@@ -36,8 +38,15 @@ class IntentClassifier:
             out = self.llm.complete_json(
                 prompt, temperature=self.cfg.get("temperature_classify", 0.0)
             )
-        except Exception:
+        except (json.JSONDecodeError, ValueError):
+            # The model answered, but not with parseable JSON. That is a genuine model
+            # failure and belongs in the metrics as `unparseable`.
             return {"intent": "unparseable", "confidence": 0.0}
+        # NOTE: transport errors (bad model name, exhausted quota, network) are
+        # deliberately NOT caught. An earlier version swallowed them here, so a dead API
+        # key produced 196 confident-looking "unparseable" rows and an intent accuracy of
+        # zero with no error anywhere. A crash is the correct behaviour: it distinguishes
+        # "the model was wrong" from "there was no model". See DECISIONS.md #15.
         intent = str(out.get("intent", "")).strip()
         if intent not in INTENT_NAMES:
             return {"intent": "unparseable", "confidence": 0.0}
