@@ -15,6 +15,10 @@ llm:
   # on the only available flash model, against the ~570 this evaluation needs)
   provider: groq
   model: openai/gpt-oss-120b
+  # A DIFFERENT model judges the replies. Two reasons, one practical and one
+  # methodological: Groq's token-per-day cap is per model, so the judge gets its own
+  # budget; and a judge from another family cannot prefer its own output. See #20.
+  judge_model: qwen/qwen3.8-27b
   temperature_classify: 0.0
   temperature_draft: 0.3
   temperature_judge: 0.0

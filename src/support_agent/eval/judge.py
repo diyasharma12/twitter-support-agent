@@ -41,9 +41,21 @@ Answer with JSON only:
 
 
 class ReplyJudge:
+    """Scores reply quality with a model deliberately different from the drafter's.
+
+    Judging with the same model that wrote the reply invites self-preference bias — a
+    model tends to rate its own family's output generously. Using another family does not
+    remove judge bias, it only removes that particular one; the human agreement check is
+    still what bounds how far these scores can be trusted.
+    """
+
     def __init__(self, llm: LLM | None = None, cfg: dict | None = None):
-        self.llm = llm or LLM(cfg)
-        self.cfg = (cfg or {}).get("llm", {})
+        cfg = cfg or {}
+        llm_cfg = cfg.get("llm", {})
+        judge_model = llm_cfg.get("judge_model")
+        self.llm = llm or LLM(cfg or None, model=judge_model)
+        self.model_name = self.llm.model
+        self.cfg = llm_cfg
 
     def score(self, message: str, reply: str, precedents_text: str) -> dict:
         prompt = RUBRIC.format(

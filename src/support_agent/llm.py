@@ -60,11 +60,13 @@ def _require_key(provider: str) -> str:
 
 
 class LLM:
-    def __init__(self, cfg: dict | None = None):
+    def __init__(self, cfg: dict | None = None, model: str | None = None):
         cfg = cfg or load_config()
         self.cfg = cfg["llm"]
         self.provider = self.cfg.get("provider", "gemini")
-        self.model = self.cfg["model"]
+        # `model` lets one process run two different models (the drafter and the judge)
+        # through the same cache and rate limiter.
+        self.model = model or self.cfg["model"]
         self.cache_dir = REPO_ROOT / self.cfg["cache_dir"]
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.limiter = RateLimiter(self.cfg["requests_per_minute"])

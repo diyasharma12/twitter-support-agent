@@ -21,7 +21,7 @@ from support_agent.eval.judge import ReplyJudge
 from support_agent.eval.metrics import escalation_metrics, intent_metrics
 from support_agent.llm import LLM
 
-JUDGE_LIMIT = 60  # judged replies per system, to stay inside the free-tier quota
+JUDGE_LIMIT = 40  # judged replies per system; the free tier caps tokens per DAY
 
 
 def load_golden(path):
@@ -64,7 +64,7 @@ def cross_val_predict_simple(rows, retriever):
 def judge_replies(judge, rows, outputs, retriever, limit=JUDGE_LIMIT):
     scored = []
     for row, out in list(zip(rows, outputs))[:limit]:
-        hits = retriever.search(row["customer_message"], k=3)
+        hits = retriever.search(row["customer_message"], k=2)
         s = judge.score(row["customer_message"], out["reply"], format_precedents(hits))
         scored.append({"thread_id": row["thread_id"], **s})
     def avg(key):
@@ -136,8 +136,11 @@ def main():
     systems["agent"] = agent_out
     print("agent done")
 
-    judge = ReplyJudge(llm, cfg)
+    judge = ReplyJudge(cfg=cfg)  # its own model, its own token budget
+    print(f"judge model: {judge.model_name}")
     results = {"golden_n": len(rows), "brand": cfg["brand"], "systems": {}}
+    out_path = resolve("reports/results.json")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     for name, outs in systems.items():
         results["systems"][name] = {
             "intent": intent_metrics(true_intent, [o["intent"] for o in outs]),
@@ -146,11 +149,14 @@ def main():
             ),
             "reply_quality": judge_replies(judge, rows, outs, retriever),
         }
+        # Written after every system, so a quota failure part-way through leaves usable
+        # results instead of nothing. Learned the hard way.
+        out_path.write_text(json.dumps(results, indent=2))
         print(f"judged {name}")
 
     results["runtime_seconds"] = round(time.time() - t0, 1)
-    out_path = resolve("reports/results.json")
-    out_path.parent.mkdir(parents=True, exist_ok=True)
+    results["judge_model"] = judge.model_name
+    results["model"] = cfg["llm"]["model"]
     out_path.write_text(json.dumps(results, indent=2))
 
     with open(resolve("reports/predictions.json"), "w") as fh:
