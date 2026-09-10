@@ -11,13 +11,15 @@ data:
 brand: Delta           # chosen after profiling; see DECISIONS.md #7
 
 llm:
-  provider: gemini
-  model: gemini-3.6-flash
+  # provider: gemini | groq  (see DECISIONS.md #17 — Gemini free tier gave 20 req/DAY
+  # on the only available flash model, against the ~570 this evaluation needs)
+  provider: groq
+  model: llama-3.3-70b-versatile
   temperature_classify: 0.0
   temperature_draft: 0.3
   temperature_judge: 0.0
   max_output_tokens: 512
-  requests_per_minute: 10   # stay inside the free-tier RPM
+  requests_per_minute: 25   # Groq free tier allows 30 RPM; leave headroom
   cache_dir: .cache/llm
 
 eval:

@@ -1,21 +1,33 @@
-"""The single door to the LLM.
+"""The single door to the LLM, with a swappable provider.
 
-Why a wrapper instead of calling the SDK directly:
+Why a wrapper instead of calling an SDK directly:
   * Free-tier quota is the binding constraint on this project. Every prompt/response pair
-    is cached on disk by hash, so re-running the eval costs zero API calls and the
-    published results are reproducible without a key (if the cache is present).
+    is cached on disk by hash, so re-running the eval costs zero API calls and published
+    results are reproducible without a key (given the cache).
   * A shared rate limiter keeps us under the free-tier requests-per-minute ceiling.
-  * One place to add retries, so transient 429/503s do not kill a 200-example eval run.
+  * One place for retries, so a transient 429/503 does not kill a 200-example run.
+  * One place to swap providers. This earned itself within an hour: Gemini retired the
+    configured model mid-project and its replacement turned out to allow 20 requests per
+    DAY on the free tier, against the ~570 this evaluation needs. Switching to Groq is
+    now a one-line config change, not a rewrite. See DECISIONS.md #17.
+
+Groq is reached over its OpenAI-compatible HTTP endpoint using the standard library, so
+no extra dependency and no extra install time in the grader's 15-minute budget.
 """
 from __future__ import annotations
 
 import hashlib
 import json
+import os
 import threading
 import time
+import urllib.error
+import urllib.request
 from pathlib import Path
 
-from .config import REPO_ROOT, load_config, require_api_key
+from .config import REPO_ROOT, load_config
+
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 
 class RateLimiter:
@@ -34,38 +46,88 @@ class RateLimiter:
             self._last = time.monotonic()
 
 
+def _require_key(provider: str) -> str:
+    var = {"gemini": "GEMINI_API_KEY", "groq": "GROQ_API_KEY"}[provider]
+    key = os.environ.get(var)
+    if not key:
+        raise RuntimeError(
+            f"{var} is not set. Add it to .env. "
+            + ("Get one free at https://console.groq.com/keys"
+               if provider == "groq" else
+               "Get one free at https://aistudio.google.com/apikey")
+        )
+    return key
+
+
 class LLM:
     def __init__(self, cfg: dict | None = None):
-        self.cfg = (cfg or load_config())["llm"]
+        cfg = cfg or load_config()
+        self.cfg = cfg["llm"]
+        self.provider = self.cfg.get("provider", "gemini")
+        self.model = self.cfg["model"]
         self.cache_dir = REPO_ROOT / self.cfg["cache_dir"]
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.limiter = RateLimiter(self.cfg["requests_per_minute"])
-        self._client = None  # lazy: a cache-only run needs no key
+        self._gemini = None
 
-    def _model(self, temperature: float):
+    # --- providers ----------------------------------------------------------
+
+    def _call_gemini(self, prompt: str, temperature: float) -> str:
         import google.generativeai as genai
 
-        if self._client is None:
-            genai.configure(api_key=require_api_key())
-            self._client = genai
-        return self._client.GenerativeModel(
-            self.cfg["model"],
+        if self._gemini is None:
+            genai.configure(api_key=_require_key("gemini"))
+            self._gemini = genai
+        model = self._gemini.GenerativeModel(
+            self.model,
             generation_config={
                 "temperature": temperature,
                 "max_output_tokens": self.cfg["max_output_tokens"],
             },
         )
+        return (model.generate_content(prompt).text or "").strip()
+
+    def _call_groq(self, prompt: str, temperature: float) -> str:
+        body = json.dumps({
+            "model": self.model,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": temperature,
+            "max_tokens": self.cfg["max_output_tokens"],
+        }).encode()
+        req = urllib.request.Request(
+            GROQ_URL,
+            data=body,
+            headers={
+                "Authorization": f"Bearer {_require_key('groq')}",
+                "Content-Type": "application/json",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                payload = json.loads(resp.read())
+        except urllib.error.HTTPError as err:
+            raise RuntimeError(
+                f"Groq HTTP {err.code}: {err.read().decode()[:300]}"
+            ) from err
+        return payload["choices"][0]["message"]["content"].strip()
+
+    def _call(self, prompt: str, temperature: float) -> str:
+        if self.provider == "groq":
+            return self._call_groq(prompt, temperature)
+        return self._call_gemini(prompt, temperature)
+
+    # --- public -------------------------------------------------------------
 
     def _cache_path(self, prompt: str, temperature: float) -> Path:
         key = hashlib.sha256(
             json.dumps(
-                {"m": self.cfg["model"], "t": temperature, "p": prompt}, sort_keys=True
+                {"p": self.provider, "m": self.model, "t": temperature, "q": prompt},
+                sort_keys=True,
             ).encode()
         ).hexdigest()
         return self.cache_dir / f"{key}.json"
 
     def complete(self, prompt: str, temperature: float = 0.0, use_cache: bool = True) -> str:
-        """Return the model's text for `prompt`, hitting the disk cache when possible."""
         path = self._cache_path(prompt, temperature)
         if use_cache and path.exists():
             return json.loads(path.read_text())["response"]
@@ -74,20 +136,19 @@ class LLM:
         for attempt in range(5):
             try:
                 self.limiter.wait()
-                resp = self._model(temperature).generate_content(prompt)
-                text = (resp.text or "").strip()
+                text = self._call(prompt, temperature)
                 path.write_text(json.dumps({"prompt": prompt, "response": text}))
                 return text
-            except Exception as err:  # noqa: BLE001 - free tier throws several shapes
+            except Exception as err:  # noqa: BLE001 - providers throw several shapes
                 last_err = err
-                time.sleep(2**attempt)
+                time.sleep(min(2**attempt, 30))
         raise RuntimeError(f"LLM call failed after retries: {last_err}")
 
     def complete_json(self, prompt: str, temperature: float = 0.0) -> dict:
-        """Same, but strips markdown fences and parses JSON. Raises on unparseable output.
+        """Same, but strips markdown fences and parses JSON.
 
-        Unparseable output is itself a finding worth reporting, so we do not silently
-        repair it here — the caller decides whether to count it as a failure.
+        Unparseable output is itself a finding, so it is not silently repaired here —
+        the caller decides whether to count it as a model failure.
         """
         raw = self.complete(prompt, temperature=temperature)
         cleaned = raw.strip()
