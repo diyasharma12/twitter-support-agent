@@ -27,10 +27,26 @@ INTENTS: dict[str, str] = {
     "loyalty_refund_compensation": (
         "SkyMiles/Medallion status, refunds, vouchers, or a request for compensation."
     ),
-    "praise": "Positive feedback with no issue to resolve.",
+    "praise": "Positive feedback about Delta with no issue to resolve.",
+    "general_question": (
+        "A policy, product or information question that does not depend on this "
+        "customer's booking: baggage allowances, card benefits, pet/cargo rules, "
+        "boarding groups, what a status tier gets you."
+    ),
+    "service_complaint": (
+        "Complaint about service quality rather than a flight event: rude or unhelpful "
+        "staff, phone hold times, queues, airport facilities, aircraft condition."
+    ),
+    "social_chitchat": (
+        "Conversational messages with no request and no evaluation of Delta: "
+        "'see you in the morning', photos, live-tweeting a trip, tagging Delta in "
+        "something unrelated."
+    ),
     "other": (
         "Real message that fits none of the above, including pure venting with no "
-        "actionable request. Use sparingly — if this exceeds ~10% the taxonomy is wrong."
+        "actionable request. Use sparingly — if this exceeds ~10% the taxonomy is wrong. "
+        "It did exceed it on the first labelling pass, which is how general_question, "
+        "service_complaint and social_chitchat came to exist. See DECISIONS.md #11."
     ),
 }
 
