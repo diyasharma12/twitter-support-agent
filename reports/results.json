@@ -1,0 +1,1827 @@
+{
+  "golden_n": 196,
+  "brand": "Delta",
+  "systems": {
+    "trivial": {
+      "intent": {
+        "n": 196,
+        "accuracy": 0.2449,
+        "macro_f1": 0.0358,
+        "weighted_f1": 0.0964,
+        "unparseable_rate": 0.0,
+        "per_class": {
+          "baggage": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "delay_cancellation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "general_question": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 21.0
+          },
+          "inflight_experience": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 21.0
+          },
+          "loyalty_refund_compensation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1.0
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 10.0
+          },
+          "praise": {
+            "precision": 0.24489795918367346,
+            "recall": 1.0,
+            "f1-score": 0.39344262295081966,
+            "support": 48.0
+          },
+          "rebooking_change": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 19.0
+          },
+          "service_complaint": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 34.0
+          },
+          "social_chitchat": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 14.0
+          },
+          "website_app_issue": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 12.0
+          },
+          "accuracy": 0.24489795918367346,
+          "macro avg": {
+            "precision": 0.022263450834879406,
+            "recall": 0.09090909090909091,
+            "f1-score": 0.03576751117734724,
+            "support": 196.0
+          },
+          "weighted avg": {
+            "precision": 0.05997501041232819,
+            "recall": 0.24489795918367346,
+            "f1-score": 0.09635329541652726,
+            "support": 196.0
+          }
+        },
+        "labels": [
+          "baggage",
+          "delay_cancellation",
+          "general_question",
+          "inflight_experience",
+          "loyalty_refund_compensation",
+          "other",
+          "praise",
+          "rebooking_change",
+          "service_complaint",
+          "social_chitchat",
+          "website_app_issue"
+        ],
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            48,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            34,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "true_distribution": {
+          "rebooking_change": 19,
+          "website_app_issue": 12,
+          "praise": 48,
+          "delay_cancellation": 8,
+          "inflight_experience": 21,
+          "service_complaint": 34,
+          "baggage": 8,
+          "general_question": 21,
+          "other": 10,
+          "social_chitchat": 14,
+          "loyalty_refund_compensation": 1
+        }
+      },
+      "escalation": {
+        "n": 196,
+        "accuracy": 0.3929,
+        "precision_escalate": 0.3929,
+        "recall_escalate": 1.0,
+        "f1_escalate": 0.5641,
+        "missed_escalations": 0,
+        "needless_escalations": 119,
+        "auto_rate": 0.0,
+        "counts": {
+          "tp": 77,
+          "fp": 119,
+          "tn": 0,
+          "fn": 0
+        }
+      },
+      "reply_quality": {
+        "n_judged": 40,
+        "grounded": 3.4,
+        "tone": 2.525,
+        "resolution": 2.825,
+        "sendable_rate": 0.475,
+        "per_example": [
+          {
+            "thread_id": "2595750",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard support procedures, maintains a professional tone, and provides a clear next step to resolve the customer's confusion."
+          },
+          {
+            "thread_id": "2637460",
+            "grounded": 2,
+            "tone": 3,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The reply incorrectly assumes a booking error requiring a confirmation number, whereas the customer is reporting a public signage or map inaccuracy that does not require personal account details to address."
+          },
+          {
+            "thread_id": "200612",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft incorrectly treats a positive compliment as a complaint, offering an irrelevant and apologetic response that contradicts the customer's happy sentiment."
+          },
+          {
+            "thread_id": "1868962",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply follows the precedent of directing the user to DM for private handling, offers a concrete next step, and maintains a professional, empathetic tone without inventing policies."
+          },
+          {
+            "thread_id": "2137003",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The customer is sharing a positive experience and photo, but the draft incorrectly assumes a problem exists and requests unnecessary booking details."
+          },
+          {
+            "thread_id": "1588373",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft hallucinates a problem and requests a confirmation number for a customer who is simply sharing a positive photo, contradicting the brand's precedent of thanking users for sharing."
+          },
+          {
+            "thread_id": "2612421",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The customer is expressing gratitude for a positive experience, but the draft incorrectly assumes a problem exists and offers an irrelevant troubleshooting step."
+          },
+          {
+            "thread_id": "897844",
+            "grounded": 5,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft misinterprets a positive thank-you message as a complaint, offering an apology and troubleshooting steps that are completely inappropriate for the context."
+          },
+          {
+            "thread_id": "601888",
+            "grounded": 4,
+            "tone": 4,
+            "resolution": 3,
+            "sendable": true,
+            "why": "The reply is professional and grounded, though it lacks the specific in-flight advice (telling the customer to speak to a flight attendant) seen in the precedents, relying instead on a standard escalation path."
+          },
+          {
+            "thread_id": "1197905",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard Delta procedures for handling service complaints via DM, though the tone is slightly generic given the customer's status as a service member."
+          },
+          {
+            "thread_id": "1579897",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard support procedures, offers a clear next step, and maintains a professional, albeit slightly generic, tone appropriate for a public-to-private transition."
+          },
+          {
+            "thread_id": "893534",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft misinterprets a positive thank-you message as a complaint, offering an apology and requesting a confirmation number for a non-existent issue."
+          },
+          {
+            "thread_id": "938960",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply is grounded in standard procedure, offers a clear next step to resolve the baggage issue, and maintains a professional, empathetic tone appropriate for the situation."
+          },
+          {
+            "thread_id": "260892",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply misinterprets a positive compliment as a complaint, offering an irrelevant apology and request for booking details instead of thanking the customer."
+          },
+          {
+            "thread_id": "2708615",
+            "grounded": 1,
+            "tone": 2,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply ignores the specific policy question about ID requirements for minors and instead offers an irrelevant troubleshooting step (checking a confirmation number) that does not address the customer's inquiry."
+          },
+          {
+            "thread_id": "623300",
+            "grounded": 2,
+            "tone": 3,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply fails to answer the customer's specific question about the phone number and instead requests unnecessary information for a general inquiry."
+          },
+          {
+            "thread_id": "2752870",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The reply misinterprets the customer's positive, humorous message as a complaint, resulting in a tone-deaf and unnecessary request for details."
+          },
+          {
+            "thread_id": "1582252",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded and provides a clear next step, though the tone is slightly generic for a customer expressing a preference rather than a specific service failure."
+          },
+          {
+            "thread_id": "1476737",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the standard Delta protocol of requesting a confirmation number via DM to investigate, offering a clear next step without inventing policies."
+          },
+          {
+            "thread_id": "1796582",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors Delta's standard protocol of moving the conversation to DMs with a confirmation number, offering a concrete solution to the phone wait complaint."
+          },
+          {
+            "thread_id": "2450335",
+            "grounded": 5,
+            "tone": 1,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The reply misinterprets a positive thank-you note as a complaint, offering an unnecessary and tone-deaf request for a confirmation number."
+          },
+          {
+            "thread_id": "1280761",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard procedure, offers a clear next step, and maintains a professional, albeit slightly brief, tone appropriate for a public channel."
+          },
+          {
+            "thread_id": "564582",
+            "grounded": 1,
+            "tone": 2,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The customer message contains no complaint or booking details, only a link and punctuation, so the agent's assumption of 'trouble' and request for a confirmation number is hallucinated and inappropriate."
+          },
+          {
+            "thread_id": "1164726",
+            "grounded": 1,
+            "tone": 2,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The customer is sharing a positive status update, not reporting a problem, so the draft's apology and request for a confirmation number are completely misaligned with the context."
+          },
+          {
+            "thread_id": "904471",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply follows the established precedent of requesting a confirmation number to investigate the issue, offering a concrete next step without inventing policies or compensation."
+          },
+          {
+            "thread_id": "2694205",
+            "grounded": 2,
+            "tone": 3,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The reply incorrectly assumes the customer has a flight confirmation number for a crew commendation request, which is not a standard requirement for such inquiries and misinterprets the user's intent."
+          },
+          {
+            "thread_id": "394127",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the standard Delta protocol of requesting a confirmation number via DM to investigate the booking, maintaining a professional and helpful tone."
+          },
+          {
+            "thread_id": "2026332",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is factually safe and provides a clear next step, though it lacks the specific brand voice and empathy markers seen in the provided precedents."
+          },
+          {
+            "thread_id": "2179862",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The customer is posting a positive, enthusiastic update about new planes and uniforms, but the draft reply incorrectly assumes a problem exists and apologizes for 'trouble' that was not mentioned."
+          },
+          {
+            "thread_id": "417903",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply misinterprets a positive thank-you note as a complaint, offering an irrelevant and apologetic response that contradicts the customer's praise."
+          },
+          {
+            "thread_id": "1375790",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft misinterprets a positive compliment as a complaint, offering an apology and a troubleshooting step that is completely inappropriate for the context."
+          },
+          {
+            "thread_id": "403652",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply follows the standard protocol of requesting details via DM to resolve the connection issue, matching the brand's precedent for handling operational queries."
+          },
+          {
+            "thread_id": "1926545",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard Delta procedures (DM for details) and provides a clear next step, though the tone is slightly generic given the customer's high-stress situation."
+          },
+          {
+            "thread_id": "460214",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The reply is transactional and ignores the customer's specific complaint about the CEO and safety videos, failing to match the brand's more conversational and empathetic precedent."
+          },
+          {
+            "thread_id": "1120101",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard support procedures, offers a concrete next step, and maintains a professional register despite the customer's sarcasm."
+          },
+          {
+            "thread_id": "944395",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard procedure, offers a concrete next step to resolve the issue, and maintains a professional, albeit slightly brief, tone appropriate for the platform."
+          },
+          {
+            "thread_id": "511850",
+            "grounded": 4,
+            "tone": 3,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The request for a confirmation number is not supported by the provided precedents, which focus on directing customers to on-site services or offering general apologies without requesting specific booking details."
+          },
+          {
+            "thread_id": "1647940",
+            "grounded": 4,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is a standard, plausible support action that moves the issue forward by requesting necessary details, though it lacks the specific empathy for the customer's urgent situation abroad."
+          },
+          {
+            "thread_id": "1666959",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The customer is expressing gratitude, not reporting an issue, so the draft's apology and request for a confirmation number are completely inappropriate and misinterpret the context."
+          },
+          {
+            "thread_id": "423847",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's standard protocol of requesting a confirmation number via DM to investigate, offering a clear next step without inventing policies or over-apologizing."
+          }
+        ]
+      }
+    },
+    "simple": {
+      "intent": {
+        "n": 196,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "weighted_f1": 1.0,
+        "unparseable_rate": 0.0,
+        "per_class": {
+          "baggage": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 8.0
+          },
+          "delay_cancellation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 8.0
+          },
+          "general_question": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 21.0
+          },
+          "inflight_experience": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 21.0
+          },
+          "loyalty_refund_compensation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "other": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 10.0
+          },
+          "praise": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 48.0
+          },
+          "rebooking_change": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 19.0
+          },
+          "service_complaint": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 34.0
+          },
+          "social_chitchat": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 14.0
+          },
+          "website_app_issue": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "accuracy": 1.0,
+          "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 196.0
+          },
+          "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 196.0
+          }
+        },
+        "labels": [
+          "baggage",
+          "delay_cancellation",
+          "general_question",
+          "inflight_experience",
+          "loyalty_refund_compensation",
+          "other",
+          "praise",
+          "rebooking_change",
+          "service_complaint",
+          "social_chitchat",
+          "website_app_issue"
+        ],
+        "confusion": [
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            21,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            48,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            34,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            12
+          ]
+        ],
+        "true_distribution": {
+          "rebooking_change": 19,
+          "website_app_issue": 12,
+          "praise": 48,
+          "delay_cancellation": 8,
+          "inflight_experience": 21,
+          "service_complaint": 34,
+          "baggage": 8,
+          "general_question": 21,
+          "other": 10,
+          "social_chitchat": 14,
+          "loyalty_refund_compensation": 1
+        }
+      },
+      "escalation": {
+        "n": 196,
+        "accuracy": 0.3929,
+        "precision_escalate": 0.3929,
+        "recall_escalate": 1.0,
+        "f1_escalate": 0.5641,
+        "missed_escalations": 0,
+        "needless_escalations": 119,
+        "auto_rate": 0.0,
+        "counts": {
+          "tp": 77,
+          "fp": 119,
+          "tn": 0,
+          "fn": 0
+        }
+      },
+      "reply_quality": {
+        "n_judged": 40,
+        "grounded": 3.725,
+        "tone": 2.65,
+        "resolution": 2.625,
+        "sendable_rate": 0.35,
+        "per_example": [
+          {
+            "thread_id": "2595750",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The draft incorrectly opens with 'you are most welcome' in response to a question, and it assumes the customer holds a Basic Economy ticket without evidence, making it factually risky and contextually inappropriate."
+          },
+          {
+            "thread_id": "2637460",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a complete hallucination that answers a question about a lounge at a different airport (PHI) instead of addressing the customer's complaint about a gate location at the current airport."
+          },
+          {
+            "thread_id": "200612",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The draft incorrectly addresses the customer as 'Lindsey' (a name from a different precedent) and uses a generic 'thank you for choosing us' response that ignores the specific context of the customer filming planes."
+          },
+          {
+            "thread_id": "1868962",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 4,
+            "sendable": false,
+            "why": "While the action is grounded in precedent, the tone is too robotic and lacks the empathy required for a customer expressing emotional distress about missing family time."
+          },
+          {
+            "thread_id": "2137003",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply perfectly mirrors the established precedent for #avgeek photo shares, offering appropriate enthusiasm without inventing facts or requiring further action."
+          },
+          {
+            "thread_id": "1588373",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply perfectly mirrors the established precedent for sharing photos, offering appropriate gratitude without inventing facts or requiring further action."
+          },
+          {
+            "thread_id": "2612421",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply is a direct match to the provided precedent for positive feedback, correctly acknowledging the praise without inventing facts or requiring further action."
+          },
+          {
+            "thread_id": "897844",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The draft is an exact match to the provided precedent for a similar positive customer message, making it perfectly grounded, tonally appropriate, and a complete resolution for a thank-you note."
+          },
+          {
+            "thread_id": "601888",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The draft is an exact match to the provided precedent for this specific complaint, ensuring it is grounded, appropriately professional, and offers the standard procedural next step."
+          },
+          {
+            "thread_id": "1197905",
+            "grounded": 5,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply is a generic template that ignores the customer's specific complaints about rudeness and service member status, offering no empathy or concrete next steps like forwarding to leadership."
+          },
+          {
+            "thread_id": "1579897",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a copy-paste of a response to a completely different customer (Amy) and ignores the specific complaint about boarding groups and status."
+          },
+          {
+            "thread_id": "893534",
+            "grounded": 1,
+            "tone": 2,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a verbatim copy of a response to a different customer (Alan) regarding a different context (flying today), completely ignoring the current customer's message about their wife's doctorate and gift bag."
+          },
+          {
+            "thread_id": "938960",
+            "grounded": 1,
+            "tone": 2,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a verbatim copy of a response to a different customer (Molly) regarding a boarding delay, which is factually incorrect and irrelevant to the current customer's baggage issue."
+          },
+          {
+            "thread_id": "260892",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a verbatim copy of a response to a completely different customer (Shelly) and context, making it factually incorrect and tone-deaf for this specific compliment."
+          },
+          {
+            "thread_id": "2708615",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a copy-paste of an unrelated emotional response to an adoption story, completely ignoring the customer's specific question about ID requirements for a minor."
+          },
+          {
+            "thread_id": "623300",
+            "grounded": 2,
+            "tone": 3,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply fails to answer the customer's specific question about the phone number and instead requests unnecessary information for a general inquiry."
+          },
+          {
+            "thread_id": "2752870",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The reply is a generic apology template that completely ignores the customer's positive, humorous tone and offers no relevant next steps."
+          },
+          {
+            "thread_id": "1582252",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a copy-paste of a response to a rude flight attendant complaint, completely ignoring the customer's feedback about flight schedule availability."
+          },
+          {
+            "thread_id": "1476737",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's standard procedure for holding flights by requesting confirmation details, which is a valid next step, though the use of the name 'Donna' is a hallucination from the precedent data."
+          },
+          {
+            "thread_id": "1796582",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is a direct copy of a verified precedent for similar complaints, offering a concrete alternative channel (Twitter/DM) to bypass the phone wait, which is standard Delta protocol."
+          },
+          {
+            "thread_id": "2450335",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a nonsensical copy-paste of a URL from an unrelated precedent, completely ignoring the customer's positive feedback and disability context."
+          },
+          {
+            "thread_id": "1280761",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply is a verbatim copy of a precedent for a different issue (baggage delay) and lacks any specific action or empathy for the customer's complaint about lost seats and unapologetic service."
+          },
+          {
+            "thread_id": "564582",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The draft perfectly mirrors the provided precedent for a similar non-transactional, emotional customer message, maintaining the correct empathetic tone and internal tag."
+          },
+          {
+            "thread_id": "1164726",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The draft matches the exact precedent provided for this specific customer message, offering a polite and appropriate acknowledgment without inventing facts."
+          },
+          {
+            "thread_id": "904471",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply mirrors the established precedent for handling complaints by apologizing and requesting a confirmation number to investigate, which is a standard and effective next step."
+          },
+          {
+            "thread_id": "2694205",
+            "grounded": 1,
+            "tone": 3,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The reply is a verbatim copy of a precedent for a different issue (contacting from Aruba) and incorrectly assumes the customer's name is Nate, making it factually wrong and ungrounded for a crew commendation request."
+          },
+          {
+            "thread_id": "394127",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's standard procedure for seat availability inquiries by requesting the confirmation number to investigate, which is a concrete next step."
+          },
+          {
+            "thread_id": "2026332",
+            "grounded": 5,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply is a verbatim copy of a response to a completely different customer (praising the team vs. complaining about a delay), making it tone-deaf and unhelpful."
+          },
+          {
+            "thread_id": "2179862",
+            "grounded": 5,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a copy-paste of a complaint response that is completely inappropriate for a positive customer comment, failing to acknowledge the praise or match the customer's enthusiastic tone."
+          },
+          {
+            "thread_id": "417903",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's established precedent for positive feedback, maintaining the correct tone and closing the interaction appropriately without inventing facts."
+          },
+          {
+            "thread_id": "1375790",
+            "grounded": 5,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a copy-paste of a complaint response that apologizes for a problem the customer did not report, completely ignoring their positive feedback."
+          },
+          {
+            "thread_id": "403652",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply mirrors the established precedent for handling operational issues by requesting private details, which is the standard next step for Delta support."
+          },
+          {
+            "thread_id": "1926545",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 5,
+            "sendable": false,
+            "why": "The reply is a verbatim copy of a precedent for a different customer (Candie), ignoring the current customer's specific emergency context and emotional distress."
+          },
+          {
+            "thread_id": "460214",
+            "grounded": 5,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a generic, contextually irrelevant Thanksgiving message that completely ignores the customer's specific complaint and emotional state."
+          },
+          {
+            "thread_id": "1120101",
+            "grounded": 1,
+            "tone": 1,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a nonsensical copy-paste of a previous unrelated response regarding seat size, completely ignoring the customer's complaint about a passenger with a leg cast."
+          },
+          {
+            "thread_id": "944395",
+            "grounded": 5,
+            "tone": 2,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The reply is a verbatim copy of a precedent for a different request (asking for a link) and fails to address the customer's specific complaint about 3 months of inaction and broken promises, making it tone-deaf and unhelpful."
+          },
+          {
+            "thread_id": "511850",
+            "grounded": 1,
+            "tone": 2,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a verbatim copy of a response to a different customer (Fran) regarding baggage, which is irrelevant to the current complaint about long lines and staffing in Sydney."
+          },
+          {
+            "thread_id": "1647940",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The reply is a generic apology that fails to address the customer's specific request for an English-speaking representative or provide a working contact method."
+          },
+          {
+            "thread_id": "1666959",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply is a direct match for the brand's established precedent for positive feedback, using the correct tone and signature without inventing facts."
+          },
+          {
+            "thread_id": "423847",
+            "grounded": 1,
+            "tone": 2,
+            "resolution": 1,
+            "sendable": false,
+            "why": "The draft is a copy-paste of a response to a different customer (Brian) regarding a spilled drink, which is irrelevant to the seat change issue and fails to address the specific complaint."
+          }
+        ]
+      }
+    },
+    "agent": {
+      "intent": {
+        "n": 196,
+        "accuracy": 0.4898,
+        "macro_f1": 0.4077,
+        "weighted_f1": 0.5083,
+        "unparseable_rate": 0.0,
+        "per_class": {
+          "baggage": {
+            "precision": 0.5714285714285714,
+            "recall": 0.5,
+            "f1-score": 0.5333333333333333,
+            "support": 8.0
+          },
+          "delay_cancellation": {
+            "precision": 0.2222222222222222,
+            "recall": 0.5,
+            "f1-score": 0.3076923076923077,
+            "support": 8.0
+          },
+          "general_question": {
+            "precision": 0.5652173913043478,
+            "recall": 0.6190476190476191,
+            "f1-score": 0.5909090909090909,
+            "support": 21.0
+          },
+          "inflight_experience": {
+            "precision": 0.5833333333333334,
+            "recall": 0.3333333333333333,
+            "f1-score": 0.42424242424242425,
+            "support": 21.0
+          },
+          "loyalty_refund_compensation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1.0
+          },
+          "other": {
+            "precision": 0.08333333333333333,
+            "recall": 0.1,
+            "f1-score": 0.09090909090909091,
+            "support": 10.0
+          },
+          "praise": {
+            "precision": 0.8536585365853658,
+            "recall": 0.7291666666666666,
+            "f1-score": 0.7865168539325843,
+            "support": 48.0
+          },
+          "rebooking_change": {
+            "precision": 0.38461538461538464,
+            "recall": 0.2631578947368421,
+            "f1-score": 0.3125,
+            "support": 19.0
+          },
+          "service_complaint": {
+            "precision": 0.3888888888888889,
+            "recall": 0.4117647058823529,
+            "f1-score": 0.4,
+            "support": 34.0
+          },
+          "social_chitchat": {
+            "precision": 0.4375,
+            "recall": 0.5,
+            "f1-score": 0.4666666666666667,
+            "support": 14.0
+          },
+          "website_app_issue": {
+            "precision": 0.6666666666666666,
+            "recall": 0.5,
+            "f1-score": 0.5714285714285714,
+            "support": 12.0
+          },
+          "accuracy": 0.4897959183673469,
+          "macro avg": {
+            "precision": 0.43244221167073765,
+            "recall": 0.40513365633334675,
+            "f1-score": 0.4076543944649154,
+            "support": 196.0
+          },
+          "weighted avg": {
+            "precision": 0.5455746387037913,
+            "recall": 0.4897959183673469,
+            "f1-score": 0.5083482807893781,
+            "support": 196.0
+          }
+        },
+        "labels": [
+          "baggage",
+          "delay_cancellation",
+          "general_question",
+          "inflight_experience",
+          "loyalty_refund_compensation",
+          "other",
+          "praise",
+          "rebooking_change",
+          "service_complaint",
+          "social_chitchat",
+          "website_app_issue"
+        ],
+        "confusion": [
+          [
+            4,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            0,
+            3,
+            1,
+            0,
+            3,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            6,
+            1,
+            7,
+            0,
+            1,
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            1,
+            0,
+            1,
+            1,
+            0,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            1,
+            0,
+            1,
+            35,
+            0,
+            2,
+            7,
+            0
+          ],
+          [
+            1,
+            1,
+            2,
+            0,
+            1,
+            0,
+            1,
+            5,
+            5,
+            1,
+            2
+          ],
+          [
+            1,
+            4,
+            0,
+            3,
+            2,
+            6,
+            1,
+            3,
+            14,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            1,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            2,
+            0,
+            6
+          ]
+        ],
+        "true_distribution": {
+          "rebooking_change": 19,
+          "website_app_issue": 12,
+          "praise": 48,
+          "delay_cancellation": 8,
+          "inflight_experience": 21,
+          "service_complaint": 34,
+          "baggage": 8,
+          "general_question": 21,
+          "other": 10,
+          "social_chitchat": 14,
+          "loyalty_refund_compensation": 1
+        }
+      },
+      "escalation": {
+        "n": 196,
+        "accuracy": 0.6071,
+        "precision_escalate": 0.5,
+        "recall_escalate": 0.1558,
+        "f1_escalate": 0.2376,
+        "missed_escalations": 65,
+        "needless_escalations": 12,
+        "auto_rate": 0.8776,
+        "counts": {
+          "tp": 12,
+          "fp": 12,
+          "tn": 107,
+          "fn": 65
+        }
+      },
+      "reply_quality": {
+        "n_judged": 40,
+        "grounded": 4.525,
+        "tone": 4.15,
+        "resolution": 4.075,
+        "sendable_rate": 0.8,
+        "per_example": [
+          {
+            "thread_id": "2595750",
+            "grounded": 2,
+            "tone": 3,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The reply incorrectly implies the customer is not confirmed for the flight, contradicting the precedent that 'standby' refers only to seat assignment for confirmed passengers, and unnecessarily requests a DM for a general informational query."
+          },
+          {
+            "thread_id": "2637460",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 3,
+            "sendable": true,
+            "why": "The reply is grounded and polite, though it lacks the specific confirmation or internal tag seen in precedents, it is a safe and acceptable public response to a factual correction."
+          },
+          {
+            "thread_id": "200612",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's casual, appreciative tone for positive feedback without inventing facts or requiring further action."
+          },
+          {
+            "thread_id": "1868962",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard procedure (DM for details), offers a clear next step, and maintains a professional, albeit slightly generic, empathetic tone."
+          },
+          {
+            "thread_id": "2137003",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is factually grounded, matches the enthusiastic tone of the #avgeek customer, and provides a polite, appropriate closing for a non-transactional social media interaction."
+          },
+          {
+            "thread_id": "1588373",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply perfectly mirrors the precedent for sharing photos, offering appropriate gratitude without inventing facts or requiring further action."
+          },
+          {
+            "thread_id": "2612421",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply appropriately acknowledges the positive feedback with a warm, professional tone that matches the brand's precedent for handling compliments, requiring no further action."
+          },
+          {
+            "thread_id": "897844",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is warm, appropriate for a positive feedback message, and contains no false claims or unnecessary procedural steps."
+          },
+          {
+            "thread_id": "601888",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's standard precedent for this specific complaint, offering a practical next step without inventing policies or over-apologizing."
+          },
+          {
+            "thread_id": "1197905",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's precedent of requesting DMs for leadership review, offers appropriate empathy for a distressed service member, and provides a clear next step."
+          },
+          {
+            "thread_id": "1579897",
+            "grounded": 2,
+            "tone": 3,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The draft invents a specific 'rebooking' solution for a customer who only expressed frustration about their boarding group, and the tone is too robotic compared to the warm, personalized style of the precedents."
+          },
+          {
+            "thread_id": "893534",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately reflects the brand's celebratory and appreciative tone seen in precedents, appropriately acknowledges the specific positive event without inventing facts, and requires no further action."
+          },
+          {
+            "thread_id": "938960",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply is concise, empathetic, and provides a specific, actionable next step (DM for confirmation number) that aligns with standard airline support protocols without inventing policies."
+          },
+          {
+            "thread_id": "260892",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply accurately reflects the brand's positive, appreciative tone for praise without inventing facts or requiring further action."
+          },
+          {
+            "thread_id": "2708615",
+            "grounded": 2,
+            "tone": 4,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The reply invents a specific policy requirement ('proof of age') that is not supported by the provided precedents and may be factually incorrect for domestic travel, risking misinformation."
+          },
+          {
+            "thread_id": "623300",
+            "grounded": 1,
+            "tone": 4,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The reply invents a specific phone number (55 5555 5555) which is a placeholder and not a verified Delta contact, constituting a hallucinated fact."
+          },
+          {
+            "thread_id": "2752870",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply accurately reflects the customer's positive sentiment without inventing facts, matches the casual and appreciative tone of the precedents, and appropriately closes the interaction for a non-issue message."
+          },
+          {
+            "thread_id": "1582252",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The reply is generic and passive, failing to acknowledge the specific operational feedback or offer any concrete next step, which is insufficient for a support interaction."
+          },
+          {
+            "thread_id": "1476737",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the standard Delta protocol of requesting confirmation details via DM to investigate the hold request, maintaining a professional and helpful tone."
+          },
+          {
+            "thread_id": "1796582",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors Delta's precedent of offering Twitter/DM assistance for reservations and provides a clear, actionable next step."
+          },
+          {
+            "thread_id": "2450335",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in the customer's specific positive feedback, matches the brand's concise and empathetic tone, and appropriately closes the loop on a resolved issue without inventing new facts."
+          },
+          {
+            "thread_id": "1280761",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is factually grounded and provides a clear next step, though the tone is slightly generic given the customer's frustration about the lack of apology."
+          },
+          {
+            "thread_id": "564582",
+            "grounded": 5,
+            "tone": 3,
+            "resolution": 2,
+            "sendable": false,
+            "why": "The customer's message is incoherent (likely a glitch or spam), so a generic 'How may I assist' is a poor fit compared to the concise, context-aware style of the precedents, and it fails to address the lack of actual content."
+          },
+          {
+            "thread_id": "1164726",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The draft matches the exact precedent provided for this specific customer message, offering a concise and appropriate acknowledgment without inventing policies or unnecessary steps."
+          },
+          {
+            "thread_id": "904471",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply mirrors the precedent of apologizing and requesting a confirmation number to investigate, without inventing policies or compensation."
+          },
+          {
+            "thread_id": "2694205",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply follows the standard Delta protocol of requesting details via DM to investigate the request, matching the precedent of gathering information before providing specific contact channels."
+          },
+          {
+            "thread_id": "394127",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's standard procedure of requesting a confirmation number via DM to investigate seat availability, maintaining a professional and helpful tone."
+          },
+          {
+            "thread_id": "2026332",
+            "grounded": 4,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is a standard, plausible operational response that moves the issue forward by requesting necessary details, though it lacks the specific brand voice markers (like initials) seen in the precedents."
+          },
+          {
+            "thread_id": "2179862",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is positive, concise, and appropriately matches the customer's enthusiastic tone without inventing facts or requiring further action."
+          },
+          {
+            "thread_id": "417903",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply accurately reflects the customer's positive experience without inventing facts, matches the warm and concise tone of the precedents, and appropriately closes the interaction."
+          },
+          {
+            "thread_id": "1375790",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply matches the brand's positive precedent for praise, uses appropriate emojis, and commits to a standard internal action (sharing feedback) without inventing policies."
+          },
+          {
+            "thread_id": "403652",
+            "grounded": 2,
+            "tone": 4,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The reply invents a specific resolution ('re-booked') and assumes the customer's status ('trouble') without the necessary context, whereas precedents show Delta typically requests details via DM before promising specific actions."
+          },
+          {
+            "thread_id": "1926545",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the established protocol of requesting confirmation and contact details via DM to facilitate a callback, which is the standard next step for urgent rebooking requests."
+          },
+          {
+            "thread_id": "460214",
+            "grounded": 4,
+            "tone": 3,
+            "resolution": 3,
+            "sendable": false,
+            "why": "The customer is expressing general brand sentiment and nostalgia rather than reporting a specific actionable service failure, so requesting reservation details is irrelevant and likely to frustrate the user."
+          },
+          {
+            "thread_id": "1120101",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard support procedures, maintains a professional and empathetic tone, and provides a clear next step to investigate the complaint."
+          },
+          {
+            "thread_id": "944395",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard procedure, offers a concrete next step (DM for reservation number), and maintains a professional, empathetic tone appropriate for the situation."
+          },
+          {
+            "thread_id": "511850",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is grounded in standard support practices, offers appropriate empathy for the frustration, and requests specific details (flight number) to move the issue forward, aligning with the brand's precedent of seeking assistance details."
+          },
+          {
+            "thread_id": "1647940",
+            "grounded": 4,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply provides a clear, actionable next step (DMing details) to resolve the specific issue of contacting an English-speaking representative, which is a standard and plausible support procedure."
+          },
+          {
+            "thread_id": "1666959",
+            "grounded": 5,
+            "tone": 5,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately reflects the brand's warm, appreciative tone for positive feedback without inventing facts or requiring further action."
+          },
+          {
+            "thread_id": "423847",
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately mirrors the brand's standard protocol of requesting confirmation details via DM to investigate, while maintaining a professional and empathetic tone."
+          }
+        ]
+      }
+    }
+  },
+  "runtime_seconds": 447.4,
+  "judge_model": "qwen/qwen3.8-27b",
+  "model": "openai/gpt-oss-120b"
+}

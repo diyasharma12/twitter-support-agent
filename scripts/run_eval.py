@@ -33,31 +33,32 @@ def load_golden(path):
 
 
 def cross_val_predict_simple(rows, retriever):
-    """The simple baseline must not be trained on the rows it is scored on.
+    """Out-of-fold predictions for the simple baseline.
 
-    With only ~200 labelled examples we cannot afford a held-out split AND a meaningful
-    test set, so the simple baseline is evaluated with 5-fold cross-validation over the
-    golden set. The agent and trivial baseline see no labels at all, so they are not
-    advantaged by this — worth stating plainly in the report.
+    The baseline is the only system that learns from the golden labels, so it must never
+    be scored on a row it was fitted to. An earlier version stratified the folds and fell
+    back to fit-on-everything when any class had fewer than two examples — which is
+    exactly this dataset, since `loyalty_refund_compensation` has one. The fallback
+    silently produced 1.000 accuracy by memorisation. Plain K-fold has no such
+    requirement: a rare class may be absent from a training fold, the model simply never
+    predicts it there, and that is an honest reflection of learning from 196 labels.
+    See DECISIONS.md #22.
     """
-    from sklearn.model_selection import StratifiedKFold
-    import numpy as np
+    from sklearn.model_selection import KFold
 
     msgs = [r["customer_message"] for r in rows]
     intents = [r["intent"] for r in rows]
     preds = [None] * len(rows)
-    counts = {i: intents.count(i) for i in set(intents)}
-    if min(counts.values()) < 2 or len(counts) < 2:
-        model = SimpleBaseline(retriever).fit(msgs, intents)
-        return [model.handle(m) for m in msgs]
-    n_splits = min(5, min(counts.values()))
-    skf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
-    for train_idx, test_idx in skf.split(np.zeros(len(msgs)), intents):
+
+    kf = KFold(n_splits=5, shuffle=True, random_state=42)
+    for train_idx, test_idx in kf.split(msgs):
         model = SimpleBaseline(retriever).fit(
             [msgs[i] for i in train_idx], [intents[i] for i in train_idx]
         )
         for i in test_idx:
             preds[i] = model.handle(msgs[i])
+
+    assert all(p is not None for p in preds), "every row must get an out-of-fold prediction"
     return preds
 
 
