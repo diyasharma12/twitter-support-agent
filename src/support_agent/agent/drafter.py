@@ -46,6 +46,8 @@ class ReplyDrafter:
             precedents=format_precedents(precedents), intent=intent, message=message
         )
         text = self.llm.complete(
-            prompt, temperature=self.cfg.get("temperature_draft", 0.3)
+            prompt,
+            temperature=self.cfg.get("temperature_draft", 0.3),
+            max_tokens=self.cfg.get("max_tokens_draft", 300),
         )
         return text.strip().strip('"')

@@ -63,7 +63,9 @@ class ReplyJudge:
         )
         try:
             out = self.llm.complete_json(
-                prompt, temperature=self.cfg.get("temperature_judge", 0.0)
+                prompt,
+                temperature=self.cfg.get("temperature_judge", 0.0),
+                max_tokens=self.cfg.get("max_tokens_judge", 200),
             )
         except (json.JSONDecodeError, ValueError):
             return {"grounded": None, "tone": None, "resolution": None,

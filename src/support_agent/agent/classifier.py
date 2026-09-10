@@ -36,7 +36,9 @@ class IntentClassifier:
         prompt = PROMPT.format(taxonomy=self.taxonomy, message=message)
         try:
             out = self.llm.complete_json(
-                prompt, temperature=self.cfg.get("temperature_classify", 0.0)
+                prompt,
+                temperature=self.cfg.get("temperature_classify", 0.0),
+                max_tokens=self.cfg.get("max_tokens_classify", 150),
             )
         except (json.JSONDecodeError, ValueError):
             # The model answered, but not with parseable JSON. That is a genuine model
@@ -46,7 +48,7 @@ class IntentClassifier:
         # deliberately NOT caught. An earlier version swallowed them here, so a dead API
         # key produced 196 confident-looking "unparseable" rows and an intent accuracy of
         # zero with no error anywhere. A crash is the correct behaviour: it distinguishes
-        # "the model was wrong" from "there was no model". See DECISIONS.md #15.
+        # "the model was wrong" from "there was no model". See DECISIONS.md #11.
         intent = str(out.get("intent", "")).strip()
         if intent not in INTENT_NAMES:
             return {"intent": "unparseable", "confidence": 0.0}

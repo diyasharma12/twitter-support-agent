@@ -8,22 +8,30 @@ data:
   sample_jsonl: data/sample/threads_{brand}_sample.jsonl
   sample_size: 4000
 
-brand: Delta           # chosen after profiling; see DECISIONS.md #7
+brand: Delta           # chosen after profiling; see DECISIONS.md #4
 
 llm:
-  # provider: gemini | groq  (see DECISIONS.md #17 — Gemini free tier gave 20 req/DAY
+  # provider: gemini | groq  (see DECISIONS.md #12 — Gemini free tier gave 20 req/DAY
   # on the only available flash model, against the ~570 this evaluation needs)
   provider: groq
   model: openai/gpt-oss-120b
   # A DIFFERENT model judges the replies. Two reasons, one practical and one
   # methodological: Groq's token-per-day cap is per model, so the judge gets its own
-  # budget; and a judge from another family cannot prefer its own output. See #20.
+  # budget; and a judge from another family cannot prefer its own output. See #13.
   judge_model: qwen/qwen3.8-27b
   temperature_classify: 0.0
   temperature_draft: 0.3
   temperature_judge: 0.0
-  max_output_tokens: 1024   # gpt-oss spends some of the budget on reasoning
-  requests_per_minute: 25   # Groq free tier allows 30 RPM; leave headroom
+  # Per-call-type output caps, not one shared number. The classifier and judge only ever
+  # emit a few words of JSON; capping them tightly matters because Groq's free tier is
+  # tokens-per-minute bound (measured directly from the API: 8000 TPM per model), which
+  # binds far sooner than any requests-per-minute number. See DECISIONS.md #17.
+  max_tokens_classify: 150
+  max_tokens_draft: 300
+  max_tokens_judge: 200
+  max_tokens_default: 50    # anything else (e.g. the preflight call)
+  requests_per_minute: 20   # a floor under the token budget below, not the binding limit
+  tokens_per_minute: 7000   # headroom under Groq's measured 8000 TPM ceiling, per model
   cache_dir: .cache/llm
 
 eval:
