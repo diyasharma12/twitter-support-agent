@@ -39,7 +39,17 @@ def main():
             done = {r["thread_id"]: r for r in csv.DictReader(fh)}
 
     todo = [p for p in pool if str(p["thread_id"]) not in done]
-    print(f"\n{len(done)} scored, {len(todo)} to go. You will NOT see the judge's opinion.\n")
+    print(f"\n{len(done)} scored, {len(todo)} to go. You will NOT see the judge's opinion.")
+    print("""
+The question is not 'is this reply reasonable?' — it is:
+    Would I send THIS reply, unedited, to THIS customer, as Delta?
+
+Say no when the reply deflects a customer who is angry, stranded or grieving into
+'DM us your confirmation number'; when it answers a question the customer did not ask;
+when it promises something Delta may not do; or when the tone does not match how upset
+they are. A first pass that answers yes to everything produces no usable statistic —
+kappa needs both raters to vary.
+""")
 
     new = not out_path.exists()
     with open(out_path, "a", newline="", encoding="utf-8") as fh:
@@ -77,12 +87,26 @@ def main():
     j = [1 if judge_rows[i].get("sendable") else 0 for i in ids]
     agree = sum(a == b for a, b in zip(h, j)) / max(len(ids), 1)
     k = kappa(h, j)
+    # Kappa corrects for chance agreement, which requires BOTH raters to vary. If one
+    # rater gives the same answer every time, expected agreement equals observed
+    # agreement and kappa collapses to 0.0 — which reads like "no agreement" but actually
+    # means "this comparison carries no information". Say so rather than print the 0.
+    degenerate = len(set(h)) < 2 or len(set(j)) < 2
     summary = {
         "n": len(ids),
         "raw_agreement": round(agree, 3),
-        "cohens_kappa": k,
+        "cohens_kappa": None if degenerate else k,
         "human_sendable_rate": round(sum(h) / max(len(h), 1), 3),
         "judge_sendable_rate": round(sum(j) / max(len(j), 1), 3),
+        "degenerate": degenerate,
+        "interpretation": (
+            "UNDEFINED: one rater never varied, so kappa is not computable and the judge "
+            "remains unvalidated. Re-score with a stricter bar, or report the judge's "
+            "numbers as unvalidated."
+            if degenerate else
+            "poor" if k < 0.2 else "fair" if k < 0.4 else "moderate" if k < 0.6
+            else "substantial" if k < 0.8 else "near-perfect"
+        ),
     }
     resolve("reports/judge_agreement.json").write_text(json.dumps(summary, indent=2))
     print(json.dumps(summary, indent=2))
