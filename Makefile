@@ -1,6 +1,7 @@
 # Every target runs inside .venv once `make setup` has been run, so you never have to
 # remember to activate it. Override with `make PY=python3.12 setup` if needed.
-.PHONY: setup index profile threads sample explore pool label eval judge-check test clean
+.PHONY: setup index profile threads sample explore pool label eval judge-check \
+        second-annotator-export second-annotator-import test clean
 
 BOOTSTRAP_PY ?= python3
 VENV := .venv
@@ -11,7 +12,7 @@ setup:                ## create .venv and install dependencies
 	$(PY) -m pip install --upgrade pip
 	$(PY) -m pip install -r requirements.txt
 	@echo ""
-	@echo "Done. Next: cp .env.example .env  and paste your GEMINI_API_KEY into it."
+	@echo "Done. Next: cp .env.example .env  and paste your GROQ_API_KEY into it."
 
 index:                ## one-time: 3M-row CSV -> sqlite index (~2-3 min)
 	$(PY) scripts/build_index.py
@@ -39,6 +40,12 @@ eval:                 ## headline numbers - must finish in <15 min
 
 judge-check:          ## score replies yourself; reports judge-vs-human kappa
 	$(PY) scripts/judge_human_check.py
+
+second-annotator-export:   ## build a blind scoring sheet for an independent second rater
+	$(PY) scripts/export_second_annotator_sheet.py
+
+second-annotator-import:   ## score their filled sheet; reports agreement with judge + me
+	$(PY) scripts/import_second_annotator_sheet.py
 
 test:
 	$(PY) -m pytest -q
