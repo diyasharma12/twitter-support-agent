@@ -12,7 +12,7 @@ from pathlib import Path
 # Deflection is any reply that moves the customer to another channel instead of
 # answering. The first version of this only looked for "DM", which badly undercounted
 # brands that push people to phone/chat/email instead — AmazonHelp scored 1.2% while
-# its replies were visibly full of "reach us by phone or chat here". See DECISIONS.md #8.
+# its replies were visibly full of "reach us by phone or chat here". See DECISIONS.md #4.
 DM_MARKERS = (
     "dm ",
     "dm us",

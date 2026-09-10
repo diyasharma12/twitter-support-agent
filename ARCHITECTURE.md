@@ -114,7 +114,7 @@ the model was retired, all 196 classifications "succeeded" while every one had a
 failed — the harness would have reported a precise, confident, entirely fictional
 accuracy. **In an evaluation harness, a fallback returning a plausible default does not
 degrade gracefully; it manufactures data.** Now only unparseable model output counts as a
-model failure and transport errors crash. See DECISIONS.md #15.
+model failure and transport errors crash. See DECISIONS.md #11.
 
 ## 5. Leakage boundaries
 

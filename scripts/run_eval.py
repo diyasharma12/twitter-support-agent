@@ -42,7 +42,7 @@ def cross_val_predict_simple(rows, retriever):
     silently produced 1.000 accuracy by memorisation. Plain K-fold has no such
     requirement: a rare class may be absent from a training fold, the model simply never
     predicts it there, and that is an honest reflection of learning from 196 labels.
-    See DECISIONS.md #22.
+    See DECISIONS.md #14.
     """
     from sklearn.model_selection import KFold
 

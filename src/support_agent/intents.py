@@ -46,7 +46,7 @@ INTENTS: dict[str, str] = {
         "Real message that fits none of the above, including pure venting with no "
         "actionable request. Use sparingly — if this exceeds ~10% the taxonomy is wrong. "
         "It did exceed it on the first labelling pass, which is how general_question, "
-        "service_complaint and social_chitchat came to exist. See DECISIONS.md #11."
+        "service_complaint and social_chitchat came to exist. See DECISIONS.md #9."
     ),
 }
 
