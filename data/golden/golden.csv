@@ -1,0 +1,2 @@
+thread_id,customer_message,brand_reply,intent,decision,note
+2595750,I have a question about a reservation that says I'm on the Standby List. Why don't I have a seat?,"Hi, Dan! I'd be happy to further assist. Can you please DM conf # here?  *TJN https://t.co/6iDGBJAc2m",rebooking_change,escalate,
