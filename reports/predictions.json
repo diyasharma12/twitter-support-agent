@@ -3178,7 +3178,7 @@
       "confidence": 0.93,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.93",
-      "reply": "Hi there, sorry for the mix\u2011up with the gate info. We\u2019re looking into it and appreciate the heads\u2011up!",
+      "reply": "Sorry for the mix\u2011up, we\u2019re looking into it. Please DM us your flight number and details so we can help.",
       "precedents": [
         {
           "message": ", do you have a lounge at PHI terminal D?",
@@ -3209,7 +3209,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'social_chitchat' with confidence 0.97",
-      "reply": "Thanks for sharing the shot! We love seeing our planes in action. \u2708\ufe0f *HDG",
+      "reply": "Thanks for sharing the view, Alex! We love seeing our planes in action. \u2708\ufe0f *HDG",
       "precedents": [
         {
           "message": "Thanks for the sweet upgrade  \ud83d\ude18\ud83d\ude18\ud83d\ude17",
@@ -3240,7 +3240,7 @@
       "confidence": 0.93,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.93",
-      "reply": "Sorry for the inconvenience. Please DM us with your confirmation number so we can look into this for you.",
+      "reply": "We\u2019re sorry for the inconvenience. Please DM us with your reservation details so we can assist you.",
       "precedents": [
         {
           "message": "D  GPWUGC now on a plane to Sioux falls. I'll have to drive from there.",
@@ -3267,11 +3267,11 @@
     {
       "thread_id": "2137003",
       "message": "Hello again  - third time here in about a week which I love. Off to  on a 6hr  B757 flight soon. #avgeek https://t.co/OJ5SqEFeyH",
-      "intent": "praise",
-      "confidence": 0.92,
+      "intent": "social_chitchat",
+      "confidence": 0.97,
       "decision": "auto",
-      "reason": "routine 'praise' with confidence 0.92",
-      "reply": "Thanks for flying with us again! We\u2019re thrilled you\u2019re enjoying the B757. Safe travels on your upcoming 6\u2011hour trip!",
+      "reason": "routine 'social_chitchat' with confidence 0.97",
+      "reply": "Hey there, thanks for sharing your excitement! Have a great time on your B757 flight.",
       "precedents": [
         {
           "message": "#avgeek  https://t.co/Q1yUzUZ84H",
@@ -3333,7 +3333,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.97",
-      "reply": "We\u2019re thrilled you experienced our team\u2019s personal touch! Thank you for the kind words\u2014our crew loves helping you connect smoothly. \u2708\ufe0f",
+      "reply": "We\u2019re thrilled our team could help you personally with your connections\u2014thank you for the kind words! \u2708\ufe0f\ud83d\ude0a",
       "precedents": [
         {
           "message": "Thank you for an amazing trip. Arrivedercia a Roma! https://t.co/gNmkj9CzBf",
@@ -3454,10 +3454,10 @@
       "thread_id": "1579897",
       "message": "I have to fly  tomorrow instead of  &amp; have no status so hello boarding group 6. \ud83d\ude22\ud83d\ude22",
       "intent": "rebooking_change",
-      "confidence": 0.94,
+      "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'rebooking_change' with confidence 0.94",
-      "reply": "Hi there, I\u2019m sorry for the inconvenience. Please DM us with your reservation details so we can look into rebooking options for you. *ASK",
+      "reason": "routine 'rebooking_change' with confidence 0.92",
+      "reply": "Sorry to hear that, we understand. Please DM us with your confirmation number so we can look into rebooking options for you. *ASK",
       "precedents": [
         {
           "message": "Why I only fly  #GoDawgs https://t.co/lzUEkImbjy",
@@ -3488,7 +3488,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Congrats to your wife on her doctorate! We\u2019re thrilled you enjoyed the surprise gift bag. Thanks for sharing your celebration with us! :-)",
+      "reply": "Congrats to your wife on her doctorate! We\u2019re thrilled she enjoyed the surprise gift bag. Thanks for sharing your celebration with us! :-)",
       "precedents": [
         {
           "message": "Back at it! #KeepClimbing  https://t.co/tTSY0B8yPw",
@@ -3550,7 +3550,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thank you for sharing! We're proud of our crew members who go the extra mile to keep every passenger safe and comfortable. Your kind words mean a lot to us. \ud83d\ude0a",
+      "reply": "Thank you for sharing! We\u2019re proud of our crew members who go the extra mile to keep every passenger safe and comfortable. \ud83d\ude0a",
       "precedents": [
         {
           "message": "Today is good day to go somewhere on .",
@@ -3581,7 +3581,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hi there! For a child 6\u202fyears old traveling with a parent, a government ID isn\u2019t required for domestic flights, but we\u2019ll need proof of age at the airport. Please DM us if you need any help.",
+      "reply": "Hi there! For a child 6\u202fyears old traveling with a parent, a government ID isn\u2019t required for domestic flights. If you have any other questions, please DM us.",
       "precedents": [
         {
           "message": "11/22 newly adopted 16 year old and new \ud83c\uddfa\ud83c\uddf8 citizen Valentina will fly from BOG to MKE via  to meet her forever family #orphannomore #oneless",
@@ -3612,7 +3612,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "\u00a1Hola! Puedes comunicarte con nuestro centro de atenci\u00f3n en M\u00e9xico al\u202f55\u202f5555\u202f5555. Estamos listos para ayudarte.",
+      "reply": "\u00a1Hola! Puedes contactarnos en M\u00e9xico al\u202f55\u202f5555\u202f5555. Estamos disponibles de lunes a viernes, 7\u202fa.m. a 10\u202fp.m. y s\u00e1bados, 8\u202fa.m. a 6\u202fp.m. \u00a1Gracias por volar con Delta!",
       "precedents": []
     },
     {
@@ -3622,7 +3622,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.97",
-      "reply": "Glad to hear our rep called you \u201cvery sweet\u201d and wished you the best on your journey! Thanks for sharing, we appreciate you! *HVI",
+      "reply": "Glad to hear our rep called you \u201cvery sweet\u201d and made your day! We appreciate the shout\u2011out! *HVI",
       "precedents": [
         {
           "message": "Doing my best to exercise patience with  ...on call #3 \ud83d\ude13",
@@ -3650,10 +3650,10 @@
       "thread_id": "1582252",
       "message": "Well there needs to be more red eye options on Saturday for that to actually work.",
       "intent": "general_question",
-      "confidence": 0.96,
+      "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'general_question' with confidence 0.96",
-      "reply": "Thank you for sharing your thoughts\u2014your feedback is appreciated and will be passed along.",
+      "reason": "routine 'general_question' with confidence 0.92",
+      "reply": "Thank you for sharing your thoughts! We appreciate your feedback on red\u2011eye options and will pass it along.",
       "precedents": [
         {
           "message": "Love taking a red eye and dealing with a nasty and very rude flight attendant!  makes my long night turn into a long day! #delta",
@@ -3715,7 +3715,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.97",
-      "reply": "We hear you. Please DM us your reservation or ticket number so we can help you right away.",
+      "reply": "We hear you. Please DM us your reservation or ticket number so we can assist you directly.",
       "precedents": [
         {
           "message": "I have been waiting 2+ hours w/ no phone call back from you. Please help. Family emergency. Thank you.",
@@ -3746,7 +3746,7 @@
       "confidence": 0.99,
       "decision": "escalate",
       "reason": "severe/legal/safety language needs a human",
-      "reply": "Thank you for sharing your experience\u2014we\u2019re glad we could keep your Comfort\u202fPlus seat when you needed it. *TMS",
+      "reply": "We\u2019re glad we could keep you in Comfort\u202fPlus and make your travel easier. Thank you for sharing your kind words!",
       "precedents": [
         {
           "message": "hoping for a upgrade on my flight. Lots of empty seats and the flight attendants won't let me move up to a comfort plus seat. #DL2042",
@@ -3773,11 +3773,11 @@
     {
       "thread_id": "1280761",
       "message": "lost our seats we carefully selected, lost baggage that still hasn't shown, no apologies from the airline",
-      "intent": "service_complaint",
-      "confidence": 0.92,
-      "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.92",
-      "reply": "We\u2019re sorry for the inconvenience with your seats and baggage. Please DM us or call our Baggage Service team at\u202f800\u2011325\u20118224 with your reservation details so we can assist.",
+      "intent": "baggage",
+      "confidence": 0.78,
+      "decision": "escalate",
+      "reason": "intent 'baggage' is rarely resolvable in public",
+      "reply": "We\u2019re sorry for the seat mix\u2011up and the delay with your baggage. Please contact our Baggage Service team at\u202f800\u2011325\u20118224 (or DM us) so we can locate your items and resolve this.",
       "precedents": [
         {
           "message": "Over 50 days later still no word on my lost baggage compensation?",
@@ -3870,7 +3870,7 @@
       "confidence": 0.93,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.93",
-      "reply": "We\u2019re sorry for the long wait you experienced. Please DM us your reservation or confirmation number so we can look into this further.",
+      "reply": "We\u2019re sorry for the long wait you experienced. Please DM us your flight details so we can look into this further.",
       "precedents": [
         {
           "message": "Not happy with ....phone rep offered hotel, ticket counter said no. https://t.co/fSlmUWbBLs",
@@ -3901,7 +3901,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hi there! Please DM us with any details you have so we can look into the crew commendation for you.",
+      "reply": "Hi! Please DM us with the details of your request so we can look into it and help you further.",
       "precedents": [
         {
           "message": "how do I contact from Aruba?",
@@ -3929,10 +3929,10 @@
       "thread_id": "394127",
       "message": "Hey  trying to choose my seat for my flight tomorrow but it says no main cabin seats available. What should I do?",
       "intent": "website_app_issue",
-      "confidence": 0.96,
+      "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'website_app_issue' with confidence 0.96",
-      "reply": "I\u2019m sorry you\u2019re seeing that error. Please DM us your confirmation number and we\u2019ll look into the seat availability for you.",
+      "reason": "routine 'website_app_issue' with confidence 0.92",
+      "reply": "I\u2019m happy to look into this for you. Please DM us your confirmation number so we can check seat availability.",
       "precedents": [
         {
           "message": "Hey ! Miss Missouri would LOVE a first class seats available for flight 4628 tomorrow! Any available?! #ThereSheTravels",
@@ -3963,7 +3963,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.96",
-      "reply": "Hi there, sorry for the delay. Please DM us your confirmation code so we can look into this for you. Thanks!",
+      "reply": "Hi there, sorry for the delay. Please DM us your confirmation code and we\u2019ll look into getting you on the next available flight. Thanks!",
       "precedents": [
         {
           "message": "Why I only fly  #GoDawgs https://t.co/lzUEkImbjy",
@@ -3991,10 +3991,10 @@
       "thread_id": "2179862",
       "message": "New #planes, new uniforms - a lot of new things at   #avgeek #DeltaFlyAway\n\nhttps://t.co/ssdf5ed2R9",
       "intent": "praise",
-      "confidence": 0.99,
+      "confidence": 0.97,
       "decision": "auto",
-      "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thanks for the love! We\u2019re thrilled you\u2019re excited about the new planes and uniforms. Happy travels!",
+      "reason": "routine 'praise' with confidence 0.97",
+      "reply": "Thanks for sharing your excitement! We\u2019re thrilled you love the new planes and uniforms.",
       "precedents": [
         {
           "message": "what happened to the beautiful new planes going to DTW. No plugs, entertainment system. You had us at hello now gone?!?!",
@@ -4025,7 +4025,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "We\u2019re thrilled our gate agent at A4 could prioritize you and get you on an earlier flight. Thanks for sharing your kind words! Have a wonderful day!",
+      "reply": "We\u2019re thrilled to hear our gate agent at A4 could help get you on the earlier flight. Thanks for sharing your experience\u2014your kind words keep us soaring! \ud83d\ude4f",
       "precedents": [
         {
           "message": "Thank you  for getting me on an earlier flight. Great customer service as always.",
@@ -4056,7 +4056,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thank you for sharing! We\u2019ll be sure to pass your kind words to Tanya \u2013 she\u2019ll be thrilled to hear it! \ud83d\ude0a \u2708",
+      "reply": "Thank you for sharing, we\u2019ll be sure to pass your kind words to Tanya! We\u2019re thrilled she could make your day. \u2708\ufe0f\ud83d\ude0a",
       "precedents": [
         {
           "message": "Lousy service today. Flight #1710",
@@ -4084,10 +4084,10 @@
       "thread_id": "403652",
       "message": "Client needs help connecting in ATL to CHO on DL4633 Can DM rec loc if needed and y'all can help him out. https://t.co/LQwrcA5jbk",
       "intent": "rebooking_change",
-      "confidence": 0.95,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'rebooking_change' with confidence 0.95",
-      "reply": "Sorry to hear you\u2019re having trouble. Please DM us your confirmation details and we\u2019ll help get you re\u2011booked for the ATL\u2011CHO connection.",
+      "reason": "routine 'rebooking_change' with confidence 0.93",
+      "reply": "Hello! Please DM us your confirmation details and we\u2019ll help get you rebooked for ATL to CHO on DL4633.",
       "precedents": [
         {
           "message": "this is like ridiculous. Can\u2019t ATL get less lazy help? https://t.co/JRPsPMVBXO",
@@ -4118,7 +4118,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'rebooking_change' with confidence 0.97",
-      "reply": "Hi! Please DM us your confirmation # and contact # so we can help you rebook quickly. \ud83d\ude4f",
+      "reply": "Hi! Please DM us your confirmation # and contact # so we can help rebook you quickly. \ud83d\ude4f",
       "precedents": [
         {
           "message": "I need to change a flight ASAP but the wait time for speaking to a representative is at least an hour!",
@@ -4146,10 +4146,10 @@
       "thread_id": "460214",
       "message": "Can I just say I'm SO over this complaint? It's been months already. Yes,  the new CEO is making some awful changes. I used to actually watch the safety videos when Anderson was around &amp; they entertained too. Many things I don't love at Delta, but more I hate at other carriers.",
       "intent": "other",
-      "confidence": 0.96,
+      "confidence": 0.97,
       "decision": "auto",
-      "reason": "routine 'other' with confidence 0.96",
-      "reply": "We hear you and appreciate the feedback. Please DM us with your reservation details so we can look into this further.",
+      "reason": "routine 'other' with confidence 0.97",
+      "reply": "We hear you. Please DM us with your reservation details so we can look into this further.",
       "precedents": [
         {
           "message": "I love you, Delta!",
@@ -4177,10 +4177,10 @@
       "thread_id": "1120101",
       "message": "- guy from my flight in leg cast just *hobbled* by... good(?) to see you treat all passengers equally (terribly). #nohelpforhimeither",
       "intent": "service_complaint",
-      "confidence": 0.96,
+      "confidence": 0.94,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.96",
-      "reply": "We\u2019re sorry you witnessed that experience. Please DM us with your flight details so we can look into it further.",
+      "reason": "routine 'service_complaint' with confidence 0.94",
+      "reply": "We\u2019re sorry you felt that way. Please DM us with your flight details so we can look into this further.",
       "precedents": [
         {
           "message": "6 hour flight and my leg is crammed into the back of the seat. Only 6'1 and have no leg rm.  why do your seats keep getting smaller?",
@@ -4211,7 +4211,7 @@
       "confidence": 0.97,
       "decision": "escalate",
       "reason": "intent 'baggage' is rarely resolvable in public",
-      "reply": "We\u2019re sorry you\u2019ve had to wait. Please DM us your reservation number so we can look into your case and get you an update. Thank you.",
+      "reply": "We\u2019re sorry you\u2019ve had to wait. Please DM us your reservation number and contact info so we can look into your baggage claim right away. Thank you.",
       "precedents": [
         {
           "message": "could I please have an email address/web link to make an overall complaint about lost baggage/broken luggage &amp; poor customer service",
@@ -4239,10 +4239,10 @@
       "thread_id": "511850",
       "message": "you guys need more people in Sydney for Sky Priority and Delta... line is NOT moving",
       "intent": "service_complaint",
-      "confidence": 0.97,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.97",
-      "reply": "Hey there, sorry for the wait at Sydney. We want to help\u2014can you share your flight number so we can look into it?",
+      "reason": "routine 'service_complaint' with confidence 0.96",
+      "reply": "Hey there. I\u2019m sorry the Sky Priority line isn\u2019t moving quickly. Could you DM us your flight number so we can look into staffing at Sydney?",
       "precedents": [
         {
           "message": "We are sky priority. 2 bags are out waiting on one?!?  Should\u2019ve all come out.  Flight 543",
@@ -4270,10 +4270,10 @@
       "thread_id": "1647940",
       "message": "I'm in Italy and need to talk with an English speaking representative. The \"normal\" phone number I use in US doesn't work. Help",
       "intent": "service_complaint",
-      "confidence": 0.92,
+      "confidence": 0.78,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.92",
-      "reply": "Hi there! Please DM us your reservation number and a contact phone so we can connect you with an English\u2011speaking rep. Thanks!",
+      "reason": "routine 'service_complaint' with confidence 0.78",
+      "reply": "Hi there! Please DM us your reservation number and a contact number where we can reach you, and we\u2019ll connect you with an English\u2011speaking representative. *TJB",
       "precedents": [
         {
           "message": "I love that so many of your planes have electrical outlets at the seats, but it doesn't do much if none of them work. :(",
@@ -4304,7 +4304,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.97",
-      "reply": "We\u2019re thrilled to be part of your journey to see your dad and back to Atlanta! Thanks for flying with us. \u2708\ufe0f\ud83d\ude0a",
+      "reply": "We\u2019re thrilled to have taken you to your dad and back to Atlanta! \u2708\ufe0f Thank you for flying with us!",
       "precedents": [
         {
           "message": "Thank you   for getting me to Boston &amp; Texas, to  for shuttling me around, to  for getting me ready for the stage! https://t.co/ZLQNPF5I7j",
@@ -4331,11 +4331,11 @@
     {
       "thread_id": "423847",
       "message": "why would I get moved back 5 rows without being notified? I have a tight connection and got a seat towards the front for that reason",
-      "intent": "service_complaint",
+      "intent": "rebooking_change",
       "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.96",
-      "reply": "I\u2019m sorry to hear about the seat change, especially with a tight connection. Please DM your confirmation or ticket number so we can look into this for you.",
+      "reason": "routine 'rebooking_change' with confidence 0.96",
+      "reply": "I\u2019m sorry to hear about the seat change, especially with your tight connection. Please DM your confirmation or ticket number so we can look into this for you.",
       "precedents": [
         {
           "message": "#Delta Flight attend spills drink on me and blames me for it being too tight. #correctIt",
@@ -4366,7 +4366,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'social_chitchat' with confidence 0.97",
-      "reply": "Happy birthday! \ud83c\udf89 Hope you enjoy the cheese and the journey. Safe travels!",
+      "reply": "Happy birthday! \ud83c\udf89 Hope your trip to Denmark is as wonderful as the cheese. Safe travels and enjoy the adventure!",
       "precedents": [
         {
           "message": "Flying #delta back to the land of #10000lakes #minneapolis #HappyMonday   https://t.co/Si0eN9lqw1",
@@ -4397,7 +4397,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thanks for the love! We're thrilled our chargers and free Wi\u2011Fi bring a smile to your face. Happy travels!",
+      "reply": "Hi, thank you for making Delta your favorite airline! We're thrilled you enjoy the chargers and free Wi\u2011Fi. \u2708\ufe0f",
       "precedents": [
         {
           "message": ". is my new favorite airline, this being one of many reasons why. https://t.co/Id208oIEin",
@@ -4428,7 +4428,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'inflight_experience' with confidence 0.97",
-      "reply": "Hey, sorry to hear about the slow internet at 30k feet. Please DM us with your flight details so we can look into this further.",
+      "reply": "Hey, sorry to hear about the slow Wi\u2011Fi at altitude. Could you DM us with your flight details so we can look into this? *AOS",
       "precedents": [
         {
           "message": "I hate flying  so much lol",
@@ -4456,10 +4456,10 @@
       "thread_id": "397068",
       "message": ". my flight from Zurich was canceled and Now my layover in JFK is extremely long. Would like to request a sky club pass",
       "intent": "loyalty_refund_compensation",
-      "confidence": 0.9,
+      "confidence": 0.93,
       "decision": "escalate",
       "reason": "intent 'loyalty_refund_compensation' is rarely resolvable in public",
-      "reply": "We\u2019re sorry for the inconvenience. Please DM us your confirmation code or ticket number so we can look into a Sky Club pass for you.",
+      "reply": "We\u2019re sorry for the inconvenience. Please DM us your confirmation code or ticket number so we can assist you with a Sky Club pass.",
       "precedents": [
         {
           "message": "your lax terminal is already a disaster. This is icing on the cake. Looking forward to a long layover with infant without sky club.",
@@ -4490,7 +4490,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hello! Lounge access is only available for customers flying in Delta One cabin. *HVI",
+      "reply": "Hello! Lounge access is reserved for customers flying in Delta One cabin. *HVI",
       "precedents": [
         {
           "message": "is there a skyteam lounge I can access with my Plat status in the BKK Airport for an international flight? If so, where? Thanks!",
@@ -4521,7 +4521,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.97",
-      "reply": "Sorry to hear about that experience. Please DM us your flight details so we can look into it.",
+      "reply": "We\u2019re sorry you had to wait and see that condition. Please DM us your ticket number so we can look into it.",
       "precedents": [
         {
           "message": "This is not the  I\u2019m used to... I choose to stand by you but I\u2019m being let down as of late... #youknowbetter #notworththeextramoney #dirtyplanes https://t.co/FvD8jLyKod",
@@ -4549,10 +4549,10 @@
       "thread_id": "1091412",
       "message": "here are your empty seats on DL 68. https://t.co/HVDh91R7ik",
       "intent": "social_chitchat",
-      "confidence": 0.92,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'social_chitchat' with confidence 0.92",
-      "reply": "Thanks for the heads\u2011up! Let us know if you have any questions about your flight.",
+      "reason": "routine 'social_chitchat' with confidence 0.93",
+      "reply": "Thanks for the heads\u2011up! Let us know if there\u2019s anything we can assist you with.",
       "precedents": [
         {
           "message": "DL 2444 Thank You",
@@ -4580,9 +4580,9 @@
       "thread_id": "2258130",
       "message": "thanks DCA ground crew for having bags off the belt and waiting!",
       "intent": "praise",
-      "confidence": 0.99,
+      "confidence": 0.98,
       "decision": "auto",
-      "reason": "routine 'praise' with confidence 0.99",
+      "reason": "routine 'praise' with confidence 0.98",
       "reply": "Thank you for the shout\u2011out to our DCA ground crew! We\u2019ll be sure they hear how much you appreciated their help.",
       "precedents": [
         {
@@ -4611,10 +4611,10 @@
       "thread_id": "1842079",
       "message": "since when doesn't #deltacomfort have pillows? I fly an hour &amp; get a pillow but don't from LAX2BOS. Crew could care LESS #platinum",
       "intent": "inflight_experience",
-      "confidence": 0.9,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'inflight_experience' with confidence 0.90",
-      "reply": "We\u2019re sorry to hear about the missing pillow, especially on a long flight. Please DM us with your details so we can look into it and make it right.",
+      "reason": "routine 'inflight_experience' with confidence 0.93",
+      "reply": "We\u2019re sorry to hear about your experience. Please DM us with your flight details so we can look into it.",
       "precedents": [
         {
           "message": "Don't EVER FLY  they just made me miss our show! I'm so sorry to all the fans!! Do NOT fly",
@@ -4645,7 +4645,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'rebooking_change' with confidence 0.97",
-      "reply": "Hey there! Please DM us your confirmation number so we can look into the roadblocks and get your ticket changed. Thanks!",
+      "reply": "Hey there! Please DM your confirmation number using the link below and we\u2019ll sort out the change for you. https://t.co/6iDGBJAc2m",
       "precedents": [
         {
           "message": "trying to change a flight and I get an error on your side. System down?",
@@ -4673,9 +4673,9 @@
       "thread_id": "2157824",
       "message": "I try to change my booking, but it seems that your website has a bud. On every page, it displays the correct flight with the correct dates, but the system shows a wrong connecting time. What should I do? I am worried that I end up booking a wrong flight",
       "intent": "website_app_issue",
-      "confidence": 0.92,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'website_app_issue' with confidence 0.92",
+      "reason": "routine 'website_app_issue' with confidence 0.96",
       "reply": "Hi there, sorry for the trouble. Please DM us your confirmation number and the itinerary details so we can look into the connecting time issue. Thank you.",
       "precedents": [
         {
@@ -4704,10 +4704,10 @@
       "thread_id": "2633424",
       "message": "I need you immediate attention to this issue, so that I don\u2019t go hungry during next flight 9W 233 from Amsterdam to delhi on 10/31",
       "intent": "inflight_experience",
-      "confidence": 0.96,
+      "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'inflight_experience' with confidence 0.96",
-      "reply": "We\u2019re sorry to hear you\u2019re worried about meals on Flight\u202f9W\u202f233. Please DM us your confirmation number so we can look into your request right away.",
+      "reason": "routine 'inflight_experience' with confidence 0.92",
+      "reply": "We\u2019re sorry to hear you\u2019re worried about meals on flight 9W\u202f233. Could you DM us your confirmation number so we can look into your reservation and help ensure you have something to enjoy?",
       "precedents": [
         {
           "message": "Even though I\u2019m not that hungry I\u2019m still excited for my #kosher meal \ud83d\ude1b",
@@ -4738,7 +4738,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thank you for the shout\u2011out! We\u2019ll let Elizabeth know she\u2019s a true rockstar on our chat line. We\u2019re thrilled she could help you. \u2708\ufe0f",
+      "reply": "Hey there, thank you for the shout\u2011out! We\u2019ll be sure to let Elizabeth know how much you appreciated her rock\u2011star service. \u2708\ufe0f",
       "precedents": [
         {
           "message": "Thank you for the outstanding customer service",
@@ -4769,7 +4769,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'inflight_experience' with confidence 0.96",
-      "reply": "Hi there! Sorry to hear about the iPass issue on flights 920 and 2501. Please DM us your confirmation number so we can look into it.",
+      "reply": "Hi there! Sorry to hear about the iPass issues on flights 920 and 2501. Please DM us your confirmation number so we can look into it.",
       "precedents": [
         {
           "message": "flight DL3686 needs gogo!!",
@@ -4796,11 +4796,11 @@
     {
       "thread_id": "506141",
       "message": "literally still sitting on ground while a pilot and flight attendant argue over who is getting the \u201cjump seat\u201d  that\u2019s embarrassing - do your dirty laundry behind closed doors, before take scheduled take off DL1998 ATL to MIA",
-      "intent": "delay_cancellation",
-      "confidence": 0.9,
+      "intent": "service_complaint",
+      "confidence": 0.88,
       "decision": "auto",
-      "reason": "routine 'delay_cancellation' with confidence 0.90",
-      "reply": "We\u2019re sorry for the delay on DL1998. Please DM us your confirmation number so we can look into this further.",
+      "reason": "routine 'service_complaint' with confidence 0.88",
+      "reply": "We\u2019re sorry for the inconvenience. Please DM us your confirmation number so we can investigate further.",
       "precedents": [
         {
           "message": "have now been sitting for 3 hours on this plane awaiting take off. DL2826 JFK-MIA. Supposed to have left 3:48pm... not acceptable",
@@ -4831,7 +4831,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'other' with confidence 0.97",
-      "reply": "We\u2019re sorry to hear about your experience. Please DM us with your flight details so we can look into it.",
+      "reply": "Sorry to hear about your experience. Please DM us with your flight details so we can look into it.",
       "precedents": [
         {
           "message": "Why is  the worst flight experiences? Never once have I just had a smooth flight with him",
@@ -4862,7 +4862,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.96",
-      "reply": "We\u2019re sorry for the delay, DL0932. The captain will provide updates shortly. Please give me a moment to look up your reservation.",
+      "reply": "We\u2019re sorry for the delay on DL0932. Please give me a moment while I look into your reservation. *AMV",
       "precedents": [
         {
           "message": "we haven\u2019t been told why we\u2019ve been on the runway for 40 min instead of taking off at MSP DL4650",
@@ -4893,7 +4893,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'inflight_experience' with confidence 0.97",
-      "reply": "We\u2019re sorry you\u2019re uncomfortable with the seat layout. Please DM us with your flight details so we can look into this further.",
+      "reply": "We\u2019re sorry to hear about your seat experience. Please DM us with more details so we can look into this further.",
       "precedents": [
         {
           "message": "Frustrated with  for double booking my seat and then for not placing me in the empty seat next to the cute girl a few rows behind me",
@@ -4924,7 +4924,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thanks for the love! Congrats on your first day of Gold\u2014enjoy the perks and happy travels!",
+      "reply": "Thanks for the love! Enjoy your Gold benefits and happy travels. \ud83d\ude0a",
       "precedents": [
         {
           "message": "SHOUT OUT TO  FOR BEING AMAZING\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d",
@@ -4952,10 +4952,10 @@
       "thread_id": "1260946",
       "message": "people waiting in line at your service desk and your ATL employees close? #CUSTOMERSERVICEFAIL",
       "intent": "service_complaint",
-      "confidence": 0.97,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.97",
-      "reply": "We\u2019re sorry for the wait and inconvenience at ATL. Please DM us with your flight details so we can look into this for you. Thank you.",
+      "reason": "routine 'service_complaint' with confidence 0.96",
+      "reply": "We\u2019re sorry you had this experience. Please DM us your flight details and we\u2019ll look into it right away.",
       "precedents": [
         {
           "message": "Trying to change flight w/  - was so close to being done and poof\ud83d\udca8*call dropped* No call back. Now in line waiting for another call\ud83d\ude2d\ud83d\ude24\ud83d\ude2b",
@@ -5017,7 +5017,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hi there, priority boarding is a benefit when you use your Delta SkyMiles Card to purchase your ticket. If you\u2019ve already booked, you can add it under \u201cMy Trips\u201d \u2192 \u201cAdd Extras\u201d on the website.",
+      "reply": "Hi there! Priority boarding is a benefit when you use your Delta SkyMiles Card to purchase your ticket. If you\u2019ve already booked, you can add it in My Trips\u202f\u2192\u202fAdd Extras. Thanks!",
       "precedents": [
         {
           "message": "Thanks  for the priority boarding for gate checking my bag. This is a good deal.",
@@ -5045,10 +5045,10 @@
       "thread_id": "2130286",
       "message": "I don't understand how I can't use my global upgrade when I've done everything you've asked. Also upgrade certs not on app",
       "intent": "loyalty_refund_compensation",
-      "confidence": 0.88,
+      "confidence": 0.9,
       "decision": "escalate",
       "reason": "intent 'loyalty_refund_compensation' is rarely resolvable in public",
-      "reply": "Sorry to hear you\u2019re having trouble. Please DM us your confirmation # so we can look into your Global Upgrade certificates.",
+      "reply": "Sorry to hear you\u2019re having trouble. Please DM us your confirmation # so we can look into your Global Upgrade certificates and get this sorted.",
       "precedents": [
         {
           "message": "How do I find out if my global upgrade certificates have cleared?",
@@ -5079,7 +5079,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "We\u2019re thrilled to hear that, thank you for sharing your journey with us! Safe travels and see you soon.",
+      "reply": "Thank you for sharing your story! We're delighted to hear flying feels like a countdown now. Safe travels on your next adventure!",
       "precedents": [
         {
           "message": "Full flight!! Flying on #Thanksgiving isn't as fun as it used to be #empty seats",
@@ -5110,7 +5110,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'social_chitchat' with confidence 0.97",
-      "reply": "Hi! Congrats on reaching Silver status\u2014what a milestone! \ud83c\udf89 We\u2019ll be sure to make your next flight feel extra special. Safe travels!",
+      "reply": "Congrats on reaching Silver status! \ud83c\udf89 We\u2019ll be sure to celebrate with you on your next flight. Let us know if there\u2019s anything we can help with.",
       "precedents": [
         {
           "message": "..after all my husband is silver status and I will be silver status by the end of the year....",
@@ -5138,10 +5138,10 @@
       "thread_id": "282867",
       "message": "Hurricane Nate is poised to make landfall near #NewOrleans on Sunday and you haven't issued a travel alert yet!",
       "intent": "service_complaint",
-      "confidence": 0.92,
+      "confidence": 0.78,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.92",
-      "reply": "We\u2019re monitoring the situation closely. Please DM us your confirmation number so we can review any needed options.",
+      "reason": "routine 'service_complaint' with confidence 0.78",
+      "reply": "We hear your concerns about Hurricane Nate. Our team is monitoring the situation and will issue updates as needed. Please DM us your confirmation number so we can review your travel plans.",
       "precedents": [
         {
           "message": "Mission get your husband home before a hurricane hits Louisiana #COMPLETE  has been a DREAM to work with #MyAirline :)",
@@ -5169,10 +5169,10 @@
       "thread_id": "949424",
       "message": "Since when do you not gate check when overhead is full? I was just forced to check my bag to my final destination, thus forcing me to have to wait at baggage claim when I totally took a SOFT carry-on to avoid that. Better not be any damage!!!!",
       "intent": "baggage",
-      "confidence": 0.93,
+      "confidence": 0.96,
       "decision": "escalate",
       "reason": "intent 'baggage' is rarely resolvable in public",
-      "reply": "We\u2019re sorry for the inconvenience. Please call us at 800\u2011325\u20118224 so we can look into your bag and any concerns about damage.",
+      "reply": "We\u2019re sorry for the inconvenience. Please call\u202f800\u2011325\u20118224 for assistance.",
       "precedents": [
         {
           "message": "When you're forced to check a carry-on during boarding when there is plenty of room in the overheads. Now I get to wait at baggage claim instead of just leaving with my carry-on. Thank you!",
@@ -5200,10 +5200,10 @@
       "thread_id": "2376515",
       "message": "Hey guys, made a trip last month and I checked in through the mobile app. Didn't receive a ticket for the baggage and need for travel expenses. Can you help?",
       "intent": "baggage",
-      "confidence": 0.92,
+      "confidence": 0.9,
       "decision": "escalate",
       "reason": "intent 'baggage' is rarely resolvable in public",
-      "reply": "Please DM us your flight and baggage claim details so we can look into this for you.",
+      "reply": "Please DM us your booking reference and a brief description of the issue so we can look into your baggage receipt and travel expenses.",
       "precedents": [
         {
           "message": "honestly you guys have the best mobile app for airlines hands down! Your developers need a raise!",
@@ -5234,7 +5234,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Yes, we offer Delta gift cards! Please DM us for more info.",
+      "reply": "Yes! We offer Delta gift cards. Feel free to DM us for more info.",
       "precedents": [
         {
           "message": "is it possible to book a flight with a combination of gift cards, skymiles, and money?",
@@ -5265,7 +5265,7 @@
       "confidence": 0.88,
       "decision": "escalate",
       "reason": "resolution requires private account data",
-      "reply": "We can help you reset your login. Please DM us your SkyMiles account number so we can verify and update your email access.",
+      "reply": "We can help reset your login. Please DM us your SkyMiles account number so we can verify and update your email access.",
       "precedents": [
         {
           "message": "Hi, my reservation 0062176735814 from GGP3TS from 14Jan2017 is not in my skymiles account 9323877283. Can you check? Itzbel",
@@ -5323,11 +5323,11 @@
     {
       "thread_id": "652270",
       "message": "I don't necessarily mind cancelled flights, i DO mind when you cancel two flights and don't NOTIFY me in either case.",
-      "intent": "delay_cancellation",
-      "confidence": 0.87,
+      "intent": "service_complaint",
+      "confidence": 0.9,
       "decision": "auto",
-      "reason": "routine 'delay_cancellation' with confidence 0.87",
-      "reply": "Hi, we\u2019re sorry you weren\u2019t notified about the cancellations. Please DM us your confirmation numbers so we can look into this for you.",
+      "reason": "routine 'service_complaint' with confidence 0.90",
+      "reply": "We\u2019re sorry you weren\u2019t notified about the cancellations. Please DM us your confirmation numbers so we can look into this for you.",
       "precedents": [
         {
           "message": "can you please make up your mind??? https://t.co/04stpoM6t9",
@@ -5354,10 +5354,10 @@
     {
       "thread_id": "2201674",
       "message": "do u want to surprise+delight? flying 401 to LDN tonight, 7 months prego and not sleeping. Please upgrade me! \ud83d\ude4f\ud83c\udffb",
-      "intent": "other",
-      "confidence": 0.78,
+      "intent": "rebooking_change",
+      "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'other' with confidence 0.78",
+      "reason": "routine 'rebooking_change' with confidence 0.92",
       "reply": "We\u2019d love to help! Please DM us your confirmation number so we can look into an upgrade for you.",
       "precedents": [
         {
@@ -5389,7 +5389,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.96",
-      "reply": "Sorry to hear about the seat change. Please DM us your confirmation number so we can look into it.",
+      "reply": "Sorry to hear about the seat change. Please DM us your confirmation number so we can look into this for you.",
       "precedents": [
         {
           "message": "nothing like having a great exit row aisle seat and getting unilaterally moved to a middle seat because the plane was broken.",
@@ -5420,7 +5420,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hi! Prices on the Brazilian site are shown in reais. For details on the baggage allowance from GRU to YVR, please DM us your reservation number so we can assist you.",
+      "reply": "Hi! Prices on the Brazil site are shown in Brazilian reais. For baggage on a GRU\u2011YVR trip, allowances depend on your fare class. Please DM your reservation details so I can check the exact franchise for you.",
       "precedents": [
         {
           "message": "what time do the checkin terminals open in GRU ?",
@@ -5451,7 +5451,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hi, please DM us your reservation number so we can review the fare rules, credit expiration and any applicable change fees.",
+      "reply": "Changable/NonRefundable tickets can be changed for a credit (no cash refund). The credit is valid 1\u202fyear from issue and a change fee may apply based on the fare. Please DM us your confirmation number so we can review your booking.",
       "precedents": [
         {
           "message": ". Rep tried to charge me  change fee to cancel flight due to #HurricaneMaria, refuses to refund my $, only issue a credit with less than 1 yr to use. #notgoodenough  refunded me right away, no problem or excuses! #deltasucks  #poorcustomerservice #greedy",
@@ -5482,7 +5482,7 @@
       "confidence": 0.85,
       "decision": "auto",
       "reason": "routine 'website_app_issue' with confidence 0.85",
-      "reply": "Sorry you didn\u2019t get a confirmation. Please DM us your confirmation number or booking details so we can locate it and resend the email.",
+      "reply": "Sorry to hear that. Please DM us your confirmation number or booking details so we can locate it and resend the email.",
       "precedents": [
         {
           "message": "where can i book my seat ?",
@@ -5513,7 +5513,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thank you for sharing! We\u2019ll be sure to pass your kind words to the gate agent at ATL who helped with your camera bag. We appreciate your support!",
+      "reply": "Thank you for the shout\u2011out! We\u2019ll be sure to pass your kind words to the gate agent at ATL who helped with your camera bag. We appreciate you sharing your experience!",
       "precedents": [
         {
           "message": "Thanks   for the great service and the ability to get me on an earlier flight. A big thanks to my gate agent, or should I say, \"Gate Angel\"!",
@@ -5544,7 +5544,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.96",
-      "reply": "Thanks for reaching out! Please DM me your confirmation number and I\u2019ll gladly look into this for you.",
+      "reply": "Thanks for reaching out. Please DM us your confirmation number so we can look into this for you.",
       "precedents": [
         {
           "message": "Hey,  \ud83d\udc99 https://t.co/p9VJVJyFKI",
@@ -5575,7 +5575,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thanks for the kind words! We\u2019re glad you feel safer flying with us. \u2708\ufe0f",
+      "reply": "Thanks for the love! If you need any help, please DM us your confirmation #.",
       "precedents": [
         {
           "message": "Hey  turn down the volume when you blast announcements into the ear buds of your customers...",
@@ -5606,7 +5606,7 @@
       "confidence": 0.85,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.85",
-      "reply": "We\u2019re sorry to hear about your night\u2011flight experience and the service you received. Please DM us with your reservation details so we can look into this further.",
+      "reply": "We\u2019re sorry to hear about your night\u2011flight experience and the service you received. Please DM us with your reservation info so we can look into this further.",
       "precedents": [
         {
           "message": "really disappointing experience with your call center. twice.",
@@ -5637,7 +5637,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.97",
-      "reply": "Hey there, I\u2019m sorry for the delay at LAX. Please DM us your confirmation # so we can check your connection and give you an update. *TBT",
+      "reply": "Hey there, I\u2019m sorry for the delay at LAX. Please DM us your confirmation # so we can check the status of your 10:15 flight and get you an update.",
       "precedents": [
         {
           "message": "Why is it that every time I fly with  they make me sit on the run way for at least a half hour before I can get off the plane. \ud83e\udd2cliterally every time",
@@ -5668,7 +5668,7 @@
       "confidence": 0.96,
       "decision": "escalate",
       "reason": "resolution requires private account data",
-      "reply": "We can check the credit timeline for your CZ flight. Please send your SkyMiles number and reservation details securely here: https://t.co/yoursecurelink *AAB",
+      "reply": "We\u2019ll look into that for you. Please send your SkyMiles number and reservation details securely here:\u202fhttps://t.co/yoursecurelink\u202f*XYZ",
       "precedents": [
         {
           "message": "Hi, my reservation 0062176735814 from GGP3TS from 14Jan2017 is not in my skymiles account 9323877283. Can you check? Itzbel",
@@ -5696,9 +5696,9 @@
       "thread_id": "827633",
       "message": ": your desk agent is not listening to complaints on 6-hour delay to #sfo. Delay not ur fault, but is it good to shut customers down?",
       "intent": "service_complaint",
-      "confidence": 0.92,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.92",
+      "reason": "routine 'service_complaint' with confidence 0.93",
       "reply": "We\u2019re sorry you felt unheard, and we understand the frustration of a 6\u2011hour delay. Please DM us your confirmation number so we can look into your situation further.",
       "precedents": [
         {
@@ -5730,7 +5730,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'website_app_issue' with confidence 0.96",
-      "reply": "Hi, sorry you\u2019re seeing that error. Could you DM us a screenshot or more details so we can investigate further?",
+      "reply": "Hi, sorry you\u2019re seeing that error. I\u2019m looking into it now\u2014please DM us any additional details or a screenshot so we can help resolve the issue.",
       "precedents": [
         {
           "message": "any cyber Monday deals?",
@@ -5758,9 +5758,9 @@
       "thread_id": "715526",
       "message": "Why does Delta upgrade me to a middle seat each time despite my preferences?? Frustrating!! Plus 2h wait on gold med line! Bad!!!",
       "intent": "service_complaint",
-      "confidence": 0.96,
+      "confidence": 0.97,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.96",
+      "reason": "routine 'service_complaint' with confidence 0.97",
       "reply": "We\u2019re sorry for the inconvenience. Please DM us your confirmation number so we can review your seat preferences and the wait you experienced.",
       "precedents": [
         {
@@ -5792,7 +5792,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.97",
-      "reply": "I\u2019m sorry for the frustration you experienced. Please DM us your confirmation number so we can look into this further.",
+      "reply": "I\u2019m sorry for the frustration you experienced. Please DM us with your confirmation number so we can look into this further.",
       "precedents": [
         {
           "message": "waited for a call back for 1 hour, then on phone for 50 min and got disconnected! Called back, 2hr+ wait!",
@@ -5882,10 +5882,10 @@
       "thread_id": "1879818",
       "message": "\u201ccustomer service\u201d - Flight to GFK for next weekend, &amp; charged me $300 to come home this weekend instead 4 dad\u2019s ER open\u2764\ufe0fsurgery",
       "intent": "rebooking_change",
-      "confidence": 0.96,
+      "confidence": 0.93,
       "decision": "escalate",
       "reason": "resolution requires private account data",
-      "reply": "We\u2019re sorry to hear about the inconvenience. Please DM us with your flight details so we can look into the rebooking and charges for you.",
+      "reply": "We\u2019re sorry to hear about the inconvenience. Please DM us with your reservation info so we can look into your re\u2011booking and the charge. Thank you.",
       "precedents": [
         {
           "message": "Been a weekend of delays with , #roundtripdelays #notevenholidaytrafficyet",
@@ -5916,7 +5916,7 @@
       "confidence": 0.97,
       "decision": "escalate",
       "reason": "resolution requires private account data",
-      "reply": "Hi, one moment while I check on this for you. Thanks. *TAS",
+      "reply": "Hi, one moment while I check on this for you. Thanks.",
       "precedents": [
         {
           "message": "Hey I have a question",
@@ -5947,7 +5947,7 @@
       "confidence": 0.97,
       "decision": "escalate",
       "reason": "resolution requires private account data",
-      "reply": "Hello! Sorry for the trouble. Please DM us your confirmation or ticket number so we can look into the seat change issue for you. *AFM https://t.co/6iDGBJAc2m",
+      "reply": "We\u2019re sorry you\u2019re having trouble. Please DM us your confirmation or ticket number so we can look into the seat change and payment issue. *AFM https://t.co/6iDGBJAc2m",
       "precedents": [
         {
           "message": "Hey  I'm trying to change my seat but the app says I'm flying standby (I'm not flying standby)",
@@ -5975,10 +5975,10 @@
       "thread_id": "1285763",
       "message": "My flight is leaving in 10 minutes and I\u2019m still in line at security. No one will help me. Please help me",
       "intent": "service_complaint",
-      "confidence": 0.93,
+      "confidence": 0.94,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.93",
-      "reply": "Hi there, I\u2019m sorry you\u2019re experiencing this. Please DM us your confirmation number so we can look into your flight and assist you.",
+      "reason": "routine 'service_complaint' with confidence 0.94",
+      "reply": "Hi there, I\u2019m sorry you\u2019re experiencing this. Please DM us your confirmation number so we can look into it right away.",
       "precedents": [
         {
           "message": "Traveling on  from .  Made it from the curb through security in less than 10 minutes.  #travel #holidaytravel",
@@ -6006,10 +6006,10 @@
       "thread_id": "1052552",
       "message": "This is the third time the first flight of the day has a maintenance issue. First flights should never. Check them overnight.",
       "intent": "service_complaint",
-      "confidence": 0.78,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.78",
-      "reply": "We\u2019re sorry for the repeated maintenance delays on your morning flight. Please DM your confirmation # so we can look into this further.",
+      "reason": "routine 'service_complaint' with confidence 0.93",
+      "reply": "We\u2019re sorry for the repeated inconvenience with early\u2011day maintenance issues. Please DM your confirmation # so we can look into this further.",
       "precedents": [
         {
           "message": "Turns out the  flight is a legit maintenance issue. Strange that they said they \u201cneed\u201d the plane tho",
@@ -6040,7 +6040,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thank you for your kind words. We\u2019re proud to support Puerto\u202fRico\u2019s humanitarian efforts and appreciate your support. \u2708\ufe0f",
+      "reply": "Thank you for your kind words. We\u2019re proud to support Puerto Rico\u2019s humanitarian efforts and grateful for passengers like you.",
       "precedents": [
         {
           "message": "! Why you sending me emails for promotions I\u2019m not eligible for!? What a tease!",
@@ -6068,10 +6068,10 @@
       "thread_id": "12068",
       "message": ".  Cheers and thanks for the upgrade to Dublin!! Unexpected and appreciated!! #2millionsoon https://t.co/KoDdFKMmXp",
       "intent": "praise",
-      "confidence": 0.98,
+      "confidence": 0.97,
       "decision": "auto",
-      "reason": "routine 'praise' with confidence 0.98",
-      "reply": "Enjoy the surprise upgrade to Dublin! We\u2019re thrilled you\u2019re loving it. Safe travels and see you on the next adventure!",
+      "reason": "routine 'praise' with confidence 0.97",
+      "reply": "Delighted to hear you\u2019re enjoying the surprise upgrade to Dublin! Safe travels and cheers to many more miles ahead. \u2708\ufe0f\ud83d\ude0a",
       "precedents": [
         {
           "message": "Thanks  for another upgrade! Let the vodka flow!",
@@ -6102,7 +6102,7 @@
       "confidence": 0.9,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.90",
-      "reply": "We\u2019re sorry to hear about the storm impact on your wedding group. Thank you for sharing, and know our team is always working to make travel smoother for you all.",
+      "reply": "We\u2019re sorry to hear your group was separated by the storm. Thank you for sharing, and we hope the rest of your wedding travels go smoothly. \ud83d\ude4f\ud83c\udffc",
       "precedents": [
         {
           "message": "Although 4 hour wait due to weather at BTV was frustrating thankful to the great  gate crew &amp; our amazing pilot who flew around storm!",
@@ -6130,10 +6130,10 @@
       "thread_id": "1805413",
       "message": "The gate agent for  1221 from ATL-OKC (Toby?) is amazing. After a brief delay finally headed to see my nephew!",
       "intent": "praise",
-      "confidence": 0.97,
+      "confidence": 0.98,
       "decision": "auto",
-      "reason": "routine 'praise' with confidence 0.97",
-      "reply": "Hi, thank you so much for recognizing Toby on flight 1221 from ATL to OKC. I\u2019ll share your kind words with his team. Have a great visit with your nephew!",
+      "reason": "routine 'praise' with confidence 0.98",
+      "reply": "Hi, thank you for the shout\u2011out to Toby on flight 1221 from ATL to OKC. I\u2019ll be sure to pass your kind words along to his team. Have a wonderful visit with your nephew!",
       "precedents": [
         {
           "message": "Many thanks to Beverly in ATL for helping us through a brief delay with kindness and humor!  #greatcustomerservice",
@@ -6164,7 +6164,7 @@
       "confidence": 0.94,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.94",
-      "reply": "We\u2019re sorry for the delay, especially after a long trip. Our team is working quickly to get you home safely. Thank you for your patience.",
+      "reply": "We\u2019re sorry for the delay, especially after a long trip. Our team is working quickly to complete the security sweep and get you home as soon as possible. Thank you for your patience.",
       "precedents": [
         {
           "message": "Thanks  for flying me home",
@@ -6192,10 +6192,10 @@
       "thread_id": "91756",
       "message": "Another poor  experience. Told 2 call 24 hrs/advance &amp; would have ticket (didn't); paid $75 change fee &amp; still didn't get ticket (1/2)",
       "intent": "rebooking_change",
-      "confidence": 0.96,
+      "confidence": 0.95,
       "decision": "auto",
-      "reason": "routine 'rebooking_change' with confidence 0.96",
-      "reply": "We\u2019re sorry to hear that, and want to help. Please DM your confirmation number and the details of the change so we can look into the ticket issue.\u202f*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*\u200b*",
+      "reason": "routine 'rebooking_change' with confidence 0.95",
+      "reply": "We\u2019re sorry to hear that, and want to help. Please DM us your confirmation number and any receipt details so we can look into the ticket and fee. *TJE",
       "precedents": [
         {
           "message": "I just got charged a $75 \"change fee\" by ... to join a standby list. \"'Cause we're Delta airlines, and life is a fucking nightmare.\" CC:",
@@ -6223,10 +6223,10 @@
       "thread_id": "2556160",
       "message": "Hi Delta, it's been a while since we last talked. I hope all is well! Have a great day :)",
       "intent": "social_chitchat",
-      "confidence": 0.97,
+      "confidence": 0.99,
       "decision": "auto",
-      "reason": "routine 'social_chitchat' with confidence 0.97",
-      "reply": "Thank you for checking in! We hope you\u2019re having a wonderful day as well.",
+      "reason": "routine 'social_chitchat' with confidence 0.99",
+      "reply": "Hi there! Thanks for checking in \u2013 we\u2019re doing great and hope you are too. Have a wonderful day!",
       "precedents": [
         {
           "message": "Just talked to a great CSR to get an RU applied for standby - nice job, . #StriveForFive",
@@ -6254,10 +6254,10 @@
       "thread_id": "282547",
       "message": "this really nice clean plane and also I can poke my finger through the air vent hole. gate agents say plane is being cleaned, really https://t.co/0IfK96P0dG",
       "intent": "service_complaint",
-      "confidence": 0.9,
+      "confidence": 0.78,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.90",
-      "reply": "We\u2019re sorry you\u2019ve had this experience. Please DM us with your flight number and travel date so we can look into the cleaning and gate\u2011agent communication.",
+      "reason": "routine 'service_complaint' with confidence 0.78",
+      "reply": "We\u2019re sorry you experienced that, and we appreciate you letting us know. Please DM us with your flight number and gate so we can look into it further.",
       "precedents": [
         {
           "message": "you tell us our plane needs maintenance.... then say that our plane is broken and we will get a new plane... then say, just kidding.",
@@ -6316,10 +6316,10 @@
       "thread_id": "1507188",
       "message": "9hr flight DL0090: ATL to D\u00fcsseldorf. My screen doesn\u2019t work, can\u2019t call a flight attendant, &amp; no working outlets. Unacceptable.",
       "intent": "inflight_experience",
-      "confidence": 0.97,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'inflight_experience' with confidence 0.97",
-      "reply": "We\u2019re sorry to hear about the screen, outlets, and assistance issues on DL0090. Please let a flight attendant know so we can help you right away. *TBT",
+      "reason": "routine 'inflight_experience' with confidence 0.96",
+      "reply": "We\u2019re sorry to hear about the screen, outlet and call button issues on DL0090. Please let a flight attendant know so they can assist you right away. *TBT",
       "precedents": [
         {
           "message": "I love that so many of your planes have electrical outlets at the seats, but it doesn't do much if none of them work. :(",
@@ -6350,7 +6350,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "We\u2019re thrilled to hear you enjoyed our team, especially Holly! Thank you for the kind words\u2014our crew works hard to make travel easy for you.",
+      "reply": "We\u2019re thrilled you enjoyed your experience with Holly and our team\u2014thanks for the kind words!\u202f*\u200b",
       "precedents": [
         {
           "message": "Why is Delta treating Diamond customers like this? Our bags are not being delivered as we couldnt gky Delta due to delays. Sad",
@@ -6381,7 +6381,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'social_chitchat' with confidence 0.97",
-      "reply": "We love that sentiment! Thanks for sharing the inspiration. \u2708\ufe0f",
+      "reply": "We love the inspiration, thank you for sharing! \u2708\ufe0f",
       "precedents": [
         {
           "message": "Love you  !!! https://t.co/ZF2ToTXUco",
@@ -6412,7 +6412,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.96",
-      "reply": "Give me a moment to pull up your info. Please DM your confirmation or ticket number so I can check on DL0479.",
+      "reply": "Hi there! Please DM us your confirmation or ticket number so we can look into DL0479 for you.",
       "precedents": [
         {
           "message": "It\u2019s wild to me that  doesn\u2019t haven\u2019t a better system by which customers can retrieve lost items. Y\u2019all have all the info already \ud83e\udd14",
@@ -6440,10 +6440,10 @@
       "thread_id": "1196843",
       "message": "flight dep time adjusted 5 times then cancelled while flight after departs on time? How does bag get sent if flight cancelled? Awful",
       "intent": "delay_cancellation",
-      "confidence": 0.88,
+      "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'delay_cancellation' with confidence 0.88",
-      "reply": "Hi, I\u2019m sorry for the inconvenience. Please DM us your confirmation number so we can look into your bag\u2019s routing and help you further.",
+      "reason": "routine 'delay_cancellation' with confidence 0.92",
+      "reply": "We\u2019re sorry for the inconvenience. Please DM us your confirmation number so we can look into your bag\u2019s routing and help you further.",
       "precedents": [
         {
           "message": "And... our flight was cancelled. Well done",
@@ -6474,7 +6474,7 @@
       "confidence": 0.92,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.92",
-      "reply": "Sure thing! Please DM us your confirmation number and TSA PreCheck number so we can verify it for your flight tomorrow.",
+      "reply": "Sure thing! Please DM us your confirmation number and TSA PreCheck number so we can verify it\u2019s attached to your flight.",
       "precedents": [
         {
           "message": "can I add a DOD number for TSA precheck to an existing flight reservation?",
@@ -6502,10 +6502,10 @@
       "thread_id": "1225371",
       "message": "$150 for 3rd checked bag? But offer to check bag to final dest at gate. Don\u2019t understand. Had to leave a bottle of  behind\ud83d\ude1e",
       "intent": "baggage",
-      "confidence": 0.96,
+      "confidence": 0.92,
       "decision": "escalate",
       "reason": "intent 'baggage' is rarely resolvable in public",
-      "reply": "We\u2019re sorry for the confusion, Alex. Please DM us your confirmation number so we can look into your bag and the bottle you left behind. *ABN",
+      "reply": "We\u2019re sorry for the confusion. Please DM us your confirmation number so we can look into the bag fee and the bottle you left behind.",
       "precedents": [
         {
           "message": "been waiting 35 min for my GATE CHECKED bag at . Miles please?",
@@ -6533,10 +6533,10 @@
       "thread_id": "2023385",
       "message": "gotta find a new glue for your FAA stickers. Now on our 3rd plane over 2 hours delayed due to FAA stickers falling off \ud83d\ude0f\ud83d\ude44",
       "intent": "delay_cancellation",
-      "confidence": 0.96,
+      "confidence": 0.94,
       "decision": "auto",
-      "reason": "routine 'delay_cancellation' with confidence 0.96",
-      "reply": "Sorry for the inconvenience, we understand the frustration. Please DM us your confirmation number so we can look into this further.",
+      "reason": "routine 'delay_cancellation' with confidence 0.94",
+      "reply": "We\u2019re sorry for the inconvenience, Alex. Please DM us your confirmation number so we can look into this further.",
       "precedents": [
         {
           "message": "we\u2019re almost 3 hours delayed. Would love some accurate updates or at least positive attitudes at the gate.",
@@ -6567,7 +6567,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hi! Please DM us your confirmation code or travel details and we\u2019ll check the options for NYC on Oct\u202f25. Thanks!",
+      "reply": "Hi! Please DM us your confirmation or travel details and we\u2019ll check the options for NYC on Oct\u202f25. Thanks!",
       "precedents": [
         {
           "message": "I'm stuck at PWM for 5 hours, do you have anything heading to NYC area before 7pm?",
@@ -6595,10 +6595,10 @@
       "thread_id": "571418",
       "message": "- DTW to CDG - Platinum status but sitting next to a dog in coach - $3000k ticket and no upgrade #really?",
       "intent": "service_complaint",
-      "confidence": 0.93,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.93",
-      "reply": "We\u2019re sorry you didn\u2019t receive the experience you expected. Please DM us your flight details and SkyMiles number so we can review the situation.",
+      "reason": "routine 'service_complaint' with confidence 0.96",
+      "reply": "We\u2019re sorry you didn\u2019t receive the experience you expected. Please DM us your flight details and SkyMiles number so we can review your situation.",
       "precedents": [
         {
           "message": "Currently have the rudest flight attendant on  DL3975! Only asked a simple question and was completely blown off with zero assistance. Apparently Platinum status only goes so far these days... #Delta",
@@ -6626,10 +6626,10 @@
       "thread_id": "2426424",
       "message": "need to rant! First/Business Class &gt; Comfort+ (Aisle/Window) &gt; Economy (Aisle/Window) &gt; ANY MIDDLE SEAT! Add a feature to exclude middle seats on upgrades\u2014NO ONE WANTS THEM! Thanks",
       "intent": "service_complaint",
-      "confidence": 0.9,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.90",
-      "reply": "We hear you! I\u2019m sorry you got a middle seat. Please DM us your confirmation number so we can review your upgrade options.",
+      "reason": "routine 'service_complaint' with confidence 0.93",
+      "reply": "We hear you\u2014middle seats aren\u2019t ideal for upgrades. Our system currently can\u2019t filter them out, but we\u2019ll pass this feedback along. If you\u2019d like help with a specific reservation, please DM us your confirmation number.",
       "precedents": [
         {
           "message": "and  conspired against me to change my aisle seat to a middle seat https://t.co/3yhR7Tq2rZ",
@@ -6657,10 +6657,10 @@
       "thread_id": "518981",
       "message": "FIX THE B SKYCLUB WIFI AND CELL RECEPTION!!!!!",
       "intent": "inflight_experience",
-      "confidence": 0.92,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'inflight_experience' with confidence 0.92",
-      "reply": "We\u2019re sorry the SkyClub Wi\u2011Fi and cell service isn\u2019t meeting expectations. Please reach out to our SkyClub team at 800\u2011221\u20111212 or email skyclub@delta.com so we can help.",
+      "reason": "routine 'inflight_experience' with confidence 0.96",
+      "reply": "We\u2019re sorry the SkyClub Wi\u2011Fi and cell service weren\u2019t up to standard. Please reach out to our SkyClub team at 800\u2011221\u20111212 or email skyclub@delta.com so we can help.",
       "precedents": [
         {
           "message": "please fix the issues with you planes, yesterday hydraulic peoblems, today no wifi i mean when does it stop?",
@@ -6691,7 +6691,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "We can help with that. Please DM us your confirmation # and the rug dimensions so we can verify size allowances. *ALY",
+      "reply": "Hi there, could you please share your confirmation number and a brief description of the item via the link below? We'll review the size limits and get back to you. https://t.co/6iDGBJAc2m",
       "precedents": [
         {
           "message": "Flying that first class  \ud83d\udc4c\ud83c\udffb",
@@ -6722,7 +6722,7 @@
       "confidence": 0.92,
       "decision": "auto",
       "reason": "routine 'other' with confidence 0.92",
-      "reply": "We love hearing from you! If you have a question, feel free to DM us.",
+      "reply": "Hey there! We appreciate the shout\u2011out. If you have any travel\u2011related questions, feel free to DM us. \u2708\ufe0f",
       "precedents": [
         {
           "message": "can I buy my dad a ticket to fly to see me, if I'm not with him at check in or on the flight?",
@@ -6784,7 +6784,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'website_app_issue' with confidence 0.96",
-      "reply": "Hi there! Please DM us your confirmation code so we can help you check\u2011in quickly.",
+      "reply": "Hi, please DM your confirmation number so we can look into your check\u2011in issue.\u202f*\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b",
       "precedents": [
         {
           "message": "Good morning.    Delta",
@@ -6843,9 +6843,9 @@
       "thread_id": "296831",
       "message": ", I truly appreciate the eagerness &amp; good intentions behind #text reminders. I reckon 3 texts within 7 mins is a tad too much though. https://t.co/LtvRzJnrpe",
       "intent": "service_complaint",
-      "confidence": 0.95,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.95",
+      "reason": "routine 'service_complaint' with confidence 0.96",
       "reply": "We hear you and appreciate the feedback. We\u2019ll look into the reminder frequency. Please DM us with your details so we can help further.",
       "precedents": [
         {
@@ -6877,7 +6877,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.97",
-      "reply": "I\u2019m sorry for the inconvenience. Could you please share your flight number so I can look into this further?",
+      "reply": "I\u2019m sorry to hear about the delay. Could you share your flight number so we can look into it?",
       "precedents": [
         {
           "message": "what the heck. Three hour flight delay into JFK? I have a 6 month old with me. Why is the flight delayed? Flight 6268 out of Savannah",
@@ -6908,7 +6908,7 @@
       "confidence": 0.96,
       "decision": "escalate",
       "reason": "intent 'loyalty_refund_compensation' is rarely resolvable in public",
-      "reply": "Hi, we understand the inconvenience caused by the delay on flight\u202f1493. Please DM us with your name and contact details so we can review your experience.",
+      "reply": "Hi, we\u2019re sorry for the inconvenience on flight\u202f1493. Please DM us your reservation details so we can review your experience.",
       "precedents": [
         {
           "message": "I \u2764\ufe0f  but never quite understand the \u201cmechanical issues\u201d that delay departure- why are these issues NOT addressed prior knowing there is a flight scheduled?! #inefficiency",
@@ -6939,7 +6939,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.97",
-      "reply": "We\u2019re thrilled you enjoy our Sky Club! We\u2019ll share your feedback about a dim\u2011room option with our team. Thanks for the idea!",
+      "reply": "We\u2019re thrilled you enjoy the Sky Club! We\u2019ll pass your \u201cdim\u2011room\u201d idea along to our team. Thanks for the feedback!",
       "precedents": [
         {
           "message": "is there a skyteam lounge I can access with my Plat status in the BKK Airport for an international flight? If so, where? Thanks!",
@@ -6970,7 +6970,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.97",
-      "reply": "We\u2019re sorry for the delay you experienced. Please DM us your confirmation number so we can look into this further.",
+      "reply": "We\u2019re sorry for the delay you experienced. Please DM us your confirmation number so we can review your flight and assist further.",
       "precedents": [
         {
           "message": "we haven\u2019t been told why we\u2019ve been on the runway for 40 min instead of taking off at MSP DL4650",
@@ -6998,10 +6998,10 @@
       "thread_id": "1281553",
       "message": "I'm at  Air Lines Ticket Counter in Detroit, MI https://t.co/IrJrJLAhzw",
       "intent": "other",
-      "confidence": 0.85,
+      "confidence": 0.78,
       "decision": "auto",
-      "reason": "routine 'other' with confidence 0.85",
-      "reply": "Happy travels! *XYZ",
+      "reason": "routine 'other' with confidence 0.78",
+      "reply": "Happy travels! \u2708\ufe0f *XYZ",
       "precedents": [
         {
           "message": "I'm at  Sky Club in Detroit, MI https://t.co/2dLcORJeOT",
@@ -7032,7 +7032,7 @@
       "confidence": 0.92,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.92",
-      "reply": "We\u2019re sorry for the delay and inconvenience, especially missing time with family. Please DM us your flight number so we can look into this further. \ud83d\ude4f",
+      "reply": "We\u2019re sorry for the delay and inconvenience, especially when you\u2019re reuniting with family. Please DM us your flight number so we can look into this further.",
       "precedents": [
         {
           "message": "i\ufe0f am so impressed with both of my flights with , and currently enjoying despicable me 3 \ud83d\ude0a\ud83d\ude0a",
@@ -7059,8 +7059,8 @@
     {
       "thread_id": "1362781",
       "message": "my delta acc has been disabled due exceed login attemp is there a way to re enabled my acc ? Thx",
-      "intent": "loyalty_refund_compensation",
-      "confidence": 0.85,
+      "intent": "website_app_issue",
+      "confidence": 0.96,
       "decision": "escalate",
       "reason": "severe/legal/safety language needs a human",
       "reply": "Sorry to hear that! Please DM us with your SkyMiles number so we can look into re\u2011enabling your account.",
@@ -7090,11 +7090,11 @@
     {
       "thread_id": "1662681",
       "message": "MCO, gate 74, DL2200 ....  gate agents are super awesome and funny! (Voluntarily checked my bag to AVL ... please don\u2019t lose it!)",
-      "intent": "praise",
-      "confidence": 0.97,
-      "decision": "auto",
-      "reason": "routine 'praise' with confidence 0.97",
-      "reply": "Thanks for the love, glad you enjoyed the gate team at MCO! We\u2019ll keep an eye on your bag to AVL. If you need anything, please DM your confirmation number.",
+      "intent": "baggage",
+      "confidence": 0.8,
+      "decision": "escalate",
+      "reason": "intent 'baggage' is rarely resolvable in public",
+      "reply": "Hi there! Please DM your confirmation number to this link so we can track your bag: https://t.co/6iDGBJAc2m",
       "precedents": [
         {
           "message": "could we please get to the gate?",
@@ -7125,7 +7125,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.97",
-      "reply": "We\u2019re thrilled we could help move you up and that our pilot kept things smooth despite the turbulence. Thanks for choosing Delta! \u2708\ufe0f",
+      "reply": "That\u2019s wonderful to hear! We\u2019re glad the crew made your upgrade smooth and the flight comfortable. Thanks for flying with us! \u2708\ufe0f *AMC",
       "precedents": [
         {
           "message": "thanks for making it right!",
@@ -7156,7 +7156,7 @@
       "confidence": 0.93,
       "decision": "escalate",
       "reason": "intent 'loyalty_refund_compensation' is rarely resolvable in public",
-      "reply": "We\u2019re sorry for the inconvenience. Please DM us with your reservation details so we can review your request.",
+      "reply": "We\u2019re sorry for the inconvenience. Please DM us with your reservation details so we can look into your request.",
       "precedents": [
         {
           "message": ". frustrating that my expense reimbursement has yet to even be assigned. Apparently, it will take another 5 weeks to be complete.",
@@ -7187,7 +7187,7 @@
       "confidence": 0.78,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.78",
-      "reply": "Sorry to hear about your experience. Could you DM us your flight number and date so we can look into the entertainment, upgrade and bump issues? https://t.co/yourlinkhere",
+      "reply": "We\u2019re sorry to hear about your experience. Could you DM us your flight details or reach out via https://t.co/fPLXqv8KGq so we can look into this further?",
       "precedents": [
         {
           "message": "Lousy service today. Flight #1710",
@@ -7218,7 +7218,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'social_chitchat' with confidence 0.97",
-      "reply": "Goodnight! Thanks for flying with us. \u2708\ufe0f",
+      "reply": "Goodnight! Thanks for sharing your journey with us.",
       "precedents": [
         {
           "message": "#thanksfortheride #lovedelta https://t.co/iYaZnxdqda",
@@ -7245,11 +7245,11 @@
     {
       "thread_id": "1238077",
       "message": "How come I can't choose my seat &amp; have to get assigned at the gate when there are available seats on the map? (  )",
-      "intent": "website_app_issue",
+      "intent": "service_complaint",
       "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'website_app_issue' with confidence 0.92",
-      "reply": "Sorry you\u2019re having trouble selecting a seat. Please DM us your confirmation number so we can look into it.",
+      "reason": "routine 'service_complaint' with confidence 0.92",
+      "reply": "We\u2019re sorry for the inconvenience. Please DM us your confirmation number so we can review your reservation and help with seat selection.",
       "precedents": [
         {
           "message": ".  Why do you change my assigned seats? You moved me 2 rows back on 1 flight &amp; a row back on the other. Not full flights, plenty of other seats, many together.  I've now screenshot my seats. Unless there's an upgrade available, I'd appreciate them staying the same. Thanks!",
@@ -7280,7 +7280,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'rebooking_change' with confidence 0.97",
-      "reply": "We\u2019re sorry for the confusion. Please DM us your confirmation number so we can review the fee change and assist you further.",
+      "reply": "We\u2019re sorry for the inconvenience. Please DM us your confirmation number so we can review the fare change details.",
       "precedents": [
         {
           "message": "waited for a call back for 1 hour, then on phone for 50 min and got disconnected! Called back, 2hr+ wait!",
@@ -7308,10 +7308,10 @@
       "thread_id": "942794",
       "message": "think my SM# may have been accidentally removed from one leg of my Jet Airways flight - can u help check?",
       "intent": "loyalty_refund_compensation",
-      "confidence": 0.93,
+      "confidence": 0.96,
       "decision": "escalate",
       "reason": "intent 'loyalty_refund_compensation' is rarely resolvable in public",
-      "reply": "Sure thing! Please DM us your SkyMiles number and the flight details so we can look into it for you.",
+      "reply": "Hi there! Please DM us your SkyMiles number and the flight details so we can look into it for you. Thank you.",
       "precedents": [
         {
           "message": "6 hour flight and my leg is crammed into the back of the seat. Only 6'1 and have no leg rm.  why do your seats keep getting smaller?",
@@ -7339,10 +7339,10 @@
       "thread_id": "973687",
       "message": "is the best airlines in US - maybe world. If you commit to one airline, do / \ud83d\ude0d I'm at 1.2 mil Delta miles for a reason.",
       "intent": "praise",
-      "confidence": 0.99,
+      "confidence": 0.97,
       "decision": "auto",
-      "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Aw, thank you for the love and those miles! We\u2019re thrilled to have you in the #DeltaFamily. \u2708\ufe0f\u2764\ufe0f",
+      "reason": "routine 'praise' with confidence 0.97",
+      "reply": "Aw, thank you! We love having you in the Delta family and those 1.2\u202fM miles! \u2708\ufe0f\u2764\ufe0f",
       "precedents": [
         {
           "message": "thank you for being the best airline in the world.",
@@ -7401,10 +7401,10 @@
       "thread_id": "2160567",
       "message": "Flying to Seattle from Las Vegas onboard  DL144. Was napping so I can go straight to work after arriving. I'm an oncology nurse.",
       "intent": "social_chitchat",
-      "confidence": 0.9,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'social_chitchat' with confidence 0.90",
-      "reply": "Thank you for all you do, and safe travels to Seattle! We hope you have a smooth flight and a great shift ahead. \u2708\ufe0f",
+      "reason": "routine 'social_chitchat' with confidence 0.93",
+      "reply": "Thank you for all you do, and safe travels to Seattle! \u2708\ufe0f Have a smooth flight and a great shift ahead.",
       "precedents": [
         {
           "message": "Off to Vegas this early morning - brought drinks and food for our flight crew who are serving us!  1729 cvg to Las https://t.co/q35sUbMTGT",
@@ -7435,7 +7435,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.96",
-      "reply": "Thank you for sharing the sweet surprise! We\u2019re thrilled you enjoyed the treats at baggage check. Your delight inspires us to keep adding little moments of joy.",
+      "reply": "Thank you for sharing the sweet surprise! We\u2019re delighted you enjoyed the treats at baggage check. Your feedback brightens our day.",
       "precedents": [
         {
           "message": "no delight. Baking on tarmac at #MSP. Gate change. No air in plane. Eveyone sweating. This is gross.",
@@ -7463,10 +7463,10 @@
       "thread_id": "2072710",
       "message": "Is there anything I need to do if I am traveling with an infant in arms?",
       "intent": "general_question",
-      "confidence": 0.97,
+      "confidence": 0.99,
       "decision": "auto",
-      "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hi! Please DM us your reservation info (confirmation #) so we can confirm any steps needed for traveling with an infant in\u2011arms. Thanks.",
+      "reason": "routine 'general_question' with confidence 0.99",
+      "reply": "Hi! Please DM us your reservation info so we can help you with traveling with an infant in arms.\u202fhttps://t.co/6iDGBJAc2m",
       "precedents": [
         {
           "message": "I need to add an infant in arms to a reservation for tomorrow morning but it's a two hour wait on the reservations line.  Is this something I can do at the airport tomorrow?",
@@ -7497,7 +7497,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "We\u2019re thrilled we could help you reunite with your bag! Thanks for the kind words\u2014you\u2019re the reason we love what we do. \u2708\ufe0f",
+      "reply": "We\u2019re thrilled we could help reunite you with your bag! Thanks for the kind words\u2014happy to have you flying with us!",
       "precedents": [
         {
           "message": "Thanks  for amazing customer service yesterday and today!",
@@ -7528,7 +7528,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'rebooking_change' with confidence 0.97",
-      "reply": "We\u2019re sorry for the inconvenience. Please DM us your SkyMiles number and the flight details (original and new times) so we can help you re\u2011book the itinerary.",
+      "reply": "We\u2019re sorry for the inconvenience. Please DM us your SkyMiles number, reservation code, and preferred new times so we can assist with rebooking.",
       "precedents": [
         {
           "message": "Just to let you know, Kenneth &amp; Dr. Davis were an amazing crew on DL5314 from LGA to CLT this morning!",
@@ -7556,7 +7556,7 @@
       "thread_id": "1013903",
       "message": "Dad passed away last night. Trying to get home using dad's skymiles.  Ben Cincinnati delta manager not allow access of account help.",
       "intent": "loyalty_refund_compensation",
-      "confidence": 0.92,
+      "confidence": 0.9,
       "decision": "escalate",
       "reason": "resolution requires private account data",
       "reply": "We\u2019re sorry for your loss. Please DM us with your SkyMiles number and a brief description of the issue so we can look into it.",
@@ -7590,7 +7590,7 @@
       "confidence": 0.9,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.90",
-      "reply": "We\u2019re sorry to hear about the overbooking experience. Could you DM us your confirmation number so we can look into this for you?",
+      "reply": "We\u2019re sorry to hear about the overbooking issue, especially for a fan like you. Let\u2019s see how we can help\u2014please DM us your confirmation number so we can look into it.",
       "precedents": [
         {
           "message": "My first international flight with    I might be a fan!",
@@ -7618,10 +7618,10 @@
       "thread_id": "2552927",
       "message": "hi  please advertise if a \"window\" seat actually has a window on the plane next time! Would have picked a different seat to avoid getting sick if I knew it was going to be windowless \ud83d\ude43",
       "intent": "inflight_experience",
-      "confidence": 0.92,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'inflight_experience' with confidence 0.92",
-      "reply": "Hi there, we\u2019re sorry for the confusion. Some of our aircraft have seats labeled \u201cwindow\u201d that don\u2019t have an actual window due to design constraints. Thank you for your feedback.",
+      "reason": "routine 'inflight_experience' with confidence 0.96",
+      "reply": "Hi there, we\u2019re sorry for the confusion. Some of our aircraft have seats labeled \u201cwindow\u201d that don\u2019t have an actual window due to design constraints. Thanks for your feedback!",
       "precedents": [
         {
           "message": "thanks for the \u201cwindow\u201d seat https://t.co/2Yde73nYTG",
@@ -7652,7 +7652,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "We\u2019re thrilled you enjoyed the evening skies and our hospitality! Thank you for flying with us. \u2708\ufe0f\ud83d\ude0a",
+      "reply": "We\u2019re thrilled you enjoyed the evening flight and our hospitality! Thank you for sharing. \u2708\ufe0f\ud83d\ude0a",
       "precedents": [
         {
           "message": "On my way to beautiful Capetown #rsa  https://t.co/GkUG3gaLQh",
@@ -7680,10 +7680,10 @@
       "thread_id": "825957",
       "message": ". why was flight 5869 delayed for two hours and then we have just been sitting here for half an hour? Unacceptable",
       "intent": "delay_cancellation",
-      "confidence": 0.97,
+      "confidence": 0.99,
       "decision": "auto",
-      "reason": "routine 'delay_cancellation' with confidence 0.97",
-      "reply": "Sorry to hear about the delay, we understand it\u2019s frustrating. Please DM us your confirmation # so we can look into this and help you further. *HEC",
+      "reason": "routine 'delay_cancellation' with confidence 0.99",
+      "reply": "Sorry for the delay, we understand it\u2019s frustrating. Please DM us your confirmation # so we can look into flight 5869 and get you an update. *HEC",
       "precedents": [
         {
           "message": "The one time someone convinces me to take a  flight, it's delayed 4 hours!",
@@ -7714,7 +7714,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'other' with confidence 0.97",
-      "reply": "We\u2019re really sorry you feel this way. Please DM us with more details so we can better understand and assist you.",
+      "reply": "We\u2019re really sorry you feel this way. Please DM us with more details so we can look into your experience.",
       "precedents": [
         {
           "message": "I hate flying  so much lol",
@@ -7745,7 +7745,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.96",
-      "reply": "Hi there! We're thrilled to hear you enjoyed the comfort of our seats after your last\u2011minute change. Thank you for sharing your experience! Safe travels.",
+      "reply": "Hi! Thank you for the kind words\u2014we\u2019re glad you enjoyed the comfort on your seat after the last\u2011minute switch. Safe travels!",
       "precedents": [
         {
           "message": "3 flights, 3 delays. None of which were weather related.",
@@ -7776,7 +7776,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Yes, you\u2019ll earn the same MQMs when you book through Expedia\u2014just be sure your SkyMiles number is added to the reservation before you travel. \u2708\ufe0f",
+      "reply": "Yes, you\u2019ll earn the same MQMs when you book through Expedia\u2014just be sure your SkyMiles number is added to the reservation before you fly. \u2708\ufe0f",
       "precedents": [
         {
           "message": "Do you still earn MQMs when using a flight voucher? #tripdreaming",
@@ -7807,7 +7807,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Thanks for reaching out! Please DM us your cousin\u2019s travel details or reservation number and we\u2019ll look into the cargo restrictions and pet transport options for Puerto Rico. *AMC",
+      "reply": "Thanks for reaching out! For the latest on cargo restrictions and pet travel, please DM us your reservation details or call 800\u2011221\u20111212 and we\u2019ll help you with your cousin\u2019s doggie.",
       "precedents": [
         {
           "message": "are you flying in &amp; out of San Juan Puerto Rico? MSP is my airport. I am working on flying a dog to my home in Minnesota.",
@@ -7838,7 +7838,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'social_chitchat' with confidence 0.99",
-      "reply": "Good morning! How can we assist you today? *HTP",
+      "reply": "Good morning! How can we help you today?",
       "precedents": [
         {
           "message": "I need  to get it together this morning!",
@@ -7869,7 +7869,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'other' with confidence 0.97",
-      "reply": "Enjoy your first\u2011class upgrade and nonstop to DC! Have a great 12\u2011day work trip, and let us know if there\u2019s anything we can do to make it smoother.",
+      "reply": "Enjoy your first\u2011class upgrade and direct flight to DC! Have a smooth week of work and feel free to reach out if you need anything.",
       "precedents": [
         {
           "message": "Moved to a direct flight because one of my legs might be delayed. THANK YOU,  ! Only downside, no time for breakfast first. \u00af\\_(\u30c4)_/ \u00af",
@@ -7900,7 +7900,7 @@
       "confidence": 0.93,
       "decision": "auto",
       "reason": "routine 'rebooking_change' with confidence 0.93",
-      "reply": "Hi there, apologies for the inconvenience. Please DM us with your reservation details so we can look into checking you out and exploring upgrade options.",
+      "reply": "Hi, we can help with that. Please DM us your reservation number so we can look into checking you out and exploring upgrade options.",
       "precedents": [
         {
           "message": "check your DMs please thanks",
@@ -7931,7 +7931,7 @@
       "confidence": 0.92,
       "decision": "auto",
       "reason": "routine 'other' with confidence 0.92",
-      "reply": "We\u2019re sorry to hear about the delays you\u2019ve experienced. If you\u2019d like assistance with rebooking or checking alternate options, please DM us your confirmation details.",
+      "reply": "We\u2019re sorry you\u2019ve experienced another delay. If you\u2019d like help rebooking or checking options, please DM us with your confirmation.",
       "precedents": [
         {
           "message": "Flight delays are a bummer, but  makes it pleasant and you can't keep me from #HopeHomecoming! https://t.co/R58tRg7iWA",
@@ -7959,10 +7959,10 @@
       "thread_id": "602866",
       "message": "My trusty companion who has flown over a million miles on  with me  #Seat1A  #DL1863 #2MillionMiler https://t.co/Z9s9zd9U24",
       "intent": "social_chitchat",
-      "confidence": 0.96,
+      "confidence": 0.97,
       "decision": "auto",
-      "reason": "routine 'social_chitchat' with confidence 0.96",
-      "reply": "Thank you for sharing your amazing journey with us! We appreciate you and your trusty companion. Safe travels on your next adventure!",
+      "reason": "routine 'social_chitchat' with confidence 0.97",
+      "reply": "You\u2019re welcome! Thanks for sharing your adventures and for flying so many miles with us. We appreciate you both!",
       "precedents": [
         {
           "message": "Thanks to  for making special arrangements for us. That kinda explains why I've flown over 1.3 million miles w/you. :)",
@@ -7993,7 +7993,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.97",
-      "reply": "We\u2019re thrilled you loved the extra space in Comfort\u202fPlus\u2014happy to hear you felt like royalty on your flight!",
+      "reply": "We\u2019re thrilled you\u2019re loving Comfort\u202fPlus! Enjoy the extra space and have a great flight.",
       "precedents": [
         {
           "message": "Only pretzels in Comfort Plus ATL to ALB today. No snack tray. Wonder if that is normal. 0",
@@ -8055,7 +8055,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Hi! Thank you for the shout\u2011out to Paul. We\u2019ll be sure to pass your kind words to his team. Have a wonderful flight!",
+      "reply": "Thank you for the shout\u2011out! We\u2019ll be sure Paul sees your kind words. Have a wonderful trip!",
       "precedents": [
         {
           "message": "could we please get to the gate?",
@@ -8086,7 +8086,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.97",
-      "reply": "Thanks for the love! We're thrilled to be your favorite airline. \u2764\ufe0f",
+      "reply": "Thanks for the love! We\u2019re thrilled to be your favorite airline. \u2764\ufe0f",
       "precedents": [
         {
           "message": "Inspiration is everywhere  and these survivors are some of the best examples. https://t.co/kjjMFTZ62O",
@@ -8117,7 +8117,7 @@
       "confidence": 0.97,
       "decision": "escalate",
       "reason": "resolution requires private account data",
-      "reply": "Sorry you\u2019re having trouble, Alex. Please DM us your SkyMiles number so we can look into the app login issue.",
+      "reply": "Sorry to hear you\u2019re having trouble logging in on the app, despite the website working. Please DM us your SkyMiles number so we can look into this for you.",
       "precedents": [
         {
           "message": "its on my bucket list to fly Delta one once in my life.  I need your help :)",
@@ -8148,7 +8148,7 @@
       "confidence": 0.78,
       "decision": "escalate",
       "reason": "customer appears stranded or mid-disruption",
-      "reply": "We\u2019re sorry the TV didn\u2019t work and for the tarmac delay. Please DM us your flight number and date so we can look into it further.",
+      "reply": "We\u2019re sorry the in\u2011flight TV didn\u2019t work and for the tarmac delay. Please DM us your flight number and date so we can look into it further.",
       "precedents": [
         {
           "message": ". Upgrading me to the same seat!! :-) just when I thought an airline had it all figured out :-/ https://t.co/XfQDH2yXuG",
@@ -8175,11 +8175,11 @@
     {
       "thread_id": "2180888",
       "message": "- need help resetting miles skymiles password. It locked me out. Help!",
-      "intent": "loyalty_refund_compensation",
-      "confidence": 0.93,
+      "intent": "website_app_issue",
+      "confidence": 0.88,
       "decision": "escalate",
       "reason": "resolution requires private account data",
-      "reply": "Hi there! Please DM us your Skymiles account number so we can help reset your password. *AAB",
+      "reply": "Hi there, sorry you\u2019re locked out. Please DM us your SkyMiles account email or confirmation # so we can help you reset your password.",
       "precedents": [
         {
           "message": "something is wrong with your system, I used my skymiles and my password and it locked me out #help",
@@ -8241,7 +8241,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "We\u2019re happy to help! Seats for Economy can be selected during online check\u2011in, up to 24\u202fhours before departure. If you need assistance, please DM us your confirmation number.",
+      "reply": "We\u2019re happy to help! Seats in Main Cabin can be selected during online check\u2011in, up to 24\u202fhours before departure. If you need assistance, please DM us your confirmation number.",
       "precedents": [
         {
           "message": "for a family traveling with basic economy fare, can we select out seats at time of check in?  If not, can you explain logic that governs how seats are assigned at/after check in?",
@@ -8272,7 +8272,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'other' with confidence 0.96",
-      "reply": "We\u2019re sorry you had this experience. Please DM us with more details so we can look into it.",
+      "reply": "We\u2019re sorry you had a frustrating experience. Please DM us with your details so we can look into this further.",
       "precedents": [
         {
           "message": "and  THANK YOU for caring about your customers!!! You're the best (Sorry I'm flying a competitor today!) #wishitwasyou",
@@ -8300,10 +8300,10 @@
       "thread_id": "1694085",
       "message": "Joining  Sky Club was a good idea #DelaySZN",
       "intent": "praise",
-      "confidence": 0.96,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'praise' with confidence 0.96",
-      "reply": "Great to hear you\u2019re enjoying the Sky Club, even during delay season! \u2708\ufe0f\ud83d\ude0a",
+      "reason": "routine 'praise' with confidence 0.93",
+      "reply": "Glad you enjoyed the Sky Club! Thanks for sharing.",
       "precedents": [
         {
           "message": "I'm at  Sky Club in Minneapolis, MN https://t.co/q2RakrUrSt",
@@ -8334,7 +8334,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.97",
-      "reply": "Congrats on reaching Diamond and booking your flight! We\u2019re thrilled you\u2019ll be boarding early. Safe travels and enjoy the journey!",
+      "reply": "Congrats on booking your Diamond level flight! We\u2019re thrilled you\u2019ll be boarding early\u2014enjoy the journey!",
       "precedents": [
         {
           "message": "how is it possible that I just booked a flight with delta over the phone for $596 yet if you look online that same flight is $220?",
@@ -8365,7 +8365,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'inflight_experience' with confidence 0.97",
-      "reply": "Hi, we\u2019re sorry to hear about your experience on DL885. Please DM us your confirmation number so we can look into this further.",
+      "reply": "Hi, we\u2019re sorry to hear about your experience on DL885. Please DM us your confirmation number so we can look into this further. *HDG",
       "precedents": [
         {
           "message": "DL 2444 Thank You",
@@ -8396,7 +8396,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.97",
-      "reply": "Hey there! I\u2019m sorry for the delay. Let me see what alternative routings we can offer you. Could you DM your reservation number and travel date, please?",
+      "reply": "Hey there! I\u2019m sorry to hear about the delay. Let me see what alternative routings we have for you. Could you DM me your reservation number and travel date, please?",
       "precedents": [
         {
           "message": "Landed at #SLC   #DL2377 \ud83d\udeec",
@@ -8427,7 +8427,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'inflight_experience' with confidence 0.96",
-      "reply": "We\u2019re sorry your First Class experience on flight\u202f356 fell short of expectations. Please DM us your confirmation number so we can look into this further.",
+      "reply": "We\u2019re sorry your First\u202fClass experience on flight\u202f356 didn\u2019t meet expectations. Please DM us your confirmation number so we can look into this further.",
       "precedents": [
         {
           "message": "Costa Rica here we come!!  https://t.co/F99YNDe1kP",
@@ -8458,7 +8458,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "We\u2019re thrilled you enjoyed a relaxing flight! Thanks for sharing the love. \u2708",
+      "reply": "Thanks for the kind words! We're thrilled you enjoyed a relaxing flight. \u2708",
       "precedents": [
         {
           "message": "Thanks for the fantastic first flying experience with our son, ! https://t.co/0725DxAqhe",
@@ -8486,10 +8486,10 @@
       "thread_id": "1294193",
       "message": "Flying from T4 JFK this evening. If I check a bag and go thru security at T2 due to the issue at T4, will the bag make my flight?",
       "intent": "general_question",
-      "confidence": 0.97,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "Hi there! Could you DM us your flight number and bag tag details? We'll look into whether your bag will make the connection.",
+      "reason": "routine 'general_question' with confidence 0.93",
+      "reply": "Hi there! Could you DM us your flight details so we can confirm how your bag will be routed?",
       "precedents": [
         {
           "message": "Gate 51, T4 at #JFK? Jitney to T2 it is.... on the plus side, 30 minutes early bc . #PaxEx",
@@ -8520,7 +8520,7 @@
       "confidence": 0.96,
       "decision": "escalate",
       "reason": "intent 'baggage' is rarely resolvable in public",
-      "reply": "We\u2019re sorry to hear about your instrument, and we understand your frustration. Please contact our Baggage Service team at 800\u2011325\u20118224 so we can locate it and keep you updated.",
+      "reply": "We\u2019re sorry to hear about your instrument, and understand your frustration. Please DM us your contact info or call our Baggage Service team at 800\u2011325\u20118224 so we can investigate further.",
       "precedents": [
         {
           "message": "Yayyy  lost my makeup bag mid flight and now I have to wait 4-6 weeks for a claim to be processed, meanwhile I get to replace it all.",
@@ -8579,10 +8579,10 @@
       "thread_id": "1551454",
       "message": "Well done, . Easily made my decision on whether to apply for your CC or not simply due to this LAX-LAS flight. No ground crew in LAS?!",
       "intent": "service_complaint",
-      "confidence": 0.93,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.93",
-      "reply": "We\u2019re sorry to hear about your experience in LAS. Your feedback is important and we\u2019ll share it with our team. Thank you for bringing this to our attention.",
+      "reason": "routine 'service_complaint' with confidence 0.96",
+      "reply": "We\u2019re sorry to hear about your experience in LAS. Please DM us with your flight details so we can look into this further.",
       "precedents": [
         {
           "message": "We\u2764\ufe0f\u2764\ufe0f\u2764\ufe0fthe Delta Ground Crew in OKC!!! Emily and her coworkers are the BEST!!!",
@@ -8641,10 +8641,10 @@
       "thread_id": "374561",
       "message": "Trying to figure out why  gate agents at #cle have so much attitude and 800 # can't actually assist? #customerdisservice",
       "intent": "service_complaint",
-      "confidence": 0.97,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.97",
-      "reply": "We\u2019re sorry for the experience at CLE. Could you DM us your flight number and date so we can look into it further?",
+      "reason": "routine 'service_complaint' with confidence 0.96",
+      "reply": "We\u2019re sorry for the experience at CLE. Could you DM us your flight number and date so we can look into this further?",
       "precedents": [
         {
           "message": "poor service by the gate agents at LGA. Gate C13. Another delay and can\u2019t get the truth.",
@@ -8672,10 +8672,10 @@
       "thread_id": "1788382",
       "message": "CONT. didn't look up my ticket at all, just said nope we're full. Delta GOLD but who cares.",
       "intent": "service_complaint",
-      "confidence": 0.93,
+      "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.93",
-      "reply": "We\u2019re sorry you had that experience. Please DM us your Gold member number and flight details so we can look into this for you.",
+      "reason": "routine 'service_complaint' with confidence 0.92",
+      "reply": "We\u2019re sorry you had that experience. Please DM us your Gold member number and flight details so we can look into the availability and help you further.",
       "precedents": [
         {
           "message": "Thank you so much for the assist on my proposal! She just said \u2018yes\u2019 on DL421 ! https://t.co/r5IfY7m3co",
@@ -8706,7 +8706,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'social_chitchat' with confidence 0.97",
-      "reply": "Thank you! We're thrilled you loved it. *TCC",
+      "reply": "Thank you! *TCC",
       "precedents": [
         {
           "message": "#napafire from  2610 https://t.co/Xk90Wg8KhU",
@@ -8737,7 +8737,7 @@
       "confidence": 0.94,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.94",
-      "reply": "We\u2019re sorry you felt that way. Could you please DM us your confirmation number and details so we can look into this? *ALS",
+      "reply": "We\u2019re sorry you felt that way. Please DM us your confirmation number and details so we can look into this for you.",
       "precedents": [
         {
           "message": "always treats me like queen\ud83d\udc51Shoutout to them",
@@ -8765,10 +8765,10 @@
       "thread_id": "362536",
       "message": "i have a question what number can i call forma support in mex city",
       "intent": "general_question",
-      "confidence": 0.97,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'general_question' with confidence 0.97",
-      "reply": "We don\u2019t have a separate Mexico City support line\u2014please use our standard international contact number for assistance.",
+      "reason": "routine 'general_question' with confidence 0.96",
+      "reply": "We don\u2019t have a separate Mexico City line\u2014please call our general support number at\u202f1\u2011800\u2011221\u20111212 for assistance.",
       "precedents": [
         {
           "message": "hello guys. Could you please help me to make my check in?\n I\u2019m in the flight # 2535 going to mex city. I cannot do it on the app",
@@ -8796,10 +8796,10 @@
       "thread_id": "1826156",
       "message": "Reminder  I recently sent you an email outlining what a nightmarish ordeal this flight was. From a valued customer...hit me back https://t.co/Sgc2LxRRrd",
       "intent": "service_complaint",
-      "confidence": 0.88,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.88",
-      "reply": "Hi there, we\u2019re sorry to hear about your experience. Could you share your SkyMiles number or case reference so we can locate your email and assist further?\u202f*\u200b*",
+      "reason": "routine 'service_complaint' with confidence 0.93",
+      "reply": "Hi, could you share your SkyMiles number or case reference so we can review your recent flight experience?",
       "precedents": [
         {
           "message": "-sent you an email about my latest experience and would appreciate a response, please. Thanks.",
@@ -8830,7 +8830,7 @@
       "confidence": 0.99,
       "decision": "auto",
       "reason": "routine 'praise' with confidence 0.99",
-      "reply": "Thank you for the shout\u2011out about our crew on DL1321! We\u2019re thrilled they delivered top\u2011notch service. We\u2019ll be sure to pass your kind words along. \u2708\ufe0f\ud83d\udc99",
+      "reply": "Thanks for the shout\u2011out about our crew on DL1321! We're thrilled they delivered top\u2011notch service. We'll be sure to share your kind words with the team.",
       "precedents": [
         {
           "message": "Are  flight attendants angels? Because they hooked me up! https://t.co/vJFYqafBvF",
@@ -8889,10 +8889,10 @@
       "thread_id": "729910",
       "message": "My Bro&amp;Fam flying out of PR tomorrow. PR doesn't have Power. Can they check in @ airport or can I do it?",
       "intent": "general_question",
-      "confidence": 0.93,
+      "confidence": 0.92,
       "decision": "auto",
-      "reason": "routine 'general_question' with confidence 0.93",
-      "reply": "We can definitely help. If they\u2019ve already checked in online, they can head straight to security. Otherwise they can check in at the airport counters. Let us know if you need any assistance!",
+      "reason": "routine 'general_question' with confidence 0.92",
+      "reply": "We can definitely help. If you\u2019ve already checked in online, your family can head straight to security. Otherwise they can check in at the airport kiosk or with an agent. Let us know if you need any assistance!",
       "precedents": [
         {
           "message": "80 pallets full of goods for PR stucked at BWI, can you help?",
@@ -8923,7 +8923,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'service_complaint' with confidence 0.96",
-      "reply": "We\u2019re sorry to hear about your boarding experience on flight\u202f2446. Please DM us or share your confirmation details via this link so we can review it with our team. https://t.co/6iDGBJAc2m",
+      "reply": "We\u2019re sorry to hear about your experience, and we appreciate the feedback. Please DM your flight details or share your confirmation code here: https://t.c\u200bo/6iDGBJAc2m so we can look into this further.",
       "precedents": [
         {
           "message": "kudos 2 ur gate agent ! she quickly &amp; graciously alerted a boarding \ud83d\udc81\ud83c\udffb\u200d\u2642\ufe0f eating \ud83e\udd5cthat some1 on the \u2708\ufe0f had an allergy. \ud83d\udc99",
@@ -8951,10 +8951,10 @@
       "thread_id": "1238084",
       "message": "your callback option isn't working and wait time 2+ hours. You guys okay? Did the apocalypse start with your customer service center?",
       "intent": "service_complaint",
-      "confidence": 0.97,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.97",
-      "reply": "We\u2019re sorry for the long wait and the callback issue. Let\u2019s get this sorted\u2014please DM us your SkyMiles number or preferred contact and we\u2019ll reach out directly.",
+      "reason": "routine 'service_complaint' with confidence 0.96",
+      "reply": "We\u2019re sorry for the long wait and the callback issue. Let\u2019s sort this out here\u2014could you DM us your phone number or SkyMiles ID so we can reach you directly?",
       "precedents": [
         {
           "message": "Current wait time on  is between one and two hours.  Yes, I'll choose callback option, but have no idea where I'll be by then.",
@@ -8985,7 +8985,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'social_chitchat' with confidence 0.97",
-      "reply": "Sounds like a fantastic A350 Day! Thanks for sharing the excitement and photos. \u2708\ufe0f",
+      "reply": "Sounds like an amazing #DeltaA350Day! Thanks for sharing the excitement and photos. \u2708\ufe0f\ud83d\ude01",
       "precedents": [
         {
           "message": "what just happened on my flight??? https://t.co/HvDVLYYghj",
@@ -9013,10 +9013,10 @@
       "thread_id": "2668882",
       "message": "why am I on standby for DL4635 tonight?",
       "intent": "rebooking_change",
-      "confidence": 0.96,
+      "confidence": 0.93,
       "decision": "auto",
-      "reason": "routine 'rebooking_change' with confidence 0.96",
-      "reply": "Hello! Sorry for the confusion. Please DM us your confirmation or ticket number so we can look into why you\u2019re seeing standby for DL4635 tonight.",
+      "reason": "routine 'rebooking_change' with confidence 0.93",
+      "reply": "Hello! I\u2019m sorry for the confusion. Please DM us your confirmation or ticket number so we can check why you\u2019re listed as standby for DL4635 tonight.",
       "precedents": [
         {
           "message": "Hey  I'm trying to change my seat but the app says I'm flying standby (I'm not flying standby)",
@@ -9047,7 +9047,7 @@
       "confidence": 0.96,
       "decision": "auto",
       "reason": "routine 'delay_cancellation' with confidence 0.96",
-      "reply": "We\u2019re sorry for the delay. Please DM us your flight details so we can look into this and help you get home.",
+      "reply": "We\u2019re sorry for the delay. Please DM us with your flight details so we can look into this for you.",
       "precedents": [
         {
           "message": "Don't EVER FLY  they just made me miss our show! I'm so sorry to all the fans!! Do NOT fly",
@@ -9075,10 +9075,10 @@
       "thread_id": "2505621",
       "message": "I just spent 3 days in NYC freezing my butt off to avoid checking bags. On way home, had to check bags anyway. Adds 45 mins at ATL",
       "intent": "service_complaint",
-      "confidence": 0.93,
+      "confidence": 0.85,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.93",
-      "reply": "We\u2019re sorry you had to endure extra time and discomfort. Please DM us with your itinerary so we can look into the bag\u2011check delay you experienced at ATL.",
+      "reason": "routine 'service_complaint' with confidence 0.85",
+      "reply": "We\u2019re sorry for the inconvenience, especially after your chilly NYC trip. Please DM us with your itinerary so we can look into the bag\u2011check delay at ATL.",
       "precedents": [
         {
           "message": "got to MIA airport early to check my bags and you're telling me I have to wait while you let other people check their bags.",
@@ -9109,7 +9109,7 @@
       "confidence": 0.97,
       "decision": "auto",
       "reason": "routine 'inflight_experience' with confidence 0.97",
-      "reply": "We\u2019re sorry you couldn\u2019t access closed captions. Have you spoken with our in\u2011flight crew about assistance?",
+      "reply": "We\u2019re sorry you couldn\u2019t access captions. Could you let our in\u2011flight team know so they can assist you on your next flight?\u202f*\u200b*",
       "precedents": [
         {
           "message": "no captioning for inflight entertainment. It is 2017. No excuse. #DeafTraveler #DeafInTheAir https://t.co/TLFOsHi3LQ",
@@ -9137,10 +9137,10 @@
       "thread_id": "2123537",
       "message": "LOLOLOL the current hold time for  customer service is 1 hour and 50 minutes. \n\nIs this a joke? I hope it is. All I need to do is update my name on my ticket. \ud83d\ude29",
       "intent": "rebooking_change",
-      "confidence": 0.85,
+      "confidence": 0.78,
       "decision": "auto",
-      "reason": "routine 'rebooking_change' with confidence 0.85",
-      "reply": "We\u2019re sorry for the wait. Please DM us with your reservation details so we can help update the name on your ticket.",
+      "reason": "routine 'rebooking_change' with confidence 0.78",
+      "reply": "We\u2019re sorry for the wait. Please DM us with your reservation number and the name change you need, and we\u2019ll help you update your ticket.",
       "precedents": [
         {
           "message": "Why does  customer service have a 2 HOUR hold time???",
@@ -9168,10 +9168,10 @@
       "thread_id": "1152924",
       "message": "Just switched to  due to  disgusting behavior. #fireracistsAA #Happened2MeonAA",
       "intent": "service_complaint",
-      "confidence": 0.92,
+      "confidence": 0.96,
       "decision": "auto",
-      "reason": "routine 'service_complaint' with confidence 0.92",
-      "reply": "Hi, we\u2019re sorry to hear about your experience. Please share your confirmation code or ticket number via this link so we can look into it: https://t.co/6iDGBJAc2m",
+      "reason": "routine 'service_complaint' with confidence 0.96",
+      "reply": "Hi, we\u2019re sorry to hear about your experience. Please DM us your reservation code or ticket number through this link so we can look into it: https://t.co/6iDGBJAc2m",
       "precedents": [
         {
           "message": "I\u2019m Medallion, switched aircrafts overnite &amp; moved my preferred seats to a limited recline seat on a redeye flt! No \u2764\ufe0f 4 Medallions \ud83d\ude21",

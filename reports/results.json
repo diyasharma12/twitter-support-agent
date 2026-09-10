@@ -1217,21 +1217,21 @@
     "agent": {
       "intent": {
         "n": 196,
-        "accuracy": 0.4898,
-        "macro_f1": 0.4077,
-        "weighted_f1": 0.5083,
+        "accuracy": 0.4949,
+        "macro_f1": 0.4155,
+        "weighted_f1": 0.5124,
         "unparseable_rate": 0.0,
         "per_class": {
           "baggage": {
-            "precision": 0.5714285714285714,
-            "recall": 0.5,
-            "f1-score": 0.5333333333333333,
+            "precision": 0.5555555555555556,
+            "recall": 0.625,
+            "f1-score": 0.5882352941176471,
             "support": 8.0
           },
           "delay_cancellation": {
-            "precision": 0.2222222222222222,
-            "recall": 0.5,
-            "f1-score": 0.3076923076923077,
+            "precision": 0.1875,
+            "recall": 0.375,
+            "f1-score": 0.25,
             "support": 8.0
           },
           "general_question": {
@@ -1253,52 +1253,52 @@
             "support": 1.0
           },
           "other": {
-            "precision": 0.08333333333333333,
+            "precision": 0.09090909090909091,
             "recall": 0.1,
-            "f1-score": 0.09090909090909091,
+            "f1-score": 0.09523809523809523,
             "support": 10.0
           },
           "praise": {
-            "precision": 0.8536585365853658,
-            "recall": 0.7291666666666666,
-            "f1-score": 0.7865168539325843,
+            "precision": 0.8461538461538461,
+            "recall": 0.6875,
+            "f1-score": 0.7586206896551724,
             "support": 48.0
           },
           "rebooking_change": {
-            "precision": 0.38461538461538464,
-            "recall": 0.2631578947368421,
-            "f1-score": 0.3125,
+            "precision": 0.4,
+            "recall": 0.3157894736842105,
+            "f1-score": 0.35294117647058826,
             "support": 19.0
           },
           "service_complaint": {
-            "precision": 0.3888888888888889,
-            "recall": 0.4117647058823529,
-            "f1-score": 0.4,
+            "precision": 0.40540540540540543,
+            "recall": 0.4411764705882353,
+            "f1-score": 0.4225352112676056,
             "support": 34.0
           },
           "social_chitchat": {
-            "precision": 0.4375,
+            "precision": 0.4117647058823529,
             "recall": 0.5,
-            "f1-score": 0.4666666666666667,
+            "f1-score": 0.45161290322580644,
             "support": 14.0
           },
           "website_app_issue": {
-            "precision": 0.6666666666666666,
-            "recall": 0.5,
-            "f1-score": 0.5714285714285714,
+            "precision": 0.7,
+            "recall": 0.5833333333333334,
+            "f1-score": 0.6363636363636364,
             "support": 12.0
           },
-          "accuracy": 0.4897959183673469,
+          "accuracy": 0.49489795918367346,
           "macro avg": {
-            "precision": 0.43244221167073765,
-            "recall": 0.40513365633334675,
-            "f1-score": 0.4076543944649154,
+            "precision": 0.4314399389585393,
+            "recall": 0.4163800209078847,
+            "f1-score": 0.4155180474081879,
             "support": 196.0
           },
           "weighted avg": {
-            "precision": 0.5455746387037913,
-            "recall": 0.4897959183673469,
-            "f1-score": 0.5083482807893781,
+            "precision": 0.5466172186349387,
+            "recall": 0.49489795918367346,
+            "f1-score": 0.5123533777781476,
             "support": 196.0
           }
         },
@@ -1317,7 +1317,7 @@
         ],
         "confusion": [
           [
-            4,
+            5,
             0,
             1,
             0,
@@ -1325,20 +1325,20 @@
             0,
             1,
             0,
-            2,
+            1,
             0,
             0
           ],
           [
             0,
-            4,
+            3,
             0,
             0,
             1,
             0,
             0,
             0,
-            3,
+            4,
             0,
             0
           ],
@@ -1361,9 +1361,9 @@
             1,
             7,
             0,
+            0,
+            0,
             1,
-            0,
-            0,
             5,
             0,
             0
@@ -1395,16 +1395,16 @@
             0
           ],
           [
-            0,
+            1,
             0,
             2,
             1,
             0,
             1,
-            35,
+            33,
             0,
             2,
-            7,
+            8,
             0
           ],
           [
@@ -1415,21 +1415,21 @@
             1,
             0,
             1,
-            5,
-            5,
+            6,
+            4,
             1,
             2
           ],
           [
             1,
-            4,
+            3,
             0,
             3,
             2,
             6,
             1,
             3,
-            14,
+            15,
             0,
             0
           ],
@@ -1451,13 +1451,13 @@
             1,
             0,
             0,
-            2,
+            0,
             0,
             0,
             1,
-            2,
+            3,
             0,
-            6
+            7
           ]
         ],
         "true_distribution": {
@@ -1478,23 +1478,23 @@
         "n": 196,
         "accuracy": 0.6071,
         "precision_escalate": 0.5,
-        "recall_escalate": 0.1558,
-        "f1_escalate": 0.2376,
-        "missed_escalations": 65,
-        "needless_escalations": 12,
-        "auto_rate": 0.8776,
+        "recall_escalate": 0.1688,
+        "f1_escalate": 0.2524,
+        "missed_escalations": 64,
+        "needless_escalations": 13,
+        "auto_rate": 0.8673,
         "counts": {
-          "tp": 12,
-          "fp": 12,
-          "tn": 107,
-          "fn": 65
+          "tp": 13,
+          "fp": 13,
+          "tn": 106,
+          "fn": 64
         }
       },
       "reply_quality": {
         "n_judged": 40,
         "grounded": 4.525,
         "tone": 4.15,
-        "resolution": 4.075,
+        "resolution": 4.175,
         "sendable_rate": 0.8,
         "per_example": [
           {
@@ -1507,11 +1507,11 @@
           },
           {
             "thread_id": "2637460",
-            "grounded": 5,
-            "tone": 4,
+            "grounded": 4,
+            "tone": 3,
             "resolution": 3,
-            "sendable": true,
-            "why": "The reply is grounded and polite, though it lacks the specific confirmation or internal tag seen in precedents, it is a safe and acceptable public response to a factual correction."
+            "sendable": false,
+            "why": "The reply is overly bureaucratic and defensive for a simple factual correction, failing to acknowledge the specific error or offer a direct apology as a human would."
           },
           {
             "thread_id": "200612",
@@ -1524,10 +1524,10 @@
           {
             "thread_id": "1868962",
             "grounded": 5,
-            "tone": 3,
-            "resolution": 4,
+            "tone": 4,
+            "resolution": 5,
             "sendable": true,
-            "why": "The reply is grounded in standard procedure (DM for details), offers a clear next step, and maintains a professional, albeit slightly generic, empathetic tone."
+            "why": "The reply correctly follows the precedent of directing the user to DM for private assistance, which is the standard protocol for handling specific booking issues or complaints on public channels."
           },
           {
             "thread_id": "2137003",
@@ -1535,7 +1535,7 @@
             "tone": 5,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply is factually grounded, matches the enthusiastic tone of the #avgeek customer, and provides a polite, appropriate closing for a non-transactional social media interaction."
+            "why": "The reply is safe, matches the casual and appreciative tone of the precedents, and appropriately acknowledges the customer's enthusiasm without inventing facts."
           },
           {
             "thread_id": "1588373",
@@ -1551,7 +1551,7 @@
             "tone": 5,
             "resolution": 5,
             "sendable": true,
-            "why": "The reply appropriately acknowledges the positive feedback with a warm, professional tone that matches the brand's precedent for handling compliments, requiring no further action."
+            "why": "The reply accurately reflects the positive sentiment of the customer's message, matches the brand's friendly tone with emojis, and appropriately closes the interaction without inventing facts."
           },
           {
             "thread_id": "897844",
@@ -1583,7 +1583,7 @@
             "tone": 3,
             "resolution": 3,
             "sendable": false,
-            "why": "The draft invents a specific 'rebooking' solution for a customer who only expressed frustration about their boarding group, and the tone is too robotic compared to the warm, personalized style of the precedents."
+            "why": "The draft invents a specific rebooking action and requests a confirmation number for a complaint that is primarily about status/boarding group, which Delta's precedents show they do not resolve via public DMs for simple status inquiries."
           },
           {
             "thread_id": "893534",
@@ -1591,7 +1591,7 @@
             "tone": 5,
             "resolution": 5,
             "sendable": true,
-            "why": "The reply accurately reflects the brand's celebratory and appreciative tone seen in precedents, appropriately acknowledges the specific positive event without inventing facts, and requires no further action."
+            "why": "The reply accurately reflects the brand's celebratory and appreciative tone seen in precedents, appropriately acknowledges the specific milestone without inventing facts, and provides a complete, positive closure to the customer's shout-out."
           },
           {
             "thread_id": "938960",
@@ -1607,15 +1607,15 @@
             "tone": 5,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply accurately reflects the brand's positive, appreciative tone for praise without inventing facts or requiring further action."
+            "why": "The reply accurately reflects the brand's positive reinforcement style seen in precedents, matches the customer's appreciative tone, and appropriately closes the interaction without needing further action."
           },
           {
             "thread_id": "2708615",
-            "grounded": 2,
+            "grounded": 5,
             "tone": 4,
-            "resolution": 3,
-            "sendable": false,
-            "why": "The reply invents a specific policy requirement ('proof of age') that is not supported by the provided precedents and may be factually incorrect for domestic travel, risking misinformation."
+            "resolution": 5,
+            "sendable": true,
+            "why": "The reply accurately states the standard policy for domestic travel (no ID required for minors under 18 with a parent), maintains a helpful and professional tone, and directly resolves the customer's inquiry without unnecessary fluff."
           },
           {
             "thread_id": "623300",
@@ -1623,7 +1623,7 @@
             "tone": 4,
             "resolution": 2,
             "sendable": false,
-            "why": "The reply invents a specific phone number (55 5555 5555) which is a placeholder and not a verified Delta contact, constituting a hallucinated fact."
+            "why": "The reply invents a specific phone number and operating hours that are not provided in the context or precedents, which is a critical hallucination for a support agent."
           },
           {
             "thread_id": "2752870",
@@ -1631,7 +1631,7 @@
             "tone": 5,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply accurately reflects the customer's positive sentiment without inventing facts, matches the casual and appreciative tone of the precedents, and appropriately closes the interaction for a non-issue message."
+            "why": "The reply accurately reflects the positive sentiment of the customer's message, matches the brand's casual and appreciative tone seen in precedents, and appropriately closes the interaction without inventing facts."
           },
           {
             "thread_id": "1582252",
@@ -1639,7 +1639,7 @@
             "tone": 3,
             "resolution": 2,
             "sendable": false,
-            "why": "The reply is generic and passive, failing to acknowledge the specific operational feedback or offer any concrete next step, which is insufficient for a support interaction."
+            "why": "The reply is generic and lacks the specific empathy or actionable next steps seen in Delta's precedents, making it feel dismissive of the customer's specific operational complaint."
           },
           {
             "thread_id": "1476737",
@@ -1655,23 +1655,23 @@
             "tone": 4,
             "resolution": 5,
             "sendable": true,
-            "why": "The reply accurately mirrors Delta's precedent of offering Twitter/DM assistance for reservations and provides a clear, actionable next step."
+            "why": "The reply accurately mirrors Delta's precedent of offering direct assistance via DM upon receiving a confirmation number, providing a clear and actionable next step."
           },
           {
             "thread_id": "2450335",
             "grounded": 5,
             "tone": 5,
-            "resolution": 4,
+            "resolution": 5,
             "sendable": true,
-            "why": "The reply is grounded in the customer's specific positive feedback, matches the brand's concise and empathetic tone, and appropriately closes the loop on a resolved issue without inventing new facts."
+            "why": "The reply is a polite, accurate acknowledgment of positive feedback without inventing facts or requiring further action."
           },
           {
             "thread_id": "1280761",
             "grounded": 5,
-            "tone": 3,
+            "tone": 4,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply is factually grounded and provides a clear next step, though the tone is slightly generic given the customer's frustration about the lack of apology."
+            "why": "The reply accurately reflects Delta's standard protocol for lost baggage by providing the correct contact number and offering a clear next step, while maintaining a professional and empathetic tone."
           },
           {
             "thread_id": "564582",
@@ -1693,9 +1693,9 @@
             "thread_id": "904471",
             "grounded": 5,
             "tone": 4,
-            "resolution": 5,
+            "resolution": 4,
             "sendable": true,
-            "why": "The reply mirrors the precedent of apologizing and requesting a confirmation number to investigate, without inventing policies or compensation."
+            "why": "The reply is grounded in standard support practices, offers appropriate empathy for the frustration, and provides a clear next step to investigate the issue."
           },
           {
             "thread_id": "2694205",
@@ -1703,7 +1703,7 @@
             "tone": 4,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply follows the standard Delta protocol of requesting details via DM to investigate the request, matching the precedent of gathering information before providing specific contact channels."
+            "why": "The reply correctly directs the user to DM for details, mirroring the established precedent for handling specific inquiries without inventing policies."
           },
           {
             "thread_id": "394127",
@@ -1711,15 +1711,15 @@
             "tone": 4,
             "resolution": 5,
             "sendable": true,
-            "why": "The reply accurately mirrors the brand's standard procedure of requesting a confirmation number via DM to investigate seat availability, maintaining a professional and helpful tone."
+            "why": "The reply accurately mirrors the established protocol of requesting a confirmation number via DM to investigate seat availability, maintaining a helpful and professional tone."
           },
           {
             "thread_id": "2026332",
-            "grounded": 4,
+            "grounded": 2,
             "tone": 3,
             "resolution": 4,
-            "sendable": true,
-            "why": "The reply is a standard, plausible operational response that moves the issue forward by requesting necessary details, though it lacks the specific brand voice markers (like initials) seen in the precedents."
+            "sendable": false,
+            "why": "The reply invents a specific operational capability (rebooking via DM) that is not supported by the provided precedents, which show a more passive, brand-focused engagement style."
           },
           {
             "thread_id": "2179862",
@@ -1727,7 +1727,7 @@
             "tone": 5,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply is positive, concise, and appropriately matches the customer's enthusiastic tone without inventing facts or requiring further action."
+            "why": "The reply is factually safe, matches the positive sentiment of the customer, and provides a polite acknowledgment consistent with Delta's precedent for handling positive feedback."
           },
           {
             "thread_id": "417903",
@@ -1735,7 +1735,7 @@
             "tone": 5,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply accurately reflects the customer's positive experience without inventing facts, matches the warm and concise tone of the precedents, and appropriately closes the interaction."
+            "why": "The reply accurately acknowledges the specific positive feedback without inventing facts, matches the warm and appreciative tone of the precedents, and appropriately closes the interaction for a thank-you message."
           },
           {
             "thread_id": "1375790",
@@ -1743,15 +1743,15 @@
             "tone": 5,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply matches the brand's positive precedent for praise, uses appropriate emojis, and commits to a standard internal action (sharing feedback) without inventing policies."
+            "why": "The reply accurately reflects the brand's positive response style for compliments, maintains a warm tone, and provides a standard, appropriate acknowledgment without inventing facts."
           },
           {
             "thread_id": "403652",
-            "grounded": 2,
-            "tone": 4,
-            "resolution": 3,
-            "sendable": false,
-            "why": "The reply invents a specific resolution ('re-booked') and assumes the customer's status ('trouble') without the necessary context, whereas precedents show Delta typically requests details via DM before promising specific actions."
+            "grounded": 4,
+            "tone": 3,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is actionable and grounded in standard procedure, though it lacks the specific empathy markers (like 'So sorry') seen in the negative precedent."
           },
           {
             "thread_id": "1926545",
@@ -1763,11 +1763,11 @@
           },
           {
             "thread_id": "460214",
-            "grounded": 4,
-            "tone": 3,
-            "resolution": 3,
-            "sendable": false,
-            "why": "The customer is expressing general brand sentiment and nostalgia rather than reporting a specific actionable service failure, so requesting reservation details is irrelevant and likely to frustrate the user."
+            "grounded": 5,
+            "tone": 4,
+            "resolution": 4,
+            "sendable": true,
+            "why": "The reply is professionally grounded, appropriately empathetic to the customer's frustration, and provides a clear, actionable next step to resolve the underlying complaint."
           },
           {
             "thread_id": "1120101",
@@ -1775,23 +1775,23 @@
             "tone": 4,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply is grounded in standard support procedures, maintains a professional and empathetic tone, and provides a clear next step to investigate the complaint."
+            "why": "The reply is grounded in standard support procedures, offers appropriate empathy for the frustration, and provides a clear next step to investigate the specific incident."
           },
           {
             "thread_id": "944395",
             "grounded": 5,
-            "tone": 4,
+            "tone": 3,
             "resolution": 4,
             "sendable": true,
-            "why": "The reply is grounded in standard procedure, offers a concrete next step (DM for reservation number), and maintains a professional, empathetic tone appropriate for the situation."
+            "why": "The reply is grounded in standard procedure, offers a concrete next step to resolve the claim, and maintains a professional, albeit slightly generic, tone appropriate for the platform."
           },
           {
             "thread_id": "511850",
-            "grounded": 5,
+            "grounded": 2,
             "tone": 4,
-            "resolution": 4,
-            "sendable": true,
-            "why": "The reply is grounded in standard support practices, offers appropriate empathy for the frustration, and requests specific details (flight number) to move the issue forward, aligning with the brand's precedent of seeking assistance details."
+            "resolution": 3,
+            "sendable": false,
+            "why": "The agent invents a capability to 'look into staffing' which is not a standard support action shown in the precedents, and the casual 'Hey there' register is less professional than the brand's typical 'Hi/Hello'."
           },
           {
             "thread_id": "1647940",
@@ -1815,13 +1815,13 @@
             "tone": 4,
             "resolution": 5,
             "sendable": true,
-            "why": "The reply accurately mirrors the brand's standard protocol of requesting confirmation details via DM to investigate, while maintaining a professional and empathetic tone."
+            "why": "The reply accurately mirrors the precedent of requesting a confirmation number via DM to investigate, while maintaining a professional and empathetic tone appropriate for the customer's frustration."
           }
         ]
       }
     }
   },
-  "runtime_seconds": 1.3,
+  "runtime_seconds": 1.8,
   "judge_model": "qwen/qwen3.8-27b",
   "model": "openai/gpt-oss-120b"
 }

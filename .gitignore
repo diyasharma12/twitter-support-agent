@@ -4,8 +4,11 @@
 data/raw/
 data/interim/
 *.sqlite
-# LLM response cache (regenerable, but large)
-.cache/
+# LLM response cache: llm/ IS committed (small — a few MB — and it's what makes
+# `make eval` reproduce in minutes for anyone, regardless of their own provider's rate
+# limits; see DECISIONS.md #17). Ignore everything else that might land in .cache/.
+.cache/*
+!.cache/llm/
 # python
 __pycache__/
 *.pyc
