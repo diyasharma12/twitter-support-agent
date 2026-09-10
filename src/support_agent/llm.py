@@ -69,6 +69,7 @@ class LLM:
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.limiter = RateLimiter(self.cfg["requests_per_minute"])
         self._gemini = None
+        self._groq_sdk = None  # None = untried, False = unavailable, else a client
 
     # --- providers ----------------------------------------------------------
 
@@ -88,6 +89,30 @@ class LLM:
         return (model.generate_content(prompt).text or "").strip()
 
     def _call_groq(self, prompt: str, temperature: float) -> str:
+        """Prefer the official client; fall back to raw HTTP.
+
+        Groq sits behind Cloudflare, which rejects urllib's default user-agent with a
+        403/1010 before the request ever reaches the API — an error that looks exactly
+        like a bad key but is not one. The SDK sends a normal user-agent, so it is tried
+        first; the HTTP path keeps a hand-set user-agent for environments where the SDK
+        is not installed. See DECISIONS.md #18.
+        """
+        if self._groq_sdk is not False:
+            try:
+                if self._groq_sdk is None:
+                    from groq import Groq
+
+                    self._groq_sdk = Groq(api_key=_require_key("groq"))
+                resp = self._groq_sdk.chat.completions.create(
+                    model=self.model,
+                    messages=[{"role": "user", "content": prompt}],
+                    temperature=temperature,
+                    max_tokens=self.cfg["max_output_tokens"],
+                )
+                return (resp.choices[0].message.content or "").strip()
+            except ImportError:
+                self._groq_sdk = False  # not installed; use the HTTP path below
+
         body = json.dumps({
             "model": self.model,
             "messages": [{"role": "user", "content": prompt}],
@@ -100,15 +125,20 @@ class LLM:
             headers={
                 "Authorization": f"Bearer {_require_key('groq')}",
                 "Content-Type": "application/json",
+                "User-Agent": "hiver-support-agent/1.0 (python-urllib)",
+                "Accept": "application/json",
             },
         )
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 payload = json.loads(resp.read())
         except urllib.error.HTTPError as err:
-            raise RuntimeError(
-                f"Groq HTTP {err.code}: {err.read().decode()[:300]}"
-            ) from err
+            detail = err.read().decode()[:300]
+            hint = ""
+            if err.code == 403 and "1010" in detail:
+                hint = ("\n  This is Cloudflare rejecting the user-agent, not a bad key. "
+                        "Install the official client: .venv/bin/pip install groq")
+            raise RuntimeError(f"Groq HTTP {err.code}: {detail}{hint}") from err
         return payload["choices"][0]["message"]["content"].strip()
 
     def _call(self, prompt: str, temperature: float) -> str:
