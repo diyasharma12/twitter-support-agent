@@ -103,11 +103,18 @@ class LLM:
                     from groq import Groq
 
                     self._groq_sdk = Groq(api_key=_require_key("groq"))
+                extra = {}
+                if "gpt-oss" in self.model:
+                    # These models reason before answering and bill those tokens against
+                    # max_tokens. Low effort keeps replies inside the budget and keeps
+                    # reasoning text out of the JSON we have to parse.
+                    extra["reasoning_effort"] = "low"
                 resp = self._groq_sdk.chat.completions.create(
                     model=self.model,
                     messages=[{"role": "user", "content": prompt}],
                     temperature=temperature,
                     max_tokens=self.cfg["max_output_tokens"],
+                    **extra,
                 )
                 return (resp.choices[0].message.content or "").strip()
             except ImportError:

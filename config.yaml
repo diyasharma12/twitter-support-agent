@@ -14,11 +14,11 @@ llm:
   # provider: gemini | groq  (see DECISIONS.md #17 — Gemini free tier gave 20 req/DAY
   # on the only available flash model, against the ~570 this evaluation needs)
   provider: groq
-  model: llama-3.3-70b-versatile
+  model: openai/gpt-oss-120b
   temperature_classify: 0.0
   temperature_draft: 0.3
   temperature_judge: 0.0
-  max_output_tokens: 512
+  max_output_tokens: 1024   # gpt-oss spends some of the budget on reasoning
   requests_per_minute: 25   # Groq free tier allows 30 RPM; leave headroom
   cache_dir: .cache/llm
 
