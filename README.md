@@ -13,7 +13,7 @@ on an LLM judge I was **unable to validate against a human**, and that failure i
 documented rather than papered over.
 
 See also [`ARCHITECTURE.md`](ARCHITECTURE.md) for how it works and
-[`DECISIONS.md`](DECISIONS.md) for the 22 non-obvious decisions behind it.
+[`DECISIONS.md`](DECISIONS.md) for the 24 non-obvious decisions behind it.
 
 ---
 
@@ -297,7 +297,7 @@ list below.
 | `data/sample/` | Committed 4,000-thread subsample |
 | `reports/` | Generated results, predictions, tables |
 | `ARCHITECTURE.md` | How it works, with diagrams |
-| `DECISIONS.md` | 22 non-obvious decisions and their costs |
+| `DECISIONS.md` | 24 non-obvious decisions and their costs |
 | `CREDITS.md` | What was borrowed and from where |
 
 Tests: `make test` (9 tests, including a regression test for the train-on-test leak that
