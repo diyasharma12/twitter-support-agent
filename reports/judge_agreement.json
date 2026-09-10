@@ -5,5 +5,5 @@
   "human_sendable_rate": 1.0,
   "judge_sendable_rate": 0.8,
   "degenerate": true,
-  "interpretation": "UNDEFINED: one rater never varied, so kappa is not computable and the judge remains unvalidated."
+  "interpretation": "UNDEFINED: one rater never varied, so kappa is not computable and the judge remains unvalidated. Re-score with a stricter bar, or report the judge's numbers as unvalidated."
 }
