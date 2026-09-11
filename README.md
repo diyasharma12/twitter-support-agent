@@ -239,6 +239,20 @@ The headline is *intent accuracy 0.495, judged sendable 0.800*. Both mislead, in
    estimate across runs, so reply-quality differences of a few points should not be
    treated as stable.
 
+7. **The escalation labels and the escalation policy answer different questions.** I
+   labelled with "could an AI resolve this on its own?", so anything needing a booking
+   lookup is `escalate`. The policy implements "should this go to a human instead of
+   being auto-handled?" — and in this design the agent drafts a reply either way, so
+   nothing is ever sent unreviewed. Under a workflow where the agent drafts and a human
+   approves before sending, a large share of my `escalate` labels would be `auto` with a
+   suggested reply attached. Some of the 65-message gap is therefore two questions being
+   compared, not purely the model being wrong. It does not excuse the gap — auto-sending
+   a "please DM your confirmation number" to a grieving or stranded customer is wrong
+   under either reading — but it does mean 0.156 understates the agent by an amount I
+   cannot currently quantify. Fixing it means re-labelling against one explicitly stated
+   operating model, which is the first thing I would do before quoting this metric
+   anywhere.
+
 And the number that is *not* misleading, which is the one that should decide anything:
 **64 missed escalations out of 77.**
 
