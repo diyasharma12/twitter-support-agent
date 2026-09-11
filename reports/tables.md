@@ -1,7 +1,7 @@
 # Generated results — Delta, n=196
 
 Agent model: `openai/gpt-oss-120b` · Judge model: `qwen/qwen3.8-27b`
- · runtime 1.8s
+ · runtime 3.5s
 
 ## Headline
 
@@ -18,6 +18,14 @@ Agent model: `openai/gpt-oss-120b` · Judge model: `qwen/qwen3.8-27b`
 | trivial | 77 | 119 | 0 | **0** | 0.000 |
 | simple | 77 | 119 | 0 | **0** | 0.000 |
 | agent | 13 | 13 | 106 | **64** | 0.867 |
+
+## Escalation under labelling pass 2 (stated operating model)
+
+| system | recall | precision | missed escalations | true escalations |
+|---|---|---|---|---|
+| trivial | 1.000 | 0.138 | 0 | 27 |
+| simple | 1.000 | 0.138 | 0 | 27 |
+| agent | 0.222 | 0.231 | 21 | 27 |
 
 ## Judge sub-scores (1–5)
 

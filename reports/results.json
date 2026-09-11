@@ -278,6 +278,22 @@
           "fn": 0
         }
       },
+      "escalation_v2": {
+        "n": 196,
+        "accuracy": 0.1378,
+        "precision_escalate": 0.1378,
+        "recall_escalate": 1.0,
+        "f1_escalate": 0.2422,
+        "missed_escalations": 0,
+        "needless_escalations": 169,
+        "auto_rate": 0.0,
+        "counts": {
+          "tp": 27,
+          "fp": 169,
+          "tn": 0,
+          "fn": 0
+        }
+      },
       "reply_quality": {
         "n_judged": 40,
         "grounded": 3.4,
@@ -880,6 +896,22 @@
         "counts": {
           "tp": 77,
           "fp": 119,
+          "tn": 0,
+          "fn": 0
+        }
+      },
+      "escalation_v2": {
+        "n": 196,
+        "accuracy": 0.1378,
+        "precision_escalate": 0.1378,
+        "recall_escalate": 1.0,
+        "f1_escalate": 0.2422,
+        "missed_escalations": 0,
+        "needless_escalations": 169,
+        "auto_rate": 0.0,
+        "counts": {
+          "tp": 27,
+          "fp": 169,
           "tn": 0,
           "fn": 0
         }
@@ -1490,6 +1522,22 @@
           "fn": 64
         }
       },
+      "escalation_v2": {
+        "n": 196,
+        "accuracy": 0.7908,
+        "precision_escalate": 0.2308,
+        "recall_escalate": 0.2222,
+        "f1_escalate": 0.2264,
+        "missed_escalations": 21,
+        "needless_escalations": 20,
+        "auto_rate": 0.8673,
+        "counts": {
+          "tp": 6,
+          "fp": 20,
+          "tn": 149,
+          "fn": 21
+        }
+      },
       "reply_quality": {
         "n_judged": 40,
         "grounded": 4.525,
@@ -1821,7 +1869,7 @@
       }
     }
   },
-  "runtime_seconds": 1.8,
+  "runtime_seconds": 3.5,
   "judge_model": "qwen/qwen3.8-27b",
   "model": "openai/gpt-oss-120b"
 }
