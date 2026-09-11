@@ -42,6 +42,18 @@ if __name__ == "__main__":
         lines.append(f"| {name} | {c['tp']} | {c['fp']} | {c['tn']} | **{c['fn']}** | "
                      f"{r['escalation']['auto_rate']:.3f} |")
 
+    if any("escalation_v2" in r for r in res["systems"].values()):
+        lines += ["", "## Escalation under labelling pass 2 (stated operating model)", "",
+                  "| system | recall | precision | missed escalations | true escalations |",
+                  "|---|---|---|---|---|"]
+        for name, r in res["systems"].items():
+            e = r.get("escalation_v2")
+            if not e:
+                continue
+            lines.append(f"| {name} | {e['recall_escalate']:.3f} | "
+                         f"{e['precision_escalate']:.3f} | {e['counts']['fn']} | "
+                         f"{e['counts']['tp'] + e['counts']['fn']} |")
+
     lines += ["", "## Judge sub-scores (1–5)", "",
               "| system | n judged | grounded | tone | resolution | sendable |",
               "|---|---|---|---|---|---|"]

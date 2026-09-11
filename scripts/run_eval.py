@@ -115,7 +115,13 @@ def main():
 
     msgs = [r["customer_message"] for r in rows]
     true_intent = [r["intent"] for r in rows]
-    true_decision = [r["decision"] for r in rows]
+    true_decision = [r.get("decision_v1") or r["decision"] for r in rows]
+    # The second labelling pass, if it exists, uses an explicitly stated operating model
+    # (see intents.ESCALATION_MODEL). Both are reported: the first pass is blind to the
+    # agent's behaviour, the second is not, and neither alone tells the whole story.
+    has_v2 = all((r.get("decision_v2") or "").strip() for r in rows)
+    true_decision_v2 = [r["decision_v2"] for r in rows] if has_v2 else None
+    print(f"escalation labels: pass 1{' + pass 2' if has_v2 else ' only'}")
 
     systems = {}
 
@@ -148,6 +154,8 @@ def main():
             "escalation": escalation_metrics(
                 true_decision, [o["decision"] for o in outs]
             ),
+            **({"escalation_v2": escalation_metrics(
+                true_decision_v2, [o["decision"] for o in outs])} if has_v2 else {}),
             "reply_quality": judge_replies(judge, rows, outs, retriever),
         }
         # Written after every system, so a quota failure part-way through leaves usable

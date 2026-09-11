@@ -66,6 +66,28 @@ TIE_BREAKS = (
     "Sarcasm with no request ('great job as always') -> other, not praise.",
 )
 
+# The operating model the escalation labels assume. Written down BEFORE the second
+# labelling pass, because "escalate" is meaningless without stating what happens to a
+# message that is NOT escalated.
+#
+# The system is human-in-the-loop: the agent drafts a reply for every message, and a
+# support agent sees it before anything reaches the customer. So:
+#
+#   auto     — the drafted reply is an appropriate public response and a support agent
+#              could send it after a glance. This INCLUDES replies that ask the customer
+#              to DM their confirmation number, because that is what Delta does publicly
+#              and a human picks up the DM thread afterwards.
+#
+#   escalate — a human has to take over composing the response, not merely approve it:
+#              the tone needs judgement (grief, fury, a safety or legal issue), the
+#              customer is stranded or time-critical, money or compensation is being
+#              claimed, or a routine reply would make the situation materially worse.
+#
+# The first labelling pass (kept as `decision_v1`) used a stricter reading — "could an AI
+# resolve this with no human involvement at all?" — under which any message needing a
+# booking lookup was escalate. See DECISIONS.md #26.
+ESCALATION_MODEL = "human-in-the-loop: the agent drafts, a support agent reviews and sends"
+
 # Decisions the agent must make about handling.
 DECISIONS = ("auto", "escalate")
 
