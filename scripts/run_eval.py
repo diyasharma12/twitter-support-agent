@@ -91,14 +91,23 @@ def preflight(llm, cfg):
     """
     try:
         llm.complete("Reply with the single word: ok", temperature=0.0, use_cache=False)
+        print(f"preflight ok ({cfg['llm']['model']})")
+        return True
     except Exception as err:  # noqa: BLE001 - we want the raw provider message here
-        raise SystemExit(
-            f"\nLLM preflight failed, so the run was not started:\n  {err}\n\n"
+        # Not fatal. The committed response cache covers a full run, so the headline
+        # numbers reproduce with no API key at all — which is the point of committing it.
+        # Only an actual cache MISS needs a working provider, and that raises where it
+        # happens with a message saying so.
+        print(
+            f"\nPreflight could not reach the provider:\n  {err}\n"
             f"Model in config.yaml: {cfg['llm']['model']}\n"
-            "If the provider says the model is retired, put the name it suggests into "
-            "config.yaml under llm.model and rerun."
+            "Continuing in CACHE-ONLY mode: the committed .cache/llm reproduces the\n"
+            "published numbers. If a prompt is missing from the cache the run will stop\n"
+            "there and say so. To run against a live provider, set GROQ_API_KEY (free at\n"
+            "console.groq.com/keys); if the provider says the model is retired, put the\n"
+            "name it suggests into config.yaml under llm.model.\n"
         )
-    print(f"preflight ok ({cfg['llm']['model']})")
+        return False
 
 
 def main():
@@ -133,7 +142,7 @@ def main():
     print("simple baseline done")
 
     llm = LLM(cfg)
-    preflight(llm, cfg)
+    live = preflight(llm, cfg)
     agent = SupportAgent(retriever, cfg, llm)
     agent_out = []
     for i, m in enumerate(msgs, 1):
@@ -143,6 +152,8 @@ def main():
     systems["agent"] = agent_out
     print("agent done")
 
+    if not live:
+        print("(cache-only: any prompt not already cached will stop the run)")
     judge = ReplyJudge(cfg=cfg)  # its own model, its own token budget
     print(f"judge model: {judge.model_name}")
     results = {"golden_n": len(rows), "brand": cfg["brand"], "systems": {}}

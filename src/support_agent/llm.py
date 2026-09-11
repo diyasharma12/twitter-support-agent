@@ -240,6 +240,8 @@ class LLM:
         if use_cache and path.exists():
             return json.loads(path.read_text())["response"]
 
+        # A cache miss with no usable provider is worth its own message: it means this
+        # run has diverged from the published one, not that the network is flaky.
         last_err: Exception | None = None
         for attempt in range(5):
             try:
@@ -254,7 +256,12 @@ class LLM:
             except Exception as err:  # noqa: BLE001 - providers throw several shapes
                 last_err = err
                 time.sleep(min(2**attempt, 30))
-        raise RuntimeError(f"LLM call failed after retries: {last_err}")
+        raise RuntimeError(
+            f"LLM call failed after retries: {last_err}\n"
+            "This prompt was not in .cache/llm, so reproducing it needs a working "
+            "provider. Set GROQ_API_KEY, or check that config.yaml still names a model "
+            "your key can reach (scripts/check_models.py lists them)."
+        )
 
     def complete_json(
         self, prompt: str, temperature: float = 0.0, max_tokens: int | None = None
